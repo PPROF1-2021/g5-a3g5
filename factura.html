@@ -4,12 +4,16 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Curso</title>
+    <meta name="author" content="Grupo Aula 3">
+    <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
+    <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="shorcut icon" href="img/logo.jpg">
 </head>
 <body>
@@ -23,10 +27,11 @@
             
                 <ul>
                     <li><a  href="index.html">Inicio</a></li>
+                    <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
                     <li><a  href="contacto.html">Contacto</a></li> 
                     <li><a  href="login.html">Login</a>
                     <ul>
-                    <li><a  href="registro.html">Registrar</a>
+                        <li><a  href="registro.html">Registrar</a>
                     </ul>
                     </li>
                 </ul>
@@ -35,54 +40,15 @@
 
 
 <main>
-        <div  style="float: left; width:49.85%; height: 610px;" class="formulario3">
-          <article style="height: 100%; width: 95%;">
-            <br>
-            <h2 style="text-align: center; color:rgb(243, 205, 36); ">Formulario de Contactos1</h2>
-            <br>
-            <br>
-            <p class="etiquetas" style="text-align:left;">
-          Cargando sus datos en el formulario usted recibira<br>
-          informacion detallada de sus productos en transito.<br>
-          Estos datos siempre estaran actualizados en tiempo<br>
-          real.<br>
-          Si no es cliente podra solicitar presupuestos de nuestros <br>
-          servicios e ingresar a traves de nuestro login para usuarios<br>
-          </p>
-          </article>
-        </div>
-
-
-
-        <form  style="float: left; width:49.85%" class="formulario3">
-                    <div class="contenedor1" >
-                        <label >Ingrese nombre completo:</label><br>
-                        <br>
-                        <input type="text" class="cuadrado" size="50" autofocus  title="Ingrese nombre completo sin numeros ni signos">    
-                    </div>
-                    <div class="contenedor1">
-                        <label >Ingrese E-mail:</label><br>
-                        <br>
-                        <input type="text" class="cuadrado" size="50" title="Ingrese su correo electronico valido">    
-                    </div>
-                    <div class="contenedor1">
-                        <label >Telefono (opcional):</label><br>
-                        <br>
-                        <input type="text" class="cuadrado" size="50">    
-                    </div>
-                    <div class="contenedor1">
-                        <label >Mensaje:</label><br>
-                        <br>
-                        <textarea class="textarea" name="message" rows="6" cols="54" title="Dejenos una breve descripcion de su consulta"></textarea><br>                      
-                    </div>
-                    <input type="submit" value="Enviar" class="button2" formmethod="get" formnovalidate>    
-                    <a  href="index.html"></a>
-        </form>  
+ <div class="container">
+    <div class="main row">
+     <div class=".col-md-6">col-md-6</div>
+     <div class=".col-md-6">col-md-6</div>
+    </div>  
+ </div> 
 </main>
 
-
-
-<footer style="float: left; width: 100%">
+    <footer>  
     <div class="contenedor-all">
         <div class="contenedor-footer">
             <div class="columna1">
@@ -92,9 +58,7 @@
                 <p>Cordoba, Villa Allende</p>
                 <br>
                 <p>Argentina, CP 5105</p>
-                </div>
-                 
-
+            </div>                 
 
                 <div class="columna2">
                     <div class="logo">
@@ -124,19 +88,19 @@
                     <p>info@sistemas.com.ar</p>
                 </div>    
             </div>
-            
-        
-        <div class="conteiner-footer2">
+               
+            <div class="conteiner-footer2">
                 <div class="copyright">
                     <p>© 2021 Todo los Derechos Reservados</p>
                 </div> 
                 <div class="information">
-                    <a href="">Informacion Compañia |</a>  <a href="">Politica y privacidad |</a> <a href="">Termino y Condiciones</a>
+                    <a href="informacion.html">Informacion Compañia |</a>  <a href="politica.html">Politica de Privacidad|</a> <a href="terminos.html">Termino y Condiciones</a>
                 </div>              
         </div>
     </div>
 </footer>
-
-
+    
+    <script src="js/jquery.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
