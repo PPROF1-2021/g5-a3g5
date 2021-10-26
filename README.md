@@ -17,13 +17,14 @@ un sistema online, para poder ingresar desde cualquier lugar, adaptable a la tie
 datos se logrará un trabajo más eficiente.
 
 <br>
-----------
 <br>
 
 
-### Aula 3 -  Grupo 5
+---
+
+###         Aula 3 -  Grupo 5
+---
 <br>
-----------
 <br>
 
 
