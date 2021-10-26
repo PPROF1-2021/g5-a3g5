@@ -12,6 +12,17 @@ body
         margin: 1px;
         padding: 0;
     }
+
+h2{
+    color: rgb(255, 255, 255);
+}
+h3{
+    color: rgb(243, 205, 36);
+}
+p{
+    color: rgb(243, 205, 36);
+}
+    
     .Mario
     {
         display: flex;
