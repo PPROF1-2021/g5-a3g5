@@ -1,4 +1,4 @@
-<a href="url"><img src="https://github.com/PPROF1-2021/g9-a3g9stock/tree/main/Codigo/img/logo.png" align="left" height="300"></a>
+<a href="url"><https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/logo.png" align="left" height="300"></a>
 
 
 # Factura Online
