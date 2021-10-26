@@ -79,6 +79,17 @@ a:hover
     {
         color: #fff;
     }
+
+.terminos{
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
 .contenedor
     {
         width: 100%;
