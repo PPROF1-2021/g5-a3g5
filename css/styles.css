@@ -12,7 +12,6 @@ body
         margin: 1px;
         padding: 0;
     }
-
 h2{
     color: rgb(255, 255, 255);
 }
@@ -21,8 +20,8 @@ h3{
 }
 p{
     color: rgb(243, 205, 36);
-}
-    
+    text-align: center;
+} 
     .Mario
     {
         display: flex;
@@ -257,22 +256,16 @@ imput[type="password"]
         background: rgba(245, 143, 10,.6);
         padding: 15px 20px;
         border-radius: 5px;
-        cursor: pointer;
-        
-        
+        cursor: pointer;    
     }
-    .indexmain
-    {
-        text-align: center;
-    }
+.indexmain
+{
+    text-align: center;
+}
 .botondesc:hover
 {
         color: rgb(0, 0, 0);
         background: rgba(255, 255, 255, 0.6); 
-    }
-p
-    {
-        text-align: center;
     }
 .link
     {
@@ -289,7 +282,7 @@ p
 .cuadrado
     {
         border-radius: 5px; 
-        color:rgb(255, 255, 255);  
+        color:rgb(255, 255, 255);
         background: rgba(245, 143, 10,.6);
         border: none;   /*  elimino los bordes visibles del textbox*/
         padding: 10px; /*le damos el ancho de los textbox*/
