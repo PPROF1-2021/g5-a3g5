@@ -77,8 +77,8 @@ Semana del 12/10:
 
 
 <p align="center">
-  <a href="https://codesandbox.io/s/github/algolia/doc-code-samples/tree/master/InstantSearch.js/getting-started" title="Edit on CodeSandbox">
-    <img alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg">
+  <a>
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/mapa.pdf">
   </a>
 </p>
 
@@ -100,10 +100,11 @@ Semana del 01/11:
 
 
 <p align="center">
-  <a href="https://codesandbox.io/s/github/algolia/doc-code-samples/tree/master/InstantSearch.js/getting-started" title="Edit on CodeSandbox">
-    <img alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg">
+  <a>
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/bd.png">
   </a>
 </p>
+
 --- 
 
 ## Sprint 3
