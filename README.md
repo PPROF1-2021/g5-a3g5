@@ -31,6 +31,7 @@ datos se logrará un trabajo más eficiente.
 ---
 El documento es una Especificación de Requisitos Software (ERS) para el Sistema de información para la gestión de procesos y control de inventarios. Esta especificación se ha estructurado basándose en las directrices dadas por el estándar IEEE Práctica Recomendada para Especificaciones de Requisitos Software ANSI/IEEE 830, 1998.
 <br>
+
 #### 1.1         Propósito
 ---
 Este sistema fue creado con el objetivo de brindar una solución tecnológica para el
@@ -41,6 +42,7 @@ Bajo esta problemática se creó un sistema online, para poder ingresar desde
 cualquier lugar, adaptable a la tienda virtual, al sistematizar los datos se logrará
 un trabajo más eficiente.
 <br>
+
 #### 1.2         Alcance
 --- 
 El sistema de facturación está apuntado a toda persona que tiene comercio online, como woocommerce, alguna tienda virtual desde la plantillas de wordpress, sincronizando la base de datos existente del mismo woocommerce con el sistema de G.P, manteniendo así todo el historial de ventas, presupuestos, nota de crédito o la cartera de clientes.
