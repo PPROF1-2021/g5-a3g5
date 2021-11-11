@@ -1,4 +1,4 @@
-package Clases;
+package Conector;
 import java.sql.*;
 public class Conectar {
 
