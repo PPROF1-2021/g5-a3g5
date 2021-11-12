@@ -2,6 +2,8 @@
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET SQL_NOTES=0 */;
+
+
 /*-------------------------------------------------------*/
 /*Orden 01 Borra cualquier base de datos con ese nombre  */
 /*-------------------------------------------------------*/
@@ -62,8 +64,8 @@ CREATE TABLE `facturacion` (
   PRIMARY KEY (`id_factura`),
   KEY `codigo_producto` (`codigo_producto`),
   KEY `tipo_factura` (`tipo_factura`),
-  KEY `cliente` (`cliente`))
-  /*CONSTRAINT `facturacion_ibfk_1` FOREIGN KEY (`codigo_producto`) REFERENCES `productos` (`id_numero_referencia`),
+  KEY `cliente` (`cliente`))/*
+  CONSTRAINT `facturacion_ibfk_1` FOREIGN KEY (`codigo_producto`) REFERENCES `productos` (`id_numero_referencia`),
   CONSTRAINT `facturacion_ibfk_2` FOREIGN KEY (`tipo_factura`) REFERENCES `tipo_factura` (`id_tipo_factura`),
   CONSTRAINT `facturacion_ibfk_3` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
 ) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
