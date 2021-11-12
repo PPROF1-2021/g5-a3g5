@@ -2,9 +2,40 @@
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ proyecto_1_ispc /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+
+
+/*-------------------------------------------------------*/
+/*Orden 01 Borra cualquier base de datos con ese nombre  */
+/*-------------------------------------------------------*/
+DROP DATABASE IF EXISTS proyecto_1_ispc;
+/*-------------------------------------------------------*/
+/*Orden 02 Crea una base de datos con ese nombre         */
+/*-------------------------------------------------------*/
+CREATE DATABASE proyecto_1_ispc;
 USE proyecto_1_ispc;
 
+
+DROP TABLE IF EXISTS tipo_cliente;
+CREATE TABLE `tipo_cliente` (
+  `id_tipo_cliente` int(11) NOT NULL AUTO_INCREMENT,
+  `tipocliente` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_tipo_cliente`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS provincia;
+CREATE TABLE `provincia` (
+  `id_provincia` int(255) NOT NULL AUTO_INCREMENT,
+  `provincia` varchar(30) NOT NULL,
+  PRIMARY KEY (`id_provincia`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS localidad;
+CREATE TABLE `localidad` (
+  `id_localidad` int(255) NOT NULL AUTO_INCREMENT,
+  `localidad` varchar(70) DEFAULT NULL,
+  `provincia` int(255) NOT NULL,
+  PRIMARY KEY (`id_localidad`),
+  KEY `provincia` (`provincia`),
+  CONSTRAINT `localidad_ibfk_1` FOREIGN KEY (`provincia`) REFERENCES `provincia` (`id_provincia`)
+) ENGINE=InnoDB AUTO_INCREMENT=2074 DEFAULT CHARSET=utf8mb4;
 DROP TABLE IF EXISTS clientes;
 CREATE TABLE `clientes` (
   `id_cliente` int(255) NOT NULL AUTO_INCREMENT,
@@ -20,8 +51,8 @@ CREATE TABLE `clientes` (
   KEY `localidad` (`localidad`),
   KEY `tipo_cliente` (`tipo_cliente`),
   CONSTRAINT `clientes_ibfk_1` FOREIGN KEY (`localidad`) REFERENCES `localidad` (`id_localidad`),
-  CONSTRAINT `clientes_ibfk_2` FOREIGN KEY (`tipo_cliente`) REFERENCES `tipo_cliente` (`id_tipo_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+  CONSTRAINT `clientes_ibfk_2` FOREIGN KEY (`tipo_cliente`) REFERENCES `tipo_cliente` (`id_tipo_cliente`))
+  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS facturacion;
 CREATE TABLE `facturacion` (
@@ -33,21 +64,12 @@ CREATE TABLE `facturacion` (
   PRIMARY KEY (`id_factura`),
   KEY `codigo_producto` (`codigo_producto`),
   KEY `tipo_factura` (`tipo_factura`),
-  KEY `cliente` (`cliente`),
+  KEY `cliente` (`cliente`))/*
   CONSTRAINT `facturacion_ibfk_1` FOREIGN KEY (`codigo_producto`) REFERENCES `productos` (`id_numero_referencia`),
   CONSTRAINT `facturacion_ibfk_2` FOREIGN KEY (`tipo_factura`) REFERENCES `tipo_factura` (`id_tipo_factura`),
   CONSTRAINT `facturacion_ibfk_3` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS localidad;
-CREATE TABLE `localidad` (
-  `id_localidad` int(255) NOT NULL AUTO_INCREMENT,
-  `localidad` varchar(70) DEFAULT NULL,
-  `provincia` int(255) NOT NULL,
-  PRIMARY KEY (`id_localidad`),
-  KEY `provincia` (`provincia`),
-  CONSTRAINT `localidad_ibfk_1` FOREIGN KEY (`provincia`) REFERENCES `provincia` (`id_provincia`)
-) ENGINE=InnoDB AUTO_INCREMENT=2074 DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS productos;
 CREATE TABLE `productos` (
@@ -60,9 +82,9 @@ CREATE TABLE `productos` (
   `estado` tinyint(1) DEFAULT NULL COMMENT '1',
   `proveedor` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_numero_referencia`),
-  KEY `proveedor` (`proveedor`),
+  KEY `proveedor` (`proveedor`))/*,
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`proveedor`) REFERENCES `proveedor` (`id_proveedor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS proveedor;
 CREATE TABLE `proveedor` (
@@ -74,19 +96,7 @@ CREATE TABLE `proveedor` (
   CONSTRAINT `proveedor_ibfk_1` FOREIGN KEY (`localidad`) REFERENCES `localidad` (`id_localidad`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS provincia;
-CREATE TABLE `provincia` (
-  `id_provincia` int(255) NOT NULL AUTO_INCREMENT,
-  `provincia` varchar(30) NOT NULL,
-  PRIMARY KEY (`id_provincia`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS tipo_cliente;
-CREATE TABLE `tipo_cliente` (
-  `id_tipo_cliente` int(11) NOT NULL AUTO_INCREMENT,
-  `tipocliente` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_tipo_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS tipo_factura;
 CREATE TABLE `tipo_factura` (
