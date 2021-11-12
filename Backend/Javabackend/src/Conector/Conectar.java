@@ -1,4 +1,4 @@
-package Clases;
+package Conector;
 import java.sql.*;
 public class Conectar {
 
@@ -19,12 +19,12 @@ public class Conectar {
             Statement s = conexion.createStatement();
 
             // Se realiza la consulta. Los resultados se guardan en el ResultSet rs
-            ResultSet rs = s.executeQuery("select * from usuario");
+            //ResultSet rs = s.executeQuery("select * from usuario");
 
             // Se recorre el ResultSet, mostrando por pantalla los resultados.
-            while (rs.next()) {
-                System.out.println(rs.getInt("Id") + " " + rs.getString(2) + " " + rs.getDate(3));                
-            }
+            //while (rs.next()) {
+            //    System.out.println(rs.getInt("Id") + " " + rs.getString(2) + " " + rs.getDate(3));                
+            //}
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } catch (ClassNotFoundException e) {
