@@ -27,11 +27,11 @@ Publicar el sitio web final en un hosting gratuito.
 Sobre la presentación:
 Cada uno de los integrantes del grupo, deberán consignar dentro de esta ENTREGA:
 
-Ferreyra Gaston Alejandro
-Zapata Monica
-Heredia Laura 
-
-Gonzalez Mario Alejandro
+Clavaguera, Abril.
+Heredia, Laura.
+Zapata, Mónica.
+Ferreyra Gastón.
+Gonzalez Mario.
 
 
 Insertar el link del sitio web.
