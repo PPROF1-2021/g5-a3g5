@@ -11,20 +11,18 @@ public class Conectar {
             Class.forName("com.mysql.jdbc.Driver");
 
             // Se obtiene una conexión con la base de datos.
-            // En este caso nos conectamos a la base de datos prueba
-            // con el usuario root y contraseña 1daw
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost/prueba", "", "");              
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost/proyecto_1_ispc", "", "");              
 
             // Se crea un Statement, para realizar la consulta
             Statement s = conexion.createStatement();
 
             // Se realiza la consulta. Los resultados se guardan en el ResultSet rs
-            //ResultSet rs = s.executeQuery("select * from usuario");
+            ResultSet rs = s.executeQuery("select * from usuario");
 
-            // Se recorre el ResultSet, mostrando por pantalla los resultados.
-            //while (rs.next()) {
-            //    System.out.println(rs.getInt("Id") + " " + rs.getString(2) + " " + rs.getDate(3));                
-            //}
+            //Se recorre el ResultSet, mostrando por pantalla los resultados.
+            while (rs.next()) {
+                System.out.println(rs.getInt("Id") + " " + rs.getString(2) + " " + rs.getDate(3));                
+            }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } catch (ClassNotFoundException e) {
