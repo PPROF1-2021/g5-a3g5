@@ -5,28 +5,52 @@
 
 
 /*-------------------------------------------------------*/
-/*Orden 01 Borra cualquier base de datos con ese nombre  */
+/*Paso 01 Borra cualquier base de datos con ese nombre  */
 /*-------------------------------------------------------*/
 DROP DATABASE IF EXISTS proyecto_1_ispc;
+
+
 /*-------------------------------------------------------*/
-/*Orden 02 Crea una base de datos con ese nombre         */
+/*Paso 02 Crea una base de datos con ese nombre         */
 /*-------------------------------------------------------*/
 CREATE DATABASE proyecto_1_ispc;
+
+
+
+/*-------------------------------------------------------*/
+/*Paso 03 Seleciona una base de datos con ese nombre     */
+/*-------------------------------------------------------*/
 USE proyecto_1_ispc;
 
 
+/*----------------------------------------------------------*/
+/*Paso 04 Crea una base de datos con ese nombre previo borra*/
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS tipo_cliente;
 CREATE TABLE `tipo_cliente` (
   `id_tipo_cliente` int(11) NOT NULL AUTO_INCREMENT,
   `tipocliente` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_tipo_cliente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+
+
+
+/*----------------------------------------------------------*/
+/*Paso 05 Crea una base de datos con ese nombre previo borra*/
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS provincia;
 CREATE TABLE `provincia` (
   `id_provincia` int(255) NOT NULL AUTO_INCREMENT,
   `provincia` varchar(30) NOT NULL,
   PRIMARY KEY (`id_provincia`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
+
+
+
+
+/*----------------------------------------------------------*/
+/*Paso 06 Crea una base de datos con ese nombre previo borra*/
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS localidad;
 CREATE TABLE `localidad` (
   `id_localidad` int(255) NOT NULL AUTO_INCREMENT,
@@ -36,6 +60,9 @@ CREATE TABLE `localidad` (
   KEY `provincia` (`provincia`),
   CONSTRAINT `localidad_ibfk_1` FOREIGN KEY (`provincia`) REFERENCES `provincia` (`id_provincia`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2074 DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS clientes;
 CREATE TABLE `clientes` (
   `id_cliente` int(255) NOT NULL AUTO_INCREMENT,
