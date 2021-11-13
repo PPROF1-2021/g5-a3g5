@@ -81,3 +81,11 @@ function redireccion(){
 
 }
 
+function foco(elemento){
+    elemento.style.border="3px solid red"
+
+}
+function nofoco(elemento){
+    elemento.style.border=""
+
+}
