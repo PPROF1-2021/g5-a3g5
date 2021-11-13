@@ -28,7 +28,7 @@ expresion=/\w+@\w+\.+[a/z]/
 
     var nom2= document.getElementById("nombre2").value  
     var ape= document.getElementById("apellido2").value
-    var dat= document.getElementById("date2").value
+    const dat= document.getElementById("date2").value
   //  var ema= document.getElementById("email2").value
     var pro= document.getElementById("provincia2").value
     var pai= document.getElementById("pais2").value
@@ -55,4 +55,17 @@ expresion=/\w+@\w+\.+[a/z]/
     else{
         alert("Operación Exitosa");
     }
+
+    var hoy = new Date()
+    var cumpleanos = new Date(dat)
+    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+    var m = hoy.getMonth() - cumpleanos.getMonth();
+
+    if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+        edad--;
+    }
+
+    //return edad;
+
+    alert(edad)
 } 
