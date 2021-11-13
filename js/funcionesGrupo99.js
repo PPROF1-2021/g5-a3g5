@@ -1,4 +1,3 @@
-
 function validacion()
 {
  
@@ -8,12 +7,12 @@ function validacion()
     //console.log(nom)
    if(nom == "" || pass == "")
     {
-        alert("Hay campos Vacios");
+        alert("Hay campos vacios");
         return false;
     }
     else if(nom.length <3 || pass.length <3) 
     {
-        alert("no se permite caracteres menores a 2");
+        alert("no se permite menos de 2 caracteres");
         return false;
     }
     else{
@@ -25,7 +24,6 @@ function validacion()
 
 function registro()
 {
- 
 expresion=/\w+@\w+\.+[a/z]/
 
     var nom2= document.getElementById("nombre2").value  
