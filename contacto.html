@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Factura-Online</title>
@@ -13,9 +17,12 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/Contacto.css">
     <link rel="shorcut icon" href="img/logo.jpg">
+
 </head>
 <body>
+
     <header class="encabezado">
         <nav class="menu">
                 <div>
@@ -38,53 +45,44 @@
     </header>
 
 
-<main class="Mario">
-        <!-- <div  style="float: left; width:49.85%; height: 610px;" class="formulario3"> -->
-            <div class="formulario3"></div>
-          <!-- <article style="height: 100%; width: 95%;"> -->
-            <article>
-            <br>
-            <h2 style="text-align: center; color:rgb(243, 205, 36); ">Formulario de contacto</h2>
-            <br>
-            <br>
-            <p class="etiquetas" style="text-align:left;">
-            Cargando sus datos en el formulario usted recibira
-            informacion detallada de nuestros servicios.
-            Estos datos siempre estaran actualizados en tiempo
-            real.
-            Si no es cliente podra solicitar presupuestos de nuestros
-            servicios e ingresar a traves de nuestro login para usuarios
-            </p>
-          </article>
-        </div>
 
-            <form class="formulario3">           
-            <div class="contenedor1" >
-                        <label >Ingrese nombre completo:</label><br>
-                        <br>
-                        <input type="text" class="cuadrado" size="50" autofocus  title="Ingrese nombre completo sin numeros ni signos">    
-                    </div>
-                    <div class="contenedor1">
-                        <label >Ingrese E-mail:</label><br>
-                        <br>
-                        <input type="text" class="cuadrado" size="50" title="Ingrese su correo electronico valido">    
-                    </div>
-                    <div class="contenedor1">
-                        <label >Telefono (opcional):</label><br>
-                        <br>
-                        <input type="text" class="cuadrado" size="50">    
-                    </div>
-                    <div class="contenedor1">
-                        <label >Mensaje:</label><br>
-                        <br>
-                        <textarea class="textarea" name="message" rows="6" cols="54" title="Dejenos una breve descripcion de su consulta"></textarea><br>                      
-                    </div>
-                    <input type="submit" value="Enviar" class="button2" formmethod="get" formnovalidate>    
-                    <a  href="index.html"></a>
-        </form>  
-</main>
 
-    <footer>  
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------->
+<!---                    Formulario   ---------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+<form action="" class="forma">
+    <h1 class="forma__titulo">Contactenos</h1>
+
+    <input type="text" class="forma__input">
+    <label for="" class="forma__label">Nombre</label>
+
+    <input type="text" class="forma__input">
+    <label for="" class="forma__label">Correo electronico</label>
+
+    <input type="text" class="forma__input">
+    <label for="" class="forma__label">Telefono</label>
+
+ <!--   <input type="text" class="forma__input">-->
+    <input type="text" class="forma__input">
+    <label for="" class="forma__label">Mensaje</label>
+ 
+
+    <input type="submit" class="forma__submit">
+   
+     </form>
+<!---------------------------------------------------------------------------------------------->
+
+
+
+<footer>  
     <div class="contenedor-all">
         <div class="contenedor-footer">
             <div class="columna1">
@@ -138,8 +136,7 @@
         </div>
     </div>
 </footer>
-   
+    <script src="./js/Contacto.js"></script>
 </body>
 </html>
-
 <!--   https://pprof1-2021.github.io/g5-a3g5/index.html  -->

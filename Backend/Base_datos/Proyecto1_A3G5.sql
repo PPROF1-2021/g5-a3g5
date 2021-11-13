@@ -8,10 +8,15 @@
 /*Paso 01 Borra cualquier base de datos con ese nombre  */
 /*-------------------------------------------------------*/
 DROP DATABASE IF EXISTS proyecto_1_ispc;
+
+
 /*-------------------------------------------------------*/
 /*Paso 02 Crea una base de datos con ese nombre         */
 /*-------------------------------------------------------*/
 CREATE DATABASE proyecto_1_ispc;
+
+
+
 /*-------------------------------------------------------*/
 /*Paso 03 Seleciona una base de datos con ese nombre     */
 /*-------------------------------------------------------*/
@@ -55,6 +60,9 @@ CREATE TABLE `localidad` (
   KEY `provincia` (`provincia`),
   CONSTRAINT `localidad_ibfk_1` FOREIGN KEY (`provincia`) REFERENCES `provincia` (`id_provincia`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2074 DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS clientes;
 CREATE TABLE `clientes` (
   `id_cliente` int(255) NOT NULL AUTO_INCREMENT,
