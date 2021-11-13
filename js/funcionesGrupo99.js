@@ -53,7 +53,8 @@ expresion=/\w+@\w+\.+[a/z]/
         return false;
     }*/
     else{
-        alert("Operación Exitosa");
+        alert("Operación Exitosa")
+        redireccion()
     }
 
     var hoy = new Date()
@@ -68,4 +69,15 @@ expresion=/\w+@\w+\.+[a/z]/
     //return edad;
 
     alert(edad)
+
+//mostrar datos procesados.
+document.getElementById("inputNombre").value=nom2
+
 } 
+
+function redireccion(){
+
+    location.href="../resultado.html"
+
+}
+
