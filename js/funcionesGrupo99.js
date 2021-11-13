@@ -31,7 +31,7 @@ expresion=/\w+@\w+\.+[a/z]/
     const dat= document.getElementById("date2").value
   //  var ema= document.getElementById("email2").value
     var pro= document.getElementById("provincia2").value
-    var pai= document.getElementById("pais2").value
+    var pai= document.getElementById("local2").value
     var pass= document.getElementById("password2").value
     var pass1= document.getElementById("password3").value
 
@@ -53,7 +53,8 @@ expresion=/\w+@\w+\.+[a/z]/
         return false;
     }*/
     else{
-        alert("Operación Exitosa");
+        alert("Operación Exitosa")
+        redireccion()
     }
 
     var hoy = new Date()
@@ -68,4 +69,23 @@ expresion=/\w+@\w+\.+[a/z]/
     //return edad;
 
     alert(edad)
+
+//mostrar datos procesados.
+document.getElementById("inputNombre").value=nom2
+
 } 
+
+function redireccion(){
+
+    location.href="../resultado.html"
+
+}
+
+function foco(elemento){
+    elemento.style.border="3px solid red"
+
+}
+function nofoco(elemento){
+    elemento.style.border=""
+
+}
