@@ -31,7 +31,7 @@ expresion=/\w+@\w+\.+[a/z]/
     const dat= document.getElementById("date2").value
   //  var ema= document.getElementById("email2").value
     var pro= document.getElementById("provincia2").value
-    var pai= document.getElementById("pais2").value
+    var pai= document.getElementById("local2").value
     var pass= document.getElementById("password2").value
     var pass1= document.getElementById("password3").value
 
