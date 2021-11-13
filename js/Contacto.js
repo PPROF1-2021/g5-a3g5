@@ -1,4 +1,4 @@
-var input = document.getElementsByClassName('formulario__input')
+var input = document.getElementsByClassName('forma__input')
 for (var i=0; i <= input.length; i++) {
     input[i].addEventListener('keyup', function () {
        if(this.value.length>=1) {
