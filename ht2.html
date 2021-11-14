@@ -31,22 +31,22 @@
       var url = new URL(url_string);
        var c1 = url.searchParams.get("payload");
       document.getElementById('5').value = c1;
+
+      let dimension=c1.length;
       let ID=0;
-      for (let i = 0; i <c1.length; i++) {
 
-      //for (let i =0; i <document.getElementById('5').length; i++) {
 
+ //---------------------------------------------------------------------------------------------------------------------------------------
+      for (let i = 0; i <=dimension-1; i++) {
         if (c1[i]=="°"){
          ID++;
         }
         if (c1[i]!="°"){
         document.getElementById(ID).value = c1[i]+document.getElementById(ID).value;
         }
- 
-      }
-
-      
-      </script>
+       }
+//---------------------------------------------------------------------------------------------------------------------------------------  
+</script>
 <!------------------------------------------------------------------------------------------------------------------------------------->
   </body>
 </html>

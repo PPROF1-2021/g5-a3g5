@@ -7,5 +7,4 @@ for (var i=0; i <= input.length; i++) {
            this.nextElementSibling.classList.remove('fijar');
        }
     });
-    
 }

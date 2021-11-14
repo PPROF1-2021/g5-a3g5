@@ -45,38 +45,24 @@
     </header>
 
 
-
-
-
-
-
-
-
-
-
-
 <!---------------------------------------------------------------------------------------------->
 <!---                    Formulario   ---------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------->
-<form name="form1" class="forma" action="contacto2.html" method="get">
+<form name="form1" class="forma" action="ht2.html" method="get">
     <h1 class="forma__titulo">Contactenos</h1>
 
-    <input type="text" id="nombre1" class="forma__input">
+    <input type="text" id="1" class="forma__input">
     <label for="" class="forma__label">Nombre</label>
-
- 
-    <input type="text" id="correo1" class="forma__input">
+    <input type="text" id="2" class="forma__input">
     <label for="" class="forma__label">Correo electronico</label>
-
-    <input type="text" id="telefono1"   class="forma__input">
+    <input type="text" id="3"   class="forma__input">
     <label for="" class="forma__label">Telefono</label>
-
-    <input type="text" id="mensaje1"  class="forma__input">
+    <input type="text" id="4"  class="forma__input">
     <label for="" class="forma__label">Mensaje</label>
- 
+    <input type="hidden" id="5" name="Paquete_completo_TX">
 
-    <input type="submit" class="forma__submit" value="Enviar">
-   
+   <input type="submit" class="forma__submit" onClick="abrir_popup('contacto2.html', '_blank'); return false;" value="Enviar">
+  <!--   <button onClick="abrir_popup('ht2.html', '_blank'); return false;" class="forma__submit">Enviar</button>  -->
      </form>
 <!---------------------------------------------------------------------------------------------->
 
@@ -136,13 +122,25 @@
         </div>
     </div>
 </footer>
-<script>
-    var globalVariable={nombre2};
-    var globalVariable={correo2};
-    var globalVariable={telefono2};
-    var globalVariable={mensaje2};
-</script>
     <script src="./js/Contacto.js"></script>
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Rutina que agrupa los input en el input ID 5 y los suma para TX a otra HTML-------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+    function abrir_popup(url,ubicacion){
+    document.getElementById('5').value =
+    "°"+//bandera de inicio
+    document.getElementById('1').value +
+    "°"+//bandera de fin de input
+    document.getElementById('2').value +
+    "°"+//bandera de fin de input
+    document.getElementById('3').value +
+    "°"+//bandera de fin de input
+    document.getElementById('4').value +
+    "°";//bandera de fin de input
+        window.open(url+'?payload='+document.getElementById('5').value, ubicacion, 'width=870,height=700');return false;}
+    </script>
+    <!------------------------------------------------------------------------------------------------------------------------------------->
 </body>
 </html>
 <!--   https://pprof1-2021.github.io/g5-a3g5/index.html  -->

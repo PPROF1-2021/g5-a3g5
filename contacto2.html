@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/Contacto.css">
     <link rel="shorcut icon" href="img/logo.jpg">
-    <script>function leer(){}</script>
 </head>
 
 
@@ -24,27 +23,21 @@
 <!---------------------------------------------------------------------------------------------->
 <!---                    Formulario   ---------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------->
+<form name="form2" class="forma" action="ht2.html" method="get">
+    <h1 class="forma__titulo">Enviando consulta de contacto</h1>
 
 
 
 
+    <form  method="get" >
+        <input type="text" id="1" class="forma__inputR" size="60" />
+        <input type="text" id="2" class="forma__inputR" size="60" />
+        <input type="text" id="3" class="forma__inputR" size="60" />
+        <input type="text" id="4" class="forma__inputR" size="60" />      
+        <input type="hidden" id="5" name="Paquete_completo_RX">
+        <h1 class="forma__titulo">Su consulta sera respondida a la brevedad</h1>
+        </form>
 
-
-<form name="form2"  action="" class="forma">
-
-    <input type="text" id="nombre3" class="forma__input">
-    <label for="" class="forma__label">Nombre</label>
-
-    <input type="text" id="correo3" class="forma__input">
-    <label for="" class="forma__label">Correo electronico</label>
-
-    <input type="text" id="telefono3"   class="forma__input">
-    <label for="" class="forma__label">Telefono</label>
-
-    <input type="text" id="mensaje3"  class="forma__input">
-    <label for="" class="forma__label">Mensaje</label>
-   
-     </form>
 <!---------------------------------------------------------------------------------------------->
 
 
@@ -103,6 +96,34 @@
         </div>
     </div>
 </footer>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+    var url_string = window.location.href; //
+    var url = new URL(url_string);
+     var c1 = url.searchParams.get("payload");
+    document.getElementById('5').value = c1;
+    let dimension=c1.length;
+    let ID=0;
+//---------------------------------------------------------------------------------------------------------------------------------------
+    for (let i = 0; i <=dimension-1; i++) {
+      if (c1[i]=="°"){
+       ID++;
+      }
+      if (c1[i]!="°"){
+      document.getElementById(ID).value = c1[i]+document.getElementById(ID).value;
+      }
+     }
+//---------------------------------------------------------------------------------------------------------------------------------------  
+</script>
+
+
+
+
+
+
+
 
 </body>
 </html>
