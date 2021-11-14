@@ -52,25 +52,26 @@
 
 
         
-        <form action="/resultado.php" class="was-validated row" onsubmit="return registro()" method="post" novalidate>
+        
+            <form name="form1" class="forma was-validated row" action="index.html" method="get" novalidate>
 
           <div class="form-group col-md-3">
             <label for="uname">Nombre:</label>
-            <input type="text" class="form-control" id="name" placeholder="ingresar Nombre" name="name" required>
+            <input type="text" class="form-control" id="11" placeholder="ingresar Nombre" name="name" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
 
           <div class="form-group col-md-3">
             <label for="uname">Apellido</label>
-            <input type="text" class="form-control" id="apell" placeholder="Ingresar Apellido" name="apell" required>
+            <input type="text" class="form-control" id="22" placeholder="Ingresar Apellido" name="apell" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
 
           <div class="form-group col-md-4">
             <label for="pwd">email:</label>
-            <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+            <input type="email" class="form-control" placeholder="Email" id="33" name="email">
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
@@ -91,7 +92,7 @@
 
           <div class="form-group col-md-2">
             <label for="sel1">Localidad:</label>
-            <select class="form-control" id="sel1" name="select">
+            <select class="form-control" id="44" name="select">
                 <option>Cordoba</option>
                 <option>Carlos Paz</option>
                 <option>Unquillo</option>
@@ -101,24 +102,28 @@
 
           <div class="form-group col-md-2">
             <label for="sel1">Provincia:</label>
-            <select class="form-control" id="sel1">
+            <select class="form-control" id="55">
                 <option>Cordoba</option>
                 <option>Buenos Aires</option>
                 <option>Santa Fe</option>
                 <option>San Luis</option>
             </select>
           </div>
+
+          <div class="form-group col-md-3">
+            <input type="hidden" id="66" name="Paquete_completo_TX">
+          </div>
+          <div class="form-group col-md-3">
+            <input type="submit" class="form-control" onClick="abrir_popup2('resultado.html', '_blank'); return false;" value="Enviar">
+          </div>
+
+
+          <input type="hidden" id="5" name="Paquete_completo_TX">
         </form>
         </div>
     </div>
 </div>
 </section>  
-
-
-
-          <button type="submit" class="btn btn-primary" onclick="redireccion()">Procesar Datos</button>
-        
-
       
 </main>
 <br>
@@ -175,6 +180,39 @@
     </div>
 </div>
 </footer>
+
+<script src="./js/registro.js"></script>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Rutina que agrupa los input en el input ID 5 y los suma para TX a otra HTML-------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------------------->
+    <script type="text/javascript">
+    
+    function abrir_popup2(url,ubicacion){
+    document.getElementById('66').value =
+    "°"+//bandera de inicio
+    document.getElementById('11').value +
+    "°"+//bandera de fin de input
+    document.getElementById('22').value +
+    "°"+//bandera de fin de input
+    document.getElementById('33').value +
+    "°"+//bandera de fin de input
+    document.getElementById('44').value +
+    "°";//bandera de fin de input
+    document.getElementById('55').value +
+    "°";//bandera de fin de input
+        window.open(url+'?payload2='+document.getElementById('66').value, ubicacion);//return false;
+        cerrar();
+    }
+
+
+        function cerrar() {
+        window.location("https://pprof1-2021.github.io/g5-a3g5/index.html"); 
+        }
+
+
+    </script>
+    <!------------------------------------------------------------------------------------------------------------------------------------->
 <script src="js/funcionesGrupo99.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

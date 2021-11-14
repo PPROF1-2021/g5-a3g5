@@ -30,16 +30,6 @@
 
 
     </header>
-<?php
-
-$nom=$_POST["name"];
-$apell=$_POST["apell"];
-$email=$_POST["email"];
-$select=$_POST["select"];
-
-print"<p>Nombre: <strong>$nom</strong>.</p>\n";
-print "\n";
-
 
 
 <h1 class="display-4 text-danger">Registro Exitoso</h1>
@@ -52,47 +42,74 @@ print "\n";
                 <h3 class="card-title"> Datos del Usuario</h3>
             </div>
             <div class="card-body">
-                <form class="row">
+                
+                <form name="form2" class="forma row" action="" method="get">
+
                     <div class="form-group col-md-4">
                         <label for="">Nombre</label>
-                        <input id="inputNombre" type="text" class="form-control">
+                        <input id="11" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="">Apellido</label>
-                            <input id="inputApellido" type="text" class="form-control">
+                            <input id="22" type="text" class="form-control forma__inputR">
                         </div>
                     <div class="form-group col-md-2">
                         <label for="">edad</label>
-                        <input id="inputNro" type="text" class="form-control">
+                        <input id="inputNro" type="text" class="form-control forma__inputR">
                     </div>
 
                     <div class="form-group col-md-4">
                         <label for="">Provincia</label>
-                        <input id="inputDireccion" type="text" class="form-control">
+                        <input id="55" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="">Localidad</label>
-                        <input id="inputDireccion" type="text" class="form-control">
+                        <input id="44" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="">Fecha</label>
-                        <input id="inputFecha" type="date" class="form-control">
+                        <input id="inputFecha" type="date" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-8">
                         <label for="">Email</label>
-                        <input id="inputDireccion" type="text" class="form-control">
+                        <input id="33" type="text" class="form-control forma__inputR">
                     </div>
+                    <div class="form-group col-md-8">
+                        <input type="hidden" id="55" name="Paquete_completo_RX">
+                    </div>
+   
                 </form>
             </div>
           </div>
       </div>
   </section>  
 
-  ?> 
 
 </main>
 
-
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+    var url_string2 = window.location.href; //
+    var url2 = new URL(url_string2);
+     var c2 = url2.searchParams.get("payload2");
+    document.getElementById('55').value = c2;
+    let dimension2=c2.length;
+    let ID=0;
+//---------------------------------------------------------------------------------------------------------------------------------------
+    for (let i = 0; i <=dimension2-1; i++) {
+      if (c2[i]=="°"){
+       ID++;
+      }
+      if (c2[i]!="°"){
+      document.getElementById(ID).value = c2[i]+document.getElementById(ID).value;
+      }
+     }
+//---------------------------------------------------------------------------------------------------------------------------------------  
+    function cerrar() {window.close()}
+//--------------------------------------------------------------------------------------------------------------------------------------- 
+</script>
     
     <script src="./js/jquery.js"></script>  
     <script src="./js/bootstrap.min.js"></script>
