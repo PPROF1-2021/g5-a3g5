@@ -58,24 +58,24 @@
 <!---------------------------------------------------------------------------------------------->
 <!---                    Formulario   ---------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------->
-<form action="" class="forma">
+<form name="form1" class="forma" action="contacto2.html" method="get">
     <h1 class="forma__titulo">Contactenos</h1>
 
-    <input type="text" class="forma__input">
+    <input type="text" id="nombre1" class="forma__input">
     <label for="" class="forma__label">Nombre</label>
 
-    <input type="text" class="forma__input">
+ 
+    <input type="text" id="correo1" class="forma__input">
     <label for="" class="forma__label">Correo electronico</label>
 
-    <input type="text" class="forma__input">
+    <input type="text" id="telefono1"   class="forma__input">
     <label for="" class="forma__label">Telefono</label>
 
- <!--   <input type="text" class="forma__input">-->
-    <input type="text" class="forma__input">
+    <input type="text" id="mensaje1"  class="forma__input">
     <label for="" class="forma__label">Mensaje</label>
  
 
-    <input type="submit" class="forma__submit">
+    <input type="submit" class="forma__submit" value="Enviar">
    
      </form>
 <!---------------------------------------------------------------------------------------------->
@@ -136,6 +136,12 @@
         </div>
     </div>
 </footer>
+<script>
+    var globalVariable={nombre2};
+    var globalVariable={correo2};
+    var globalVariable={telefono2};
+    var globalVariable={mensaje2};
+</script>
     <script src="./js/Contacto.js"></script>
 </body>
 </html>
