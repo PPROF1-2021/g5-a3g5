@@ -19,7 +19,7 @@
 
 
     <textarea id="6" class="form-control" name="name" rows="8" cols="80" placeholder="Observaciones"></textarea>
-    <a class="btn btn-default" href="#" role="button" onclick='window.close();'>Guardar y cerrar</a>
+    <a class="btn btn-default" href="#" role="button" onclick='window.close();'>Cerrar</a>
 
 
 
@@ -31,16 +31,17 @@
       var url = new URL(url_string);
        var c1 = url.searchParams.get("payload");
       document.getElementById('5').value = c1;
- 
-      for (let i = 0; i <document.getElementById('5').length; i++) {
+      let ID=0;
+      for (let i = 0; i <c1.length; i++) {
 
-        alert(console.log(value));
+      //for (let i =0; i <document.getElementById('5').length; i++) {
 
- //       if (selectObject.options[i].selected) {
- //         numberSelected++;
- //       }
- 
- 
+        if (c1[i]=="°"){
+         ID++;
+        }
+        if (c1[i]!="°"){
+        document.getElementById(ID).value = c1[i]+document.getElementById(ID).value;
+        }
  
       }
 
