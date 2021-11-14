@@ -9,10 +9,13 @@
         <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="shorcut icon" href="./img/logo.jpg">
     </head>
+
+
 <body>
     <header class="encabezado">
         <nav class="menu">
@@ -21,7 +24,6 @@
                         <img class="logo" src="img/logo.png" width="124" height="105" alt="logo sin imagen">
                     </a>
                 </div>
-            
                 <ul>
                     <li><a  href="index.html">Inicio</a></li>
                     <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
@@ -35,55 +37,89 @@
         </nav>
     </header>
 
+    <h1 class="display-4 text-danger">Registro </h1>
+    <hr>
 <main>
      
-    <form class="formulario" onsubmit="return registro()">
-        <h1>Registrate</h1>
-            <div class="contendeor">
-                
-                <div class="contenedor1">
-                    <i class="fas fa-user-alt icono"></i>  
-                    <input type="text" placeholder="Nombre de Usuario" class="cuadrado" id="nombre2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
+<section class="row mt-4">
+<div class="col-12">
+<div class="card">
 
-                <div class="contenedor1">
-                    <i class="fas fa-user-alt icono"></i>  
-                    <input type="text" placeholder="Apellido de Usuario" class="cuadrado" id="apellido2" onfocus="foco(this)" onblur="nofoco(this)" required>     
-                </div>
+    <div class="card-header">
+    <h3 class="card-title"> Cabecera de Facturas</h3>
+    </div>
+<div class="card-body">
 
-                <div class="contenedor1">
-                    <i class="fas fa-calendar-day icono"></i>
-                    <input type="date" class="cuadrado" id="date2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
-            
-                <div class="contenedor1">
-                    <i class="fas fa-envelope icono"></i>  
-                    <input type="text" placeholder="Correo electronico" class="cuadrado" id="email" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>  
-                  
-                <div class="contenedor1">
-                    <i class="fas fa-city icono"></i>  
-                    <input type="text" placeholder="Provincia" class="cuadrado" id="provincia2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
 
-                <div class="contenedor1">
-                    <i class="fas fa-globe-africa icono"></i>
-                    <input type="text" placeholder="Localidad" class="cuadrado" id="local2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
-               
-                <div class="contenedor1">
-                    <i class="fas fa-key icono"></i>
-                    <input type="password" placeholder="Contraseña" class="cuadrado"  id="password2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
-
-                <div class="contenedor1">
-                    <i class="fas fa-key icono"></i>
-                    <input type="password" placeholder="Repetir Contraseña" class="cuadrado" id="password3" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
         
-                <input type="submit" value="Registrar" class="button">    
-            </div>
-    </form>
+        <form action="/resultado.php" class="was-validated row" onsubmit="return registro()" method="post" novalidate>
+
+          <div class="form-group col-md-3">
+            <label for="uname">Nombre:</label>
+            <input type="text" class="form-control" id="name" placeholder="ingresar Nombre" name="name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor rellene este campo.</div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="uname">Apellido</label>
+            <input type="text" class="form-control" id="apell" placeholder="Ingresar Apellido" name="apell" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor rellene este campo.</div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="pwd">email:</label>
+            <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor rellene este campo.</div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="pwd">contraseña:</label>
+            <input type="password" class="form-control" id="pwd1" placeholder="Ingresar Contraseña" name="pswd1" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor rellene este campo.</div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <label for="pwd">contraseña:</label>
+            <input type="password" class="form-control" id="pwd2" placeholder="Ingresar nevamente Contraseña" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Por favor rellene este campo.</div>
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="sel1">Localidad:</label>
+            <select class="form-control" id="sel1" name="select">
+                <option>Cordoba</option>
+                <option>Carlos Paz</option>
+                <option>Unquillo</option>
+                <option>Villa Allende</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="sel1">Provincia:</label>
+            <select class="form-control" id="sel1">
+                <option>Cordoba</option>
+                <option>Buenos Aires</option>
+                <option>Santa Fe</option>
+                <option>San Luis</option>
+            </select>
+          </div>
+        </form>
+        </div>
+    </div>
+</div>
+</section>  
+
+
+
+          <button type="submit" class="btn btn-primary" onclick="redireccion()">Procesar Datos</button>
+        
+
+      
 </main>
 <br>
 <br>
@@ -139,8 +175,11 @@
     </div>
 </div>
 </footer>
-
 <script src="js/funcionesGrupo99.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 
