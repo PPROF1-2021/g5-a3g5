@@ -40,6 +40,7 @@ body{
 .forma__inputR{
     direction: rtl;
     unicode-bidi: bidi-override;
+    color: white;
     
 }
 .forma__input:focus{
