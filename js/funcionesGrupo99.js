@@ -124,7 +124,7 @@ function nofoco(elemento){
     "°";//bandera de fin de input
     document.getElementById('5').value +
     "°";//bandera de fin de input
-        window.open(url+'?payload2='+document.getElementById('6').value, ubicacion);//return false;
+        window.open(url+'?payload2='+document.getElementById('6').value, ubicacion);
         cerrar();
     }
 
