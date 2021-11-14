@@ -7,27 +7,45 @@
   </head>
   <body>
     <h3>Revision de datos contacto</h3>
- 
-
-    <input class="form-control" type="text" name="Nombre" value="" id="1">
-    <input class="form-control" type="text" name="Correo" value="" id="2">
-    <input class="form-control" type="text" name="Telefono" value="" id="3">
-    <input class="form-control" type="text" name="Mensaje" value="" id="4">
 
 
+    <form  method="get" >
+      <input type="text" name="numero1" id="1" size="10" />
+      <input type="text" name="numero2" id="2" size="10" />
+      <input type="text" name="numero3" id="3" size="10" />
+      <input type="text" name="numero3" id="4" size="10" />      
+      <input type="text" id="5" name="Paquete_completo_RX">
+      </form>
 
 
-
-    <textarea class="form-control" name="name" rows="8" cols="80" placeholder="Observaciones"></textarea>
+    <textarea id="6" class="form-control" name="name" rows="8" cols="80" placeholder="Observaciones"></textarea>
     <a class="btn btn-default" href="#" role="button" onclick='window.close();'>Guardar y cerrar</a>
-  </body>
-  <script>var ID="1";</script>
-<script type="text/javascript">
-  var url_string = window.location.href; //
-  var url = new URL(url_string);
-   var c1 = url.searchParams.get("filtro1");
-  document.getElementById(ID).value = c1;
-  ID++;
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+     <script type="text/javascript">
+      var url_string = window.location.href; //
+      var url = new URL(url_string);
+       var c1 = url.searchParams.get("payload");
+      document.getElementById('5').value = c1;
  
-  </script>
+      for (let i = 0; i <document.getElementById('5').length; i++) {
+
+        alert(console.log(value));
+
+ //       if (selectObject.options[i].selected) {
+ //         numberSelected++;
+ //       }
+ 
+ 
+ 
+      }
+
+      
+      </script>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+  </body>
 </html>
