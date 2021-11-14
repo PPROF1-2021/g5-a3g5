@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factura digital</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h3>Revision de datos contacto</h3>
+
+
+    <form  method="get" >
+      <input type="text" name="numero1" id="1" size="10" />
+      <input type="text" name="numero2" id="2" size="10" />
+      <input type="text" name="numero3" id="3" size="10" />
+      <input type="text" name="numero3" id="4" size="10" />      
+      <input type="text" id="5" name="Paquete_completo_RX">
+      </form>
+
+
+    <textarea id="6" class="form-control" name="name" rows="8" cols="80" placeholder="Observaciones"></textarea>
+    <a class="btn btn-default" href="#" role="button" onclick='window.close();'>Cerrar</a>
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+     <script type="text/javascript">
+      var url_string = window.location.href; //
+      var url = new URL(url_string);
+       var c1 = url.searchParams.get("payload");
+      document.getElementById('5').value = c1;
+
+      let dimension=c1.length;
+      let ID=0;
+
+
+ //---------------------------------------------------------------------------------------------------------------------------------------
+      for (let i = 0; i <=dimension-1; i++) {
+        if (c1[i]=="°"){
+         ID++;
+        }
+        if (c1[i]!="°"){
+        document.getElementById(ID).value = c1[i]+document.getElementById(ID).value;
+        }
+       }
+//---------------------------------------------------------------------------------------------------------------------------------------  
+</script>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>

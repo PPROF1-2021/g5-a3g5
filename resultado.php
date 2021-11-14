@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="shorcut icon" href="img/logo.jpg">
 </head>
-<body class="bg-light container" onsubmit=return time()>
+<body class="bg-light container">
     <header class="encabezado">
         <nav class="menu">
                 <div>
@@ -28,6 +30,17 @@
 
 
     </header>
+<?php
+
+$nom=$_POST["name"];
+$apell=$_POST["apell"];
+$email=$_POST["email"];
+$select=$_POST["select"];
+
+print"<p>Nombre: <strong>$nom</strong>.</p>\n";
+print "\n";
+
+
 
 <h1 class="display-4 text-danger">Registro Exitoso</h1>
 <hr>
@@ -39,14 +52,14 @@
                 <h3 class="card-title"> Datos del Usuario</h3>
             </div>
             <div class="card-body">
-                <form class="row" name="datos1">
+                <form class="row">
                     <div class="form-group col-md-4">
                         <label for="">Nombre</label>
                         <input id="inputNombre" type="text" class="form-control">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="">Apellido</label
-                            ><input id="inputApellido" type="text" class="form-control">
+                        <label for="">Apellido</label>
+                            <input id="inputApellido" type="text" class="form-control">
                         </div>
                     <div class="form-group col-md-2">
                         <label for="">edad</label>
@@ -75,7 +88,7 @@
       </div>
   </section>  
 
-  
+  ?> 
 
 </main>
 
@@ -85,5 +98,6 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="js/funcionesGrupo99.js"></script>
     <script src="js/time.js"></script>
+    <script src="js/datos.js"></script>
 </body>
 </html>
