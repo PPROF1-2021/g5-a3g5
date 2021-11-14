@@ -47,11 +47,11 @@
 
                     <div class="form-group col-md-4">
                         <label for="">Nombre</label>
-                        <input id="11" type="text" class="form-control forma__inputR">
+                        <input id="1" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="">Apellido</label>
-                            <input id="22" type="text" class="form-control forma__inputR">
+                            <input id="2" type="text" class="form-control forma__inputR">
                         </div>
                     <div class="form-group col-md-2">
                         <label for="">edad</label>
@@ -60,11 +60,11 @@
 
                     <div class="form-group col-md-4">
                         <label for="">Provincia</label>
-                        <input id="55" type="text" class="form-control forma__inputR">
+                        <input id="5" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="">Localidad</label>
-                        <input id="44" type="text" class="form-control forma__inputR">
+                        <input id="4" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="">Fecha</label>
@@ -72,10 +72,10 @@
                     </div>
                     <div class="form-group col-md-8">
                         <label for="">Email</label>
-                        <input id="33" type="text" class="form-control forma__inputR">
+                        <input id="3" type="text" class="form-control forma__inputR">
                     </div>
                     <div class="form-group col-md-8">
-                        <input type="hidden" id="55" name="Paquete_completo_RX">
+                        <input type="hidden" id="6" name="Paquete_completo_RX2">
                     </div>
    
                 </form>
@@ -94,11 +94,11 @@
     var url_string2 = window.location.href; //
     var url2 = new URL(url_string2);
      var c2 = url2.searchParams.get("payload2");
-    document.getElementById('55').value = c2;
-    let dimension2=c2.length;
+    document.getElementById('6').value = c2;
+    let dimension=c2.length;
     let ID=0;
 //---------------------------------------------------------------------------------------------------------------------------------------
-    for (let i = 0; i <=dimension2-1; i++) {
+    for (let i = 0; i <=dimension-1; i++) {
       if (c2[i]=="°"){
        ID++;
       }

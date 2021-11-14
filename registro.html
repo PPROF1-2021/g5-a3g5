@@ -57,21 +57,21 @@
 
           <div class="form-group col-md-3">
             <label for="uname">Nombre:</label>
-            <input type="text" class="form-control" id="11" placeholder="ingresar Nombre" name="name" required>
+            <input type="text" class="form-control" id="1" placeholder="ingresar Nombre" name="name" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
 
           <div class="form-group col-md-3">
             <label for="uname">Apellido</label>
-            <input type="text" class="form-control" id="22" placeholder="Ingresar Apellido" name="apell" required>
+            <input type="text" class="form-control" id="2" placeholder="Ingresar Apellido" name="apell" required>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
 
           <div class="form-group col-md-4">
             <label for="pwd">email:</label>
-            <input type="email" class="form-control" placeholder="Email" id="33" name="email">
+            <input type="email" class="form-control" placeholder="Email" id="3" name="email">
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
@@ -92,7 +92,7 @@
 
           <div class="form-group col-md-2">
             <label for="sel1">Localidad:</label>
-            <select class="form-control" id="44" name="select">
+            <select class="form-control" id="4" name="select">
                 <option>Cordoba</option>
                 <option>Carlos Paz</option>
                 <option>Unquillo</option>
@@ -102,7 +102,7 @@
 
           <div class="form-group col-md-2">
             <label for="sel1">Provincia:</label>
-            <select class="form-control" id="55">
+            <select class="form-control" id="5">
                 <option>Cordoba</option>
                 <option>Buenos Aires</option>
                 <option>Santa Fe</option>
@@ -111,14 +111,12 @@
           </div>
 
           <div class="form-group col-md-3">
-            <input type="hidden" id="66" name="Paquete_completo_TX">
+            <input type="hidden" id="6" name="Paquete_completo_TX2">
           </div>
           <div class="form-group col-md-3">
             <input type="submit" class="form-control" onClick="abrir_popup2('resultado.html', '_blank'); return false;" value="Enviar">
           </div>
 
-
-          <input type="hidden" id="5" name="Paquete_completo_TX">
         </form>
         </div>
     </div>
@@ -189,28 +187,21 @@
     <script type="text/javascript">
     
     function abrir_popup2(url,ubicacion){
-    document.getElementById('66').value =
+    document.getElementById('6').value =
     "°"+//bandera de inicio
-    document.getElementById('11').value +
+    document.getElementById('1').value +
     "°"+//bandera de fin de input
-    document.getElementById('22').value +
+    document.getElementById('2').value +
     "°"+//bandera de fin de input
-    document.getElementById('33').value +
+    document.getElementById('3').value +
     "°"+//bandera de fin de input
-    document.getElementById('44').value +
+    document.getElementById('4').value +
     "°";//bandera de fin de input
-    document.getElementById('55').value +
+    document.getElementById('5').value +
     "°";//bandera de fin de input
-        window.open(url+'?payload2='+document.getElementById('66').value, ubicacion);//return false;
+        window.open(url+'?payload2='+document.getElementById('6').value, ubicacion);//return false;
         cerrar();
     }
-
-
-        function cerrar() {
-        window.location("https://pprof1-2021.github.io/g5-a3g5/index.html"); 
-        }
-
-
     </script>
     <!------------------------------------------------------------------------------------------------------------------------------------->
 <script src="js/funcionesGrupo99.js"></script>
