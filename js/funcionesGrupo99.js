@@ -110,3 +110,39 @@ function nofoco(elemento){
       });
     }, false);
   })();
+
+  function abrir_popup2(url,ubicacion){
+    document.getElementById('6').value =
+    "°"+//bandera de inicio
+    document.getElementById('1').value +
+    "°"+//bandera de fin de input
+    document.getElementById('2').value +
+    "°"+//bandera de fin de input
+    document.getElementById('3').value +
+    "°"+//bandera de fin de input
+    document.getElementById('4').value +
+    "°";//bandera de fin de input
+    document.getElementById('5').value +
+    "°";//bandera de fin de input
+        window.open(url+'?payload2='+document.getElementById('6').value, ubicacion);//return false;
+        cerrar();
+    }
+
+     //     window.location.replace("https://pprof1-2021.github.io/g5-a3g5/index.html");      
+     function abrir_popup(url,ubicacion){
+        document.getElementById('5').value =
+        "°"+//bandera de inicio
+        document.getElementById('1').value +
+        "°"+//bandera de fin de input
+        document.getElementById('2').value +
+        "°"+//bandera de fin de input
+        document.getElementById('3').value +
+        "°"+//bandera de fin de input
+        document.getElementById('4').value +
+        "°";//bandera de fin de input
+            window.open(url+'?payload='+document.getElementById('5').value, ubicacion, 'width=870,height=700');//return false;
+            cerrar();
+        }
+            function cerrar() {
+            window.location("https://pprof1-2021.github.io/g5-a3g5/index.html"); 
+            }
