@@ -44,6 +44,15 @@ generando asi un solo campo de texto con toda la informacion de los anteriores p
     </a>
   </p>
 
+Con esta rutina recibimos por metodo GET el contenido de campo(input-text)5 de la pagina contacto.html
+lo guardamos en otro campo(input-text5)de la pagina contact2.html.
+Una vez cargado generamos un for para recorrer todo el texto y separarlo para cada campo del formulario local
+
+<p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md4.png" width=100% height="350" title="">
+    </a>
+  </p>
 
 
 
