@@ -34,10 +34,15 @@ generando asi un solo campo de texto con toda la informacion de los anteriores p
     </a>
   </p>
 
+ A traves de este metodo de javascript enviamos el contenido del campo(input-text)5 por metodos get al formulario
+ en la pagina contacto2.html.
 
 
-
-
+<p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md3.png" width=100% height="350" title="">
+    </a>
+  </p>
 
 
 
