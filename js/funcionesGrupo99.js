@@ -1,8 +1,8 @@
 function validacion()
 {
  
-    var nom= document.getElementById("nombre").value
-    var pass= document.getElementById("password").value
+    var nom= document.getElementsByName("name1").value
+    var pass= document.getElementsByName("apell1").val
 
     //console.log(nom)
    if(nom == "" || pass == "")
@@ -14,9 +14,6 @@ function validacion()
     {
         alert("no se permite menos de 2 caracteres");
         return false;
-    }
-    else{
-        alert("Operación Exitosa");
     }
  
 }  
@@ -78,11 +75,23 @@ function redireccion(){
     location.href="../resultado.php"
 
 }
-/*
-function redireccion(e) {
-    e.preventDefault();
-    window.location = 'resultado.html';
-}*/
+
+function edad() {
+    const dat= document.getElementById("8").value
+
+    var hoy = new Date()
+    var cumpleanos = new Date(dat)
+    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+    var m = hoy.getMonth() - cumpleanos.getMonth();
+
+    if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+        edad--;
+    }
+    //return edad;
+
+    alert(edad)
+
+}
 
 function foco(elemento){
     elemento.style.border="3px solid red"
@@ -112,7 +121,7 @@ function nofoco(elemento){
   })();
 
   function abrir_popup2(url,ubicacion){
-    document.getElementById('6').value =
+    document.getElementById('7').value =
     "°"+//bandera de inicio
     document.getElementById('1').value +
     "°"+//bandera de fin de input
@@ -124,7 +133,9 @@ function nofoco(elemento){
     "°";//bandera de fin de input
     document.getElementById('5').value +
     "°";//bandera de fin de input
-        window.open(url+'?payload2='+document.getElementById('6').value, ubicacion);
+    document.getElementById('6').value +
+    "°";//bandera de fin de input
+        window.open(url+'?payload2='+document.getElementById('7').value, ubicacion);
         cerrar();
     }
 
