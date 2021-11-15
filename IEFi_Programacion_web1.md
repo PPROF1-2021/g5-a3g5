@@ -24,7 +24,6 @@ En esta linea de codigo HTML incluinos el archivo javascript
   </p>
 
 
-
 En el formulario de contacto.html tenemos 5 campos de texto con sus respectivos label animados
 el 5 campo es Oculto y lo usamos para cargar en ese espacio el contenido de los otros cuatros 
 generando asi un solo campo de texto con toda la informacion de los anteriores para facilitar su envio.
@@ -49,10 +48,10 @@ generando asi un solo campo de texto con toda la informacion de los anteriores p
 Informar mediante un documento (puede ser dentro del IEEE830) donde se incorporaron cada uno de los puntos solicitados, luego actualizar en GitHub el mismo.
 
 
-
-
-
-
+Pagina contacto.html, animacion de las etiquetas(label) y condicionamiento por javascript.
+En esta rutina de acuerdo al estado del campo(Input-text) texto fijamos la posicion de la etiqueta(label)
+la posicion y la animacion esta en css, con javascript modificamos la posicion solo si el usuario cargo
+texto en el campo, de lo contrario vuelve a su posicion anterior.
 
 <p align="center">
    <a>
