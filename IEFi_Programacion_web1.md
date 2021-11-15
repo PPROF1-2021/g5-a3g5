@@ -23,9 +23,11 @@ En esta linea de codigo HTML incluinos el archivo javascript
     </a>
   </p>
 
+
+
 En el formulario de contacto.html tenemos 5 campos de texto con sus respectivos label animados
 el 5 campo es Oculto y lo usamos para cargar en ese espacio el contenido de los otros cuatros 
-generando asi un solo campo de texto con toda la informacion de los anteriores.
+generando asi un solo campo de texto con toda la informacion de los anteriores para facilitar su envio.
 
 <p align="center">
    <a>
@@ -45,6 +47,22 @@ generando asi un solo campo de texto con toda la informacion de los anteriores.
 ## Alojar y DOM  Javascript
 5.Las funciones en JavaScript deberán estar en un archivo llamado funcionesGrupo99.js . Agregar al menos 2 eventos de Javascript para que el usuario interactúe con el DOM.
 Informar mediante un documento (puede ser dentro del IEEE830) donde se incorporaron cada uno de los puntos solicitados, luego actualizar en GitHub el mismo.
+
+
+
+
+
+
+
+<p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md2.png" width=100% height="350" title="">
+    </a>
+  </p>
+
+
+
+
 
 
 
