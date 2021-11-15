@@ -19,7 +19,7 @@ En esta linea de codigo HTML incluinos el archivo javascript
 
 <p align="center">
    <a>
-  <img src="C:\ISPC\Programacion_web1\g5-a3g5\img\md1.png" width="350" title="Incluir Archivo javascript">
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md1.png" width="350" title="">
     </a>
   </p>
 
@@ -29,7 +29,7 @@ generando asi un solo campo de texto con toda la informacion de los anteriores.
 
 <p align="center">
    <a>
-  <img src="C:\ISPC\Programacion_web1\g5-a3g5\img\md2.png" width="350" title="Incluir Archivo javascript">
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md2.png" width="350" title="">
     </a>
   </p>
 
