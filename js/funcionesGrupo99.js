@@ -1,14 +1,6 @@
 //funcion que valida los datos ingresados en el formulario
 function validarRegUsuario() {
-    var nombre,
-      apellido,
-      email,
-      pass,
-      telef,
-      direcc,
-      fNacim,
-      provincia,
-      tipoUsuario;
+    var nombre, apellido,email, pass, telef, direcc, fNacim, provincia, tipoUsuario;
   
     //traigo valores del formulario
     nombre = document.getElementById('inputNombre').value;
@@ -22,17 +14,8 @@ function validarRegUsuario() {
     tipoUsuario = document.getElementById('selectUsuario').selectedIndex;
   
     //verifico que todos los campos contengan datos, si no muestro un alert:
-    if (
-      nombre === '' ||
-      apellido === '' ||
-      email === '' ||
-      pass === '' ||
-      telef === '' ||
-      direcc === '' ||
-      fNacim === '' ||
-      provincia === '' ||
-      tipoUsuario === ''
-    ) {
+    if (nombre === '' || apellido === '' || email === '' || pass === '' || telef === '' || direcc === '' || fNacim === '' || provincia === '' ||
+      tipoUsuario === '') {
       alert('Todos los campos deben estar completos');
       return false;
     }
@@ -88,9 +71,7 @@ function validarRegUsuario() {
     let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
     let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth();
     if (
-      diferenciaMeses < 0 ||
-      (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())
-    ) {
+      diferenciaMeses < 0 || (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
       edad--;
     }
     return edad;
