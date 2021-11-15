@@ -60,9 +60,8 @@ function validarRegUsuario() {
       );
       return false;
     }
-  
-    alert('registro completado exitosamente');
-  }
+     alert('registro completado exitosamente');
+    }
   
   //permite calcular la edad para verificar si la persona es mayor de 18 años
   function calcularEdad(fechaNac) {
