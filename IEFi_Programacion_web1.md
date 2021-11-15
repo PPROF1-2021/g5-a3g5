@@ -35,7 +35,7 @@ generando asi un solo campo de texto con toda la informacion de los anteriores p
   </p>
 
  A traves de este metodo de javascript enviamos el contenido del campo(input-text)5 por metodos get al formulario
- en la pagina contacto2.html.
+ en la pagina contacto2.html. A la vez abrimos la pagina conacto2.html en formato pop-up. 
 
 
 <p align="center">
@@ -53,6 +53,27 @@ Una vez cargado generamos un for para recorrer todo el texto y separarlo para ca
   <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md4.png" width=100% height="350" title="">
     </a>
   </p>
+
+
+Luego cargamos en este formulario los valores obtenidos.
+
+<p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md5.png" width=100% height="350" title="">
+    </a>
+  </p>
+
+Mantenemos la pagina contaco2.html abierta y esperamos 12 segundos.
+
+
+<p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md6.png" width=100% height="350" title="">
+    </a>
+  </p>
+
+
+
 
 
 
