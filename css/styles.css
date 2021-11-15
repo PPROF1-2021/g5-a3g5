@@ -12,6 +12,7 @@ body
         margin: 1px;
         padding: 0;
     }
+
 h2{
     color: rgb(255, 255, 255);
 }
@@ -31,7 +32,7 @@ p{
 .encabezado
     {
         background: rgba(0,0,0,.6);
-       
+        /*background: rgba(38, 192, 219, 0.6);*/
     }
 .encabezado .menu
     {
@@ -114,6 +115,7 @@ h1
         text-align: center;
         color:rgb(243, 205, 36);
         font-size: 25px;
+        margin-top: 0px;
     }
 .formulario3    
     {

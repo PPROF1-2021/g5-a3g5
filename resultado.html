@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Factura-Online</title>
+    <meta name="author" content="Grupo Aula 3">
+    <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
+    <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="./css/Contacto.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shorcut icon" href="img/logo.jpg">
+</head>
+<body class="bg-light container">
+    <header class="encabezado">
+        <nav class="menu">
+                <div>
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png" width="124" height="105" alt="logo sin imagen">
+                    </a>
+                </div>
+
+        </nav>
+
+
+    </header>
+
+
+<h1 class="display-4 text-danger">Registro Exitoso</h1>
+<hr>
+<main>
+  <section class="row">
+      <div class="col">
+          <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"> Datos del Usuario</h3>
+            </div>
+            <div class="card-body">
+                
+                <form name="form2" class="forma row" action="" method="get">
+
+                    <div class="form-group col-md-4">
+                        <label for="">Nombre</label>
+                        <input id="1" type="text" class="form-control forma__inputR">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="">Apellido</label>
+                            <input id="2" type="text" class="form-control forma__inputR">
+                        </div>
+                    <div class="form-group col-md-2">
+                        <label for="">edad</label>
+                        <input id="inputNro" type="text" class="form-control forma__inputR">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Provincia</label>
+                        <input id="5" type="text" class="form-control forma__inputR">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="">Localidad</label>
+                        <input id="4" type="text" class="form-control forma__inputR">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="">Edad</label>
+                        <input id="6" type="text" class="form-control forma__inputR">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="">Email</label>
+                        <input id="3" type="text" class="form-control forma__inputR">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <input type="hidden" id="7" name="Paquete_completo_RX2">
+                    </div>
+   
+                </form>
+            </div>
+          </div>
+      </div>
+  </section>  
+
+
+</main>
+
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!--Rutina que Desagrupa los input del input ID 5 y los RX los muestra en el formulario------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+    var url_string2 = window.location.href; //
+    var url2 = new URL(url_string2);
+     var c2 = url2.searchParams.get("payload2");
+    document.getElementById('6').value = c2;
+    let dimension=c2.length;
+    let ID=0;
+//---------------------------------------------------------------------------------------------------------------------------------------
+    for (let i = 0; i <=dimension-1; i++) {
+      if (c2[i]=="°"){
+       ID++;
+      }
+      if (c2[i]!="°"){
+      document.getElementById(ID).value = c2[i]+document.getElementById(ID).value;
+      }
+     }
+//---------------------------------------------------------------------------------------------------------------------------------------  
+    function cerrar() {window.close()}
+//--------------------------------------------------------------------------------------------------------------------------------------- 
+</script>
+    
+    <script src="./js/jquery.js"></script>  
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/funcionesGrupo99.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/datos.js"></script>
+</body>
+</html>
