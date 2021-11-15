@@ -12,6 +12,7 @@ body
         margin: 1px;
         padding: 0;
     }
+
 h2{
     color: rgb(255, 255, 255);
 }
@@ -31,7 +32,7 @@ p{
 .encabezado
     {
         background: rgba(0,0,0,.6);
-       
+        /*background: rgba(38, 192, 219, 0.6);*/
     }
 .encabezado .menu
     {

@@ -10,122 +10,175 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
         <link rel="stylesheet" href="./css/styles.css">
+       
         <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="shorcut icon" href="./img/logo.jpg">
     </head>
 
 
-<body>
+
+
+  <body>
+    <!-- Menú -->
     <header class="encabezado">
-        <nav class="menu">
-                <div>
-                    <a href="index.html">
-                        <img class="logo" src="img/logo.png" width="124" height="105" alt="logo sin imagen">
-                    </a>
+      <nav class="menu">
+              <div>
+                  <a href="index.html">
+                      <img class="logo" src="img/logo.png" width="124" height="105" alt="logo sin imagen">
+                  </a>
+              </div>
+              <ul>
+                  <li><a  href="index.html">Inicio</a></li>
+                  <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
+                  <li><a  href="contacto.html">Contacto</a></li> 
+                  <li><a  href="login.html">Login</a>
+                  <ul>
+                      <li><a  href="registro.html">Registrar</a>
+                  </ul>
+                  </li>
+              </ul>
+      </nav>
+  </header>
+           
+     <!-- Formulario  -->
+ 
+
+      <section class="row mt-4">
+        <div class="col-12">
+        <div class="card">
+        
+            <div class="card-header">
+            <h3 class="card-title"> Registros</h3>
+            </div>
+        <div class="card-body">
+                   
+                <form  action="confirmacion.php" method="Post" class="row g-3 was-validated text-center text-white forma" id="registroDeUsuario"  onsubmit="return validarRegUsuario() ">
+        
+                  <div class="form-group col-md-3">
+                    <label for="uname">Nombre:</label>
+                    <input name="inputNombre" type="text" class="form-control" id="inputNombre" placeholder="Nombre" minlength="2"  aria-label="Nombre" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+        
+                  <div class="form-group col-md-3">
+                    <label for="uname">Apellido</label>
+                    <input name="inputApellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido" minlength="2" aria-label="Apellido" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+        
+                  <div class="form-group col-md-5">
+                    <label for="pwd">email:</label>
+                    <input name="inputEmail" type="email" class="form-control" id="inputEmail" placeholder="Email" aria-label="Email" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+
+                          
+                  <div class="form-group col-md-3">
+                    <label for="pwd">contraseña:</label>
+                    <input name="inputPassword" type="password" class="form-control" id="inputPassword" placeholder="Contraseña" aria-label="Contrasenia" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+        
+                  <div class="form-group col-md-3">
+                    <label for="pwd">contraseña:</label>
+                    <input name="inputPassword" type="password" class="form-control" id="inputPassword" placeholder="Contraseña" aria-label="Contrasenia" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+
+                  <div class="form-group col-md-5">
+                    <label for="uname">Dirección</label>
+                    <input name="inputDireccion" type="Dirección" class="form-control" id="inputDireccion" placeholder="Dirección" aria-label="Dirección" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>    
+        
+                  <div class="form-group col-md-2">
+                    <label for="inputFNacim" class="form-label">Fecha de Nacimiento</label>
+                    <input name="inputFNacim"  type="date" class="form-control" id="inputFNacim" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+        
+                  <div class="form-group col-md-3">
+                    <label for="uname">Telefono</label>
+                    <input name="inputTelefono" type="text" class="form-control" id="inputTelefono" placeholder="Teléfono (Sin 0 ni 15)" aria-label="Teléfono" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
+                  </div>
+
+                 
+
+                  <div class="form-group col-md-3">
+                  <label for="selectProvincia" class="form-label">Localidad</label>
+                  <select name="selectProvincia" id="selectProvincia" class="form-control" required>
+                  <option selected disabled value="">Seleccione Localidad</option>
+                  <option>Cordoba</option>
+                  <option>Carlos Paz</option>
+                  <option>Unquillo</option>
+                  <option>Villa Allende</option>
+                  </select>
+                  </div>
+        
+                  <div class="form-group col-md-3">
+                    <label for="selectProvincia" class="form-label">Provincia</label>
+            <select name="selectProvincia" id="selectProvincia" class="form-control" required>
+               <option selected disabled value="">Seleccione Provincia</option>
+               <option value="Córdoba">Córdoba</option>
+               <option value="Buenos Aires">Buenos Aires</option>
+               <option value="Capital Federal">Capital Federal</option>
+               <option value="Catamarca">Catamarca</option>
+               <option value="Chaco">Chaco</option>
+               <option value="Chubut">Chubut</option>
+               <option value="Corrientes">Corrientes</option>
+               <option value="Entre Ríos">Entre Ríos</option>
+               <option value="Formosa">Formosa</option>
+               <option value="Jujuy">Jujuy</option>
+               <option value="La Pampa">La Pampa</option>
+               <option value="La Rioja">La Rioja</option>
+               <option value="Mendoza">Mendoza</option>
+               <option value="Misiones">Misiones</option>
+               <option value="Neuquén">Neuquén</option>
+               <option value="Río Negro">Río Negro</option>
+               <option value="Salta">Salta</option>
+               <option value="San Juan">San Juan</option>
+               <option value="San Luis">San Luis</option>
+               <option value="Santa Cruz">Santa Cruz</option>
+               <option value="Santa Fe">Santa Fe</option>
+               <option value="Santiago del Estero">Santiago del Estero</option>
+               <option value="Tierra del Fuego">Tierra del Fuego</option>
+               <option value="Tucumán">Tucumán</option>
+            </select>
+                  </div>
+        
+                  <div class="form-group col-md-3">
+                    <input type="hidden" id="7" name="Paquete_completo_TX2">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <button class="btn btn-success col-sm-12  botonEnviar" type="submit" id="btnBorrar" onclick="borrarRegistroUsuarios();">Borrar</button>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <button class="btn btn-success col-sm-12 botonEnviar" type="submit" id="btnResumen" >Guardar</button>
+                  </div>
+        
+                </form>
                 </div>
-                <ul>
-                    <li><a  href="index.html">Inicio</a></li>
-                    <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
-                    <li><a  href="contacto.html">Contacto</a></li> 
-                    <li><a  href="login.html">Login</a>
-                    <ul>
-                        <li><a  href="registro.html">Registrar</a>
-                    </ul>
-                    </li>
-                </ul>
-        </nav>
-    </header>
-
-    <h1 class="display-4 text-danger">Registro </h1>
-    <hr>
-<main>
-     
-<section class="row mt-4">
-<div class="col-12">
-<div class="card">
-
-    <div class="card-header">
-    <h3 class="card-title"> Cabecera de Facturas</h3>
-    </div>
-<div class="card-body">
-
-
-        
-        <form action="/resultado.php" class="was-validated row" onsubmit="return registro()" method="post" novalidate>
-
-          <div class="form-group col-md-3">
-            <label for="uname">Nombre:</label>
-            <input type="text" class="form-control" id="name" placeholder="ingresar Nombre" name="name" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Por favor rellene este campo.</div>
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="uname">Apellido</label>
-            <input type="text" class="form-control" id="apell" placeholder="Ingresar Apellido" name="apell" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Por favor rellene este campo.</div>
-          </div>
-
-          <div class="form-group col-md-4">
-            <label for="pwd">email:</label>
-            <input type="email" class="form-control" placeholder="Email" id="email" name="email">
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Por favor rellene este campo.</div>
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="pwd">contraseña:</label>
-            <input type="password" class="form-control" id="pwd1" placeholder="Ingresar Contraseña" name="pswd1" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Por favor rellene este campo.</div>
-          </div>
-
-          <div class="form-group col-md-3">
-            <label for="pwd">contraseña:</label>
-            <input type="password" class="form-control" id="pwd2" placeholder="Ingresar nevamente Contraseña" name="pswd" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Por favor rellene este campo.</div>
-          </div>
-
-          <div class="form-group col-md-2">
-            <label for="sel1">Localidad:</label>
-            <select class="form-control" id="sel1" name="select">
-                <option>Cordoba</option>
-                <option>Carlos Paz</option>
-                <option>Unquillo</option>
-                <option>Villa Allende</option>
-            </select>
-          </div>
-
-          <div class="form-group col-md-2">
-            <label for="sel1">Provincia:</label>
-            <select class="form-control" id="sel1">
-                <option>Cordoba</option>
-                <option>Buenos Aires</option>
-                <option>Santa Fe</option>
-                <option>San Luis</option>
-            </select>
-          </div>
-        </form>
+            </div>
         </div>
-    </div>
-</div>
-</section>  
-
-
-
-          <button type="submit" class="btn btn-primary" onclick="redireccion()">Procesar Datos</button>
-        
-
-      
-</main>
-<br>
-<br>
-<br>
-<br>
-<footer>
+        </section> 
+  
+      <!-- fin de Formulario  -->
+     
+  <br>
+  <br>
+  <br>
+  <footer>
     <div class="contenedor-all">
         <div class="contenedor-footer">
             <div class="columna1">
@@ -175,12 +228,17 @@
     </div>
 </div>
 </footer>
-<script src="js/funcionesGrupo99.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/funcionesGrupo99.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
 
-</body>
+
+<!-- fin del footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
 </html>
-
-<!--   https://pprof1-2021.github.io/g5-a3g5/index.html  -->
