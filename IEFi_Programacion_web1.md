@@ -14,6 +14,34 @@ En esta Instancia Evaluativa Final, se integrarán todos los contenidos abordado
 ## Fecha con Javascript
 4.Una vez procesado el formulario, mostrar en una pantalla siguiente, los datos procesados, la cual debe mantener la estética del sitio, luego de unos segundos, redireccionar a una página de sitio (por ejemplo al index). 
 
+
+En esta linea de codigo HTML incluinos el archivo javascript 
+
+<p align="center">
+   <a>
+  <img src="C:\ISPC\Programacion_web1\g5-a3g5\img\md1.png" width="350" title="Incluir Archivo javascript">
+    </a>
+  </p>
+
+En el formulario de contacto.html tenemos 5 campos de texto con sus respectivos label animados
+el 5 campo es Oculto y lo usamos para cargar en ese espacio el contenido de los otros cuatros 
+generando asi un solo campo de texto con toda la informacion de los anteriores.
+
+<p align="center">
+   <a>
+  <img src="C:\ISPC\Programacion_web1\g5-a3g5\img\md2.png" width="350" title="Incluir Archivo javascript">
+    </a>
+  </p>
+
+
+
+
+
+
+
+
+
+
 ## Alojar y DOM  Javascript
 5.Las funciones en JavaScript deberán estar en un archivo llamado funcionesGrupo99.js . Agregar al menos 2 eventos de Javascript para que el usuario interactúe con el DOM.
 Informar mediante un documento (puede ser dentro del IEEE830) donde se incorporaron cada uno de los puntos solicitados, luego actualizar en GitHub el mismo.
