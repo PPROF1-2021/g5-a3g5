@@ -11,7 +11,7 @@ En esta Instancia Evaluativa Final, se integrarán todos los contenidos abordado
 ## Enviar y alert con Javascript
 3.Uno de los formularios debe tener funcionalidad en el botón Enviar, mostrando un Alert de operación exitosa.
 
-## Fecha con Javascript
+## Pagina extra a la cual debemos mandarle valores del fomulario actual
 4.Una vez procesado el formulario, mostrar en una pantalla siguiente, los datos procesados, la cual debe mantener la estética del sitio, luego de unos segundos, redireccionar a una página de sitio (por ejemplo al index). 
 
 
@@ -19,7 +19,7 @@ En esta linea de codigo HTML incluinos el archivo javascript
 
 <p align="center">
    <a>
-  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md1.png" width="100%" title="">
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md1.png" width="100%" height="500"  title="">
     </a>
   </p>
 
@@ -29,7 +29,7 @@ generando asi un solo campo de texto con toda la informacion de los anteriores.
 
 <p align="center">
    <a>
-  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md2.png" width=100% title="">
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md2.png" width=100% height="500" title="">
     </a>
   </p>
 
