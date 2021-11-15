@@ -31,7 +31,7 @@ generando asi un solo campo de texto con toda la informacion de los anteriores p
 
 <p align="center">
    <a>
-  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/DOMjs.png" width=100% height="350" title="">
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md2.png" width=100% height="350" title="">
     </a>
   </p>
 
@@ -56,7 +56,7 @@ Informar mediante un documento (puede ser dentro del IEEE830) donde se incorpora
 
 <p align="center">
    <a>
-  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/md2.png" width=100% height="350" title="">
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/DOMjs.png" width=100% height="350" title="">
     </a>
   </p>
 
