@@ -7,6 +7,15 @@ En esta Instancia Evaluativa Final, se integrarán todos los contenidos abordado
 ## Validacion Bootstrap y javascript
 1.Validación de campos vacíos mediante Bootstrap (de acuerdo al template de la web oficial), luego con Javascript la longitud de los campos, tipo de datos en los input. Los campos nombre y apellido deberán validarse con más de 2 caracteres. 
 
+
+<p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/b1.png" width="100%" height="350"  title="">
+    </a>
+  </p>
+
+
+
 ## Fecha con Javascript
 2.Crear una función en JavaScript para mostrar un cálculo de fechas (edad, día de turno, u otro pertinente al proyecto en desarrollo).
 
@@ -53,9 +62,9 @@ En esta linea de codigo HTML incluinos el archivo javascript
   </p>
 
 
-En el formulario de contacto.html tenemos 5 campos de texto con sus respectivos label animados
-el 5 campo es Oculto y lo usamos para cargar en ese espacio el contenido de los otros cuatros 
-generando asi un solo campo de texto con toda la informacion de los anteriores para facilitar su envio.
+En el formulario de contacto.html tenemos 5 campos de texto con sus respectivos label animados,
+el campo5 es oculto y lo usamos para cargar el contenido de los otros cuatros.
+Generando asi un solo campo de texto con toda la informacion de los anteriores para facilitar su envio.
 
 <p align="center">
    <a>
@@ -131,16 +140,21 @@ texto en el campo, de lo contrario vuelve a su posicion anterior.
 
 
 Publicar el sitio web final en un hosting gratuito.
+https://pprof1-2021.github.io/g5-a3g5/index.html 
+
+
 
 
 Sobre la presentación:
 Cada uno de los integrantes del grupo, deberán consignar dentro de esta ENTREGA:
+
 
 Clavaguera, Abril.
 Heredia, Laura.
 Zapata, Mónica.
 Ferreyra Gastón.
 Gonzalez Mario.
+
 
 
 Insertar el link del sitio web.
