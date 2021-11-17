@@ -7,7 +7,14 @@ import java.sql.*;
 
 
 public class Conectar_bd {
+//---------------------------------------
+//Atributos
+//---------------------------------------
 private String conecto;
+
+//---------------------------------------
+//Constructor
+//--------------------------------------
 
 //---------------------------------------
 //metodo Setter para guardar la conexion
