@@ -8,6 +8,7 @@
 
 package Principal;
 
+import java.sql.*;
 
 import Conector.Conectar_bd;
 
