@@ -1,8 +1,10 @@
 //=================================================================
 // Proyecto Aula 3 Grupo 5 Materia Practica profesionalizante
 //integrantes:
-//          
-//=================================================================
+//            Gonzalez, Mario
+//            zapata, Monica
+//            Heredia, Laura          
+//================================================================
 
 package Principal;
 
