@@ -1,7 +1,3 @@
-/*!40101 SET NAMES utf8 */;
-/*!40014 SET FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET SQL_NOTES=0 */;
 
 
 /*-------------------------------------------------------*/
@@ -9,22 +5,18 @@
 /*-------------------------------------------------------*/
 DROP DATABASE IF EXISTS proyecto_1_ispc;
 
-
 /*-------------------------------------------------------*/
 /*Paso 02 Crea una base de datos con ese nombre         */
 /*-------------------------------------------------------*/
 CREATE DATABASE proyecto_1_ispc;
-
-
 
 /*-------------------------------------------------------*/
 /*Paso 03 Seleciona una base de datos con ese nombre     */
 /*-------------------------------------------------------*/
 USE proyecto_1_ispc;
 
-
 /*----------------------------------------------------------*/
-/*Paso 04 Crea una base de datos con ese nombre previo borra*/
+/*Paso 04 Crea una tabla tipo_cliente                       */
 /*----------------------------------------------------------*/
 DROP TABLE IF EXISTS tipo_cliente;
 CREATE TABLE `tipo_cliente` (
@@ -33,10 +25,8 @@ CREATE TABLE `tipo_cliente` (
   PRIMARY KEY (`id_tipo_cliente`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
-
-
 /*----------------------------------------------------------*/
-/*Paso 05 Crea una base de datos con ese nombre previo borra*/
+/*Paso 05 Crea una tabla provincia                          */
 /*----------------------------------------------------------*/
 DROP TABLE IF EXISTS provincia;
 CREATE TABLE `provincia` (
@@ -45,11 +35,8 @@ CREATE TABLE `provincia` (
   PRIMARY KEY (`id_provincia`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
 
-
-
-
 /*----------------------------------------------------------*/
-/*Paso 06 Crea una base de datos con ese nombre previo borra*/
+/*Paso 06 Crea una tabla localidad                          */
 /*----------------------------------------------------------*/
 DROP TABLE IF EXISTS localidad;
 CREATE TABLE `localidad` (
@@ -61,8 +48,9 @@ CREATE TABLE `localidad` (
   CONSTRAINT `localidad_ibfk_1` FOREIGN KEY (`provincia`) REFERENCES `provincia` (`id_provincia`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2074 DEFAULT CHARSET=utf8mb4;
 
-
-
+/*----------------------------------------------------------*/
+/*Paso 07 Crea una tabla clientes                           */
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS clientes;
 CREATE TABLE `clientes` (
   `id_cliente` int(255) NOT NULL AUTO_INCREMENT,
@@ -81,24 +69,9 @@ CREATE TABLE `clientes` (
   CONSTRAINT `clientes_ibfk_2` FOREIGN KEY (`tipo_cliente`) REFERENCES `tipo_cliente` (`id_tipo_cliente`))
   ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----------------------------------------------------------*/
+/*Paso 08 Crea una tabla tipo factura                       */
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS tipo_factura;
 CREATE TABLE `tipo_factura` (
   `id_tipo_factura` int(11) NOT NULL AUTO_INCREMENT,
@@ -106,6 +79,9 @@ CREATE TABLE `tipo_factura` (
   PRIMARY KEY (`id_tipo_factura`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+/*----------------------------------------------------------*/
+/*Paso 09 Crea una tabla proveedor                          */
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS proveedor;
 CREATE TABLE `proveedor` (
   `id_proveedor` int(11) NOT NULL AUTO_INCREMENT,
@@ -116,7 +92,9 @@ CREATE TABLE `proveedor` (
   CONSTRAINT `proveedor_ibfk_1` FOREIGN KEY (`localidad`) REFERENCES `localidad` (`id_localidad`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-
+/*----------------------------------------------------------*/
+/*Paso 10 Crea una tabla productos                          */
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS productos;
 CREATE TABLE `productos` (
   `id_numero_referencia` int(11) NOT NULL AUTO_INCREMENT,
@@ -132,7 +110,9 @@ CREATE TABLE `productos` (
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`proveedor`) REFERENCES `proveedor` (`id_proveedor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-
+/*----------------------------------------------------------*/
+/*Paso 11 Crea una tabla facturacion                        */
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS facturacion;
 CREATE TABLE `facturacion` (
   `id_factura` int(11) NOT NULL AUTO_INCREMENT,
@@ -149,7 +129,9 @@ CREATE TABLE `facturacion` (
   CONSTRAINT `facturacion_ibfk_3` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-
+/*----------------------------------------------------------*/
+/*Paso 12 Crea una tabla usuario                            */
+/*----------------------------------------------------------*/
 DROP TABLE IF EXISTS usuario;
 CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
