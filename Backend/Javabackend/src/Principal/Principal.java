@@ -1,6 +1,16 @@
+//=================================================================
+// Proyecto Aula 3 Grupo 5 Materia Practica profesionalizante
+//=================================================================
+
+
+
+
+
+
+
+
 package Principal;
-//import java.sql.*;
-//import Conector.Conectar_bd;
+
 
 import Conector.Conectar_bd;
 

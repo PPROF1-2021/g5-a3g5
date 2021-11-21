@@ -81,21 +81,40 @@ CREATE TABLE `clientes` (
   CONSTRAINT `clientes_ibfk_2` FOREIGN KEY (`tipo_cliente`) REFERENCES `tipo_cliente` (`id_tipo_cliente`))
   ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS facturacion;
-CREATE TABLE `facturacion` (
-  `id_factura` int(11) NOT NULL AUTO_INCREMENT,
-  `fecha_factura` date NOT NULL,
-  `codigo_producto` int(11) NOT NULL,
-  `tipo_factura` int(11) NOT NULL,
-  `cliente` int(11) NOT NULL,
-  PRIMARY KEY (`id_factura`),
-  KEY `codigo_producto` (`codigo_producto`),
-  KEY `tipo_factura` (`tipo_factura`),
-  KEY `cliente` (`cliente`))/*
-  CONSTRAINT `facturacion_ibfk_1` FOREIGN KEY (`codigo_producto`) REFERENCES `productos` (`id_numero_referencia`),
-  CONSTRAINT `facturacion_ibfk_2` FOREIGN KEY (`tipo_factura`) REFERENCES `tipo_factura` (`id_tipo_factura`),
-  CONSTRAINT `facturacion_ibfk_3` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
-) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DROP TABLE IF EXISTS tipo_factura;
+CREATE TABLE `tipo_factura` (
+  `id_tipo_factura` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo_factura` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_tipo_factura`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS proveedor;
+CREATE TABLE `proveedor` (
+  `id_proveedor` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `localidad` int(11) NOT NULL,
+  PRIMARY KEY (`id_proveedor`),
+  KEY `localidad` (`localidad`),
+  CONSTRAINT `proveedor_ibfk_1` FOREIGN KEY (`localidad`) REFERENCES `localidad` (`id_localidad`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 DROP TABLE IF EXISTS productos;
@@ -109,28 +128,27 @@ CREATE TABLE `productos` (
   `estado` tinyint(1) DEFAULT NULL COMMENT '1',
   `proveedor` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_numero_referencia`),
-  KEY `proveedor` (`proveedor`))/*,
+  KEY `proveedor` (`proveedor`),
   CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`proveedor`) REFERENCES `proveedor` (`id_proveedor`)
-) */ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-DROP TABLE IF EXISTS proveedor;
-CREATE TABLE `proveedor` (
-  `id_proveedor` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(50) NOT NULL,
-  `localidad` int(11) NOT NULL,
-  PRIMARY KEY (`id_proveedor`),
-  KEY `localidad` (`localidad`),
-  CONSTRAINT `proveedor_ibfk_1` FOREIGN KEY (`localidad`) REFERENCES `localidad` (`id_localidad`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
-
-DROP TABLE IF EXISTS tipo_factura;
-CREATE TABLE `tipo_factura` (
-  `id_tipo_factura` int(11) NOT NULL AUTO_INCREMENT,
-  `tipo_factura` varchar(50) NOT NULL,
-  PRIMARY KEY (`id_tipo_factura`)
+DROP TABLE IF EXISTS facturacion;
+CREATE TABLE `facturacion` (
+  `id_factura` int(11) NOT NULL AUTO_INCREMENT,
+  `fecha_factura` date NOT NULL,
+  `codigo_producto` int(11) NOT NULL,
+  `tipo_factura` int(11) NOT NULL,
+  `cliente` int(11) NOT NULL,
+  PRIMARY KEY (`id_factura`),
+  KEY `codigo_producto` (`codigo_producto`),
+  KEY `tipo_factura` (`tipo_factura`),
+  KEY `cliente` (`cliente`),
+  CONSTRAINT `facturacion_ibfk_1` FOREIGN KEY (`codigo_producto`) REFERENCES `productos` (`id_numero_referencia`),
+  CONSTRAINT `facturacion_ibfk_2` FOREIGN KEY (`tipo_factura`) REFERENCES `tipo_factura` (`id_tipo_factura`),
+  CONSTRAINT `facturacion_ibfk_3` FOREIGN KEY (`cliente`) REFERENCES `clientes` (`id_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 DROP TABLE IF EXISTS usuario;
 CREATE TABLE `usuario` (

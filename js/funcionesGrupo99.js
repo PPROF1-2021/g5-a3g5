@@ -125,17 +125,17 @@ function validarRegUsuario() {
      function abrir_popup(url,ubicacion){
         document.getElementById('5').value =
         "°"+//bandera de inicio
-        document.getElementById('1').value +
+        document.getElementById('1').value +//valor de input 1
         "°"+//bandera de fin de input
-        document.getElementById('2').value +
+        document.getElementById('2').value +//valor de input 2
         "°"+//bandera de fin de input
-        document.getElementById('3').value +
+        document.getElementById('3').value +//valor de input 3
         "°"+//bandera de fin de input
-        document.getElementById('4').value +
+        document.getElementById('4').value +//valor de input 4
         "°";//bandera de fin de input
             window.open(url+'?payload='+document.getElementById('5').value, ubicacion, 'width=870,height=700');//return false;
             cerrar();
         }
-            function cerrar() {
-            window.location("https://pprof1-2021.github.io/g5-a3g5/index.html"); 
+            function cerrar() {//funcion para cerrar la ventana
+            window.location("https://pprof1-2021.github.io/g5-a3g5/index.html");//redireccionar a la pagina de inicio 
             }
