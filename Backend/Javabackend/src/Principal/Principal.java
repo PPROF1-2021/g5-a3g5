@@ -3,8 +3,6 @@ import java.util.Scanner;//
 import Clases.*;//importa clases
 import java.time.LocalDateTime;//importa clase
 import java.time.format.DateTimeFormatter;//importa clase
-//import java.sql.DriverManager;
-//import java.sql.*;
 
 public class Principal {//clase principal
     public static void main(String[] args) throws Exception {//metodo principal
