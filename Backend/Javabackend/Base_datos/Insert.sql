@@ -1,165 +1,149 @@
-INSERT INTO `localidad` (`id_localidad`, `localidad`, `provincia`) VALUES
-(1, '25 de Mayo', 1),
-(2, '3 de febrero', 1),
-(3, 'A. Alsina', 1),
-(4, 'A. Gonzáles Cháves', 1),
-(5, 'Aguas Verdes', 1),
-(6, 'Alberti', 1),
-(7, 'Arrecifes', 1),
-(8, 'Ayacucho', 1),
-(9, 'Azul', 1),
-(10, 'Bahía Blanca', 1),
-(11, 'Balcarce', 1),
-(12, 'Baradero', 1),
-(13, 'Benito Juárez', 1),
-(14, 'Berisso', 1),
-(15, 'Bolívar', 1),
-(16, 'Bragado', 1),
-(17, 'Brandsen', 1),
-(18, 'Campana', 1),
-(19, 'Cañuelas', 1),
-(20, 'Capilla del Señor', 1),
-(21, 'Capitán Sarmiento', 1),
-(22, 'Carapachay', 1),
-(23, 'Carhue', 1),
-(24, 'Cariló', 1),
-(25, 'Carlos Casares', 1),
-(26, 'Carlos Tejedor', 1),
-(27, 'Carmen de Areco', 1),
-(28, 'Carmen de Patagones', 1),
-(29, 'Castelli', 1),
-(30, 'Chacabuco', 1),
-(31, 'Chascomús', 1),
-(32, 'Chivilcoy', 1),
-(33, 'Colón', 1),
-(34, 'Coronel Dorrego', 1),
-(35, 'Coronel Pringles', 1),
-(36, 'Coronel Rosales', 1),
-(37, 'Coronel Suarez', 1),
-(38, 'Costa Azul', 1),
-(39, 'Costa Chica', 1),
-(40, 'Costa del Este', 1),
-(41, 'Costa Esmeralda', 1),
-(42, 'Daireaux', 1),
-(43, 'Darregueira', 1),
-(44, 'Del Viso', 1),
-(45, 'Dolores', 1),
-(46, 'Don Torcuato', 1),
-(47, 'Ensenada', 1),
-(48, 'Escobar', 1),
-(49, 'Exaltación de la Cruz', 1),
-(50, 'Florentino Ameghino', 1),
-(51, 'Garín', 1),
-(52, 'Gral. Alvarado', 1),
-(53, 'Gral. Alvear', 1),
-(54, 'Gral. Arenales', 1),
-(55, 'Gral. Belgrano', 1),
-(56, 'Gral. Guido', 1),
-(57, 'Gral. Lamadrid', 1),
-(58, 'Gral. Las Heras', 1),
-(59, 'Gral. Lavalle', 1),
-(60, 'Gral. Madariaga', 1),
-(61, 'Gral. Pacheco', 1),
-(62, 'Gral. Paz', 1),
-(63, 'Gral. Pinto', 1),
-(64, 'Gral. Pueyrredón', 1),
-(65, 'Gral. Rodríguez', 1),
-(66, 'Gral. Viamonte', 1),
-(67, 'Gral. Villegas', 1),
-(68, 'Guaminí', 1),
-(69, 'Guernica', 1),
-(70, 'Hipólito Yrigoyen', 1),
-(71, 'Ing. Maschwitz', 1),
-(72, 'Junín', 1),
-(73, 'La Plata', 1),
-(74, 'Laprida', 1),
-(75, 'Las Flores', 1),
-(76, 'Las Toninas', 1),
-(77, 'Leandro N. Alem', 1),
-(78, 'Lincoln', 1),
-(79, 'Loberia', 1),
-(80, 'Lobos', 1),
-(81, 'Los Cardales', 1),
-(82, 'Los Toldos', 1),
-(83, 'Lucila del Mar', 1);
 
-INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido`, `cuil`,
-`fecha_alta`, `telefono`, `e_mail`, `localidad`, `tipo_cliente`) VALUES
-(1, 'Juan', 'Martinez', '23252652543', '2021-11-01', '35125365254',
-'aula3@gmail.com', 1, 1),
-(2, 'Gaston', 'Ferreyra', '33252652544', '2021-11-01', '35125365254',
-'aula4@gmail.com', 1, 1),
-(3, 'Monica', 'Zapata,', '53252652545', '2021-11-01', '35125365254',
-'aula5@gmail.com', 1, 1),
-(4, 'Abril', 'Clavaguera', '73252652546', '2021-11-01', '35125365254',
-'aula6@gmail.com', 1, 1),
-(5, 'laura', 'Heredia', '83252652547', '2021-11-01', '35125365254',
-'aula7@gmail.com', 1, 1),
-(6, 'Mario', 'Gonzalez', '3252652543', '2021-11-01', '35125365254',
-'aula8@gmail.com', 1, 4);
+/*-----------------------------------------------------------------------------*/
+/* paso 01 cargar Tipo cliente                                                 */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `tipo_cliente` (`id_tipo_cliente`, `tipocliente`) 
+VALUES 
+(NULL, 'Consumidor Final'), 
+(NULL, 'Monotributo'),
+(NULL, 'Responsable inscripto');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `tipo_cliente`   WHERE 1;
 
-INSERT INTO `productos` (`id_numero_referencia`, `descripcion`, `stock`,
-`fecha_lote`, `nombre_articulo`, `precio_venta`, `estado`, `proveedor`) VALUES
-(1, 'Oximetro Tensiometro Termometro', 100, '2021-11-01', 'Kit / Set De
-Enfermeria', '2229.00', NULL, 1),
-(2, 'Organizador Cubo Enfermería Profesional', 200, '2021-11-01', 'Estuche
-Neceser', '990.00', NULL, 1),
-(3, 'Zapato Quirurgico Enfermeria', 50, '2021-11-01', 'Zueco Esterilizables',
-'2229.00', NULL, 1);
-
-INSERT INTO `proveedor` (`id_proveedor`, `nombre`, `localidad`) VALUES
-(1, 'furey', 3),
-(2, 'Upalala', 5),
-(3, 'Galapagos', 10),
-(4, 'Cluny', 20),
-(5, 'Chapoteando', 15),
-(6, 'Elevacion', 16);
-
+/*-----------------------------------------------------------------------------*/
+/* paso 02 cargar Provincia                                                    */
+/*-----------------------------------------------------------------------------*/
 INSERT INTO `provincia` (`id_provincia`, `provincia`) VALUES
-(1, 'Buenos Aires'),
-(2, 'Buenos Aires-GBA'),
-(3, 'Capital Federal'),
-(4, 'Catamarca'),
-(5, 'Chaco'),
-(6, 'Chubut'),
-(7, 'Córdoba'),
-(8, 'Corrientes'),
-(9, 'Entre Ríos'),
-(10, 'Formosa'),
-(11, 'Jujuy'),
-(12, 'La Pampa'),
-(13, 'La Rioja'),
-(14, 'Mendoza'),
-(15, 'Misiones'),
-(16, 'Neuquén'),
-(17, 'Río Negro'),
-(18, 'Salta'),
-(19, 'San Juan'),
-(20, 'San Luis'),
-(21, 'Santa Cruz'),
-(22, 'Santa Fe'),
-(23, 'Santiago del Estero'),
-(24, 'Tierra del Fuego'),
-(25, 'Tucumán');
+(NULL, 'Buenos Aires'),
+(NULL, 'Buenos Aires-GBA'),
+(NULL, 'Capital Federal'),
+(NULL, 'Catamarca'),
+(NULL, 'Chaco'),
+(NULL, 'Chubut'),
+(NULL, 'Córdoba'),
+(NULL, 'Corrientes'),
+(NULL, 'Entre Ríos'),
+(NULL, 'Formosa'),
+(NULL, 'Jujuy'),
+(NULL, 'La Pampa'),
+(NULL, 'La Rioja'),
+(NULL, 'Mendoza'),
+(NULL, 'Misiones'),
+(NULL, 'Neuquén'),
+(NULL, 'Río Negro'),
+(NULL, 'Salta'),
+(NULL, 'San Juan'),
+(NULL, 'San Luis'),
+(NULL, 'Santa Cruz'),
+(NULL, 'Santa Fe'),
+(NULL, 'Santiago del Estero'),
+(NULL, 'Tierra del Fuego'),
+(NULL, 'Tucumán');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `provincia`   WHERE 1;
 
-INSERT INTO `tipo_cliente` (`id_tipo_cliente`, `tipocliente`) VALUES
-(1, 'cliente1'),
-(2, 'cliente2'),
-(3, 'cliente3'),
-(4, 'admin'),
-(5, 'total');
 
-INSERT INTO `tipo_factura` (`id_tipo_factura`, `tipo_factura`) VALUES
-(1, 'PRESUPUESTO'),
-(2, 'A'),
-(3, 'B'),
-(4, 'C'),
-(5, 'NOTA DE CREDITO');
+/*-----------------------------------------------------------------------------*/
+/* paso 03 cargar Localidad                                                    */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `localidad` (`id_localidad`, `localidad`, `provincia`) 
+VALUES 
+('3333', 'Córdoba Capital', '32'),
+(NULL, 'Alta Gracia', '32'),
+(NULL, 'Unquillo', '32'),
+(NULL, 'Calera', '32'),
+(NULL, 'Villa Allende', '32'),
+(NULL, 'Rio Tercero', '32');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `localidad`   WHERE 1;
 
-INSERT INTO `usuario` (`id_usuario`, `usuario`, `clave`, `cliente`, `estado`)
+/*-----------------------------------------------------------------------------*/
+/* paso 04 cargar cliente                                                      */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `clientes` (`id_cliente`, 
+`nombre`, 
+`apellido`, 
+`cuil`, 
+`fecha_alta`, 
+`telefono`, 
+`e_mail`, 
+`localidad`, 
+`tipo_cliente`) 
+VALUES 
+('1', 'Mario', 'Gonzalez', '11111111111', '2021-11-21', '3516805703', 'mario@hotmail.com.ar', '3333', '4'),
+('2', 'Gaston', 'Ferreyra', '22222222222', '2021-11-21', '3547989635', 'gastpn@gmail.com', '3333', '4'),
+('3', 'Abril', 'Clavaguera', '33333333333', '2021-11-21', '3518789456', 'abril@hotmail.com.ar', '3333', '4'),
+('4', 'Laura', 'Heredia', '44444444444', '2021-11-21', '3519852456', 'laura@gmail.com', '3333', '4'),
+('5', 'Monica', 'zapata', '55555555555', '2021-11-21', '3535478963', 'monica@hotmail.com.ar', '3333', '4');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `clientes`   WHERE 1;
+
+/*-----------------------------------------------------------------------------*/
+/* paso 05 cargar tipo de factura                                              */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `tipo_factura` (`id_tipo_factura`, `tipo_factura`) 
 VALUES
-(1, 'Juan', '123456', 1, NULL),
-(2, 'Gaston', '1234', 2, NULL),
-(3, 'Monica', '1234', 3, NULL),
-(4, 'Abril', '1234', 4, NULL),
-(5, 'laura', '1234', 5, NULL);
+ ('1', 'A'),
+ ('2', 'B'),
+ ('3', 'C');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `tipo_factura`   WHERE 1;
+
+/*-----------------------------------------------------------------------------*/
+/* paso 06 cargar proveedor                                                    */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `proveedor` (`id_proveedor`, `nombre`, `localidad`) 
+VALUES 
+('1', 'Papeplera del plata', '3333'),
+('2', 'Oxigeno industrial', '3333'),
+('3', 'Elemon Argentina', '3333'),    
+('4', 'Cem Cordoba', '3333'),
+('5', 'Geterson Saic', '3333');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `proveedor`   WHERE 1;
+
+/*-----------------------------------------------------------------------------*/
+/* paso 06 cargar productos                                                    */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `productos` (`id_numero_referencia`, 
+`descripcion`, 
+`stock`, 
+`fecha_lote`, 
+`nombre_articulo`, 
+`precio_venta`, 
+`estado`, 
+`proveedor`) 
+VALUES 
+('1', 'Algodon de maxima densidad', '100', '2021-11-21', 'Algodon', '25', '1', '5'),
+('2', 'Gasa super absorbente de maxima calidad industrial', '40', '2021-11-21', 'Gasa', '78', '1', '2'), 
+('3', 'Tensiometro digital de alta resolucion', '60', '2021-11-21', 'Tensiometro Digital', '100', '1', '5');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `productos`   WHERE 1;
+
+/*-----------------------------------------------------------------------------*/
+/* paso 07 cargar Facturacion                                                  */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `facturacion` (`id_factura`, 
+`fecha_factura`, 
+`codigo_producto`, 
+`tipo_factura`, 
+`cliente`) 
+VALUES 
+('1', '2021-11-21', '2', '1', '4'),
+('2', '2021-11-21', '2', '2', '2'), 
+('3', '2021-11-21', '3', '1', '3');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `facturacion`   WHERE 1;
+
+/*-----------------------------------------------------------------------------*/
+/* paso 08 cargar Cargar Usuario                                               */
+/*-----------------------------------------------------------------------------*/
+INSERT INTO `usuario` (`id_usuario`, `usuario`, `clave`, `cliente`, `estado`) 
+VALUES 
+('1', 'mario', '111111', '1', '1'), 
+('2', 'gaston', '222222', '2', '1'),
+('3', 'abril', '333333', '3', '1'),
+('4', 'laura', '444444', '4', '1'),
+('5', 'monica', '555555', '5', '1');
+/*-----------------------------------------------------------------------------*/
+SELECT * FROM `usuario`   WHERE 1;
