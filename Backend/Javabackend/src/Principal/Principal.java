@@ -1,4 +1,4 @@
-package Principal;//package IEFI.Principal;
+package Principal;//package Principal;
 import java.util.Scanner;//
 import Clases.*;//importa clases
 import java.time.LocalDateTime;//importa clase
