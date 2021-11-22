@@ -37,25 +37,25 @@
     </header>
 
 <main>
-    <form class="formulario" onsubmit="return validacion()">
+    <form class="formulario" action="validar.php" method="Post">
  
-        <h1>Login</h1>
-            <div class="contendeor">
-                
-                <div class="contenedor1">
-                    <i class="fas fa-user-alt icono"></i>  
-                    <input type="text" placeholder="Ingrese el Usuario" class="cuadrado" size="30" id="nombre" minlength="2" onfocus="foco(this)" onblur="nofoco(this)" required>   
-                </div>
-         
-                <div class="contenedor1">
-                    <i class="fas fa-key icono"></i>
-                    <input type="password" placeholder="Ingresela contraseña" class="cuadrado" size="30" id="password" minlength="2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-                </div>
-            
-                <input type="submit" value="login" class="button">    
-                <p>si no está registrado haga clic en el botón <a class="link" href="registro.html">
-                <span>Registrarse</span></a></p>
-            </div>
+    <h1>Login</h1>
+    <div class="contendeor">
+
+    <div class="contenedor1">
+    <i class="fas fa-user-alt icono"></i>  
+    <input type="text" placeholder="Ingrese el Usuario" class="cuadrado" size="30" name="usuario2" minlength="2" onfocus="foco(this)" onblur="nofoco(this)" required>   
+    </div>
+
+    <div class="contenedor1">
+    <i class="fas fa-key icono"></i>
+    <input type="password" placeholder="" class="cuadrado" size="30" name="password2" minlength="2" onfocus="foco(this)" onblur="nofoco(this)" required>    
+    </div>
+
+    <input type="submit" value="login" class="button">    
+    <p>si no está registrado haga clic en el botón <a class="link" href="registro.html">
+    <span>Registrarse</span></a></p>
+    </div>
 
     </form>
 </main>
@@ -68,13 +68,8 @@
         <div class="contenedor-footer">
             <div class="columna1">
                 <h1>Dirección</h1>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                <p>Buenos Aires 5734</p>
-=======
->>>>>>> d38464234857292bf57d6d17a3b14ca72f91fe02
                 <p>Buenos Aires 573</p>
+
                 <br>
                 <p>Cordoba, Villa Allende</p>
                 <br>

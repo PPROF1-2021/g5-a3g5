@@ -1,0 +1,16 @@
+<?php 
+$host="localhost";
+$usuario="root";
+$clave="";
+$basededatos="proyecto_1_ispc";
+
+
+$conn=new mysqli($host,$usuario,$clave,$basededatos);
+
+mysqli_query($conn, "SET character_set_result=utf8");
+if($conn->connect_error){
+    die("Database Error: ".$conn->connect_error);
+}
+
+//echo "conectado";
+?>
