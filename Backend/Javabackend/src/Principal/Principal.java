@@ -12,7 +12,7 @@ public class Principal {//clase principal
         Operaciones dire=new Operaciones();//instancio la clase operaciones
         dire.setUrl("jdbc:mysql://localhost:3306/proyecto_1_ispc", "root", "1234");
         CabeceraDoc();//clase que imprime la cabecera del documento
-        Thread.sleep(6000);//espero 4 segundos
+        Thread.sleep(6500);//espero 4 segundos
         LimpiarPantalla();//clase que limpia la pantalla
         Opciones_menu();//clase que imprime las opciones del menu   
     //---------------------------------------------------------------------- 
@@ -48,18 +48,19 @@ public class Principal {//clase principal
     //---------------------------------------------------------------------- 
                     case 2://Listar datos
                             LimpiarPantalla();//clase que limpia la pantalla
-                            System.out.println("=================================================");                    
-                            System.out.println("|   Op2 = Listado de alumnos Grupo 5 ISPC       |");
-                            System.out.println("=================================================");
-                            System.out.println(""); //salto
-                            Operaciones I0=new Operaciones();//instancio la clase insertar
-                            I0.mostrarDatos(); //llamo al metodo mostrarDatos
+                            Menu_clientes();
+                            //System.out.println("=================================================");                    
+                            //System.out.println("|   Op2 = Menu clientes             Grupo 5 ISP |");
+                            //System.out.println("=================================================");
+                            //System.out.println(""); //salto
+                            //Operaciones I0=new Operaciones();//instancio la clase insertar
+                            //I0.mostrarDatos(); //llamo al metodo mostrarDatos
                     break;//fin case 2
     //---------------------------------------------------------------------- 
                     case 3://Insertar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op3 = Carga nuevo alumno Grupo 5 ISPC       |");
+                            System.out.println("|   Op3 = Menu Productos           Grupo 5 ISPC |");
                             System.out.println("=================================================");
                             System.out.println(""); //salto
                             Operaciones I1=new Operaciones();//instancio la clase insertar
@@ -69,7 +70,7 @@ public class Principal {//clase principal
                     case 4://Modificar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op4 = Modificar DNI de alumno Grupo 5 ISPC  |");
+                            System.out.println("|   Op4 = Menu Facturas           Grupo 5 ISPC  |");
                             System.out.println("=================================================");
                             System.out.println("");//salto
                             Operaciones I2=new Operaciones();//instancio la clase insertar                         
@@ -79,7 +80,7 @@ public class Principal {//clase principal
                     case 5://Eliminar datos
                             LimpiarPantalla();//clase que limpia la pantalla
                             System.out.println("=================================================");                    
-                            System.out.println("|   Op5 = Eliminar registro alumno Grupo 5 ISPC |");
+                            System.out.println("|   Op5 = Menu tablas soporte      Grupo 5 ISPC |");
                             System.out.println("=================================================");
                             System.out.println("");//salto
                             Operaciones I3=new Operaciones();//instancio la clase insertar
@@ -220,6 +221,59 @@ public class Principal {//clase principal
         System.out.println("");//salto de linea
         System.out.print("    Ingrese opcion >>>>>>>>  : ");//imprime el mensaje
     }   
+//--------------------------------------------------------------------------------------
+public static void Menu_clientes(){//metodo que muestra las opciones del programa
+    DateTimeFormatter cfecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");//formato de fecha
+    DateTimeFormatter chora = DateTimeFormatter.ofPattern("HH:mm");//formato de hora   
+    int ancho=98;//ancho de la linea 
+    String titulo=("|   Menu de clientes   "+cfecha.format(LocalDateTime.now())+"  Hora : "+chora.format(LocalDateTime.now())+" |");//fecha del programa                           |";//titulo del menu      
+    String opcion1="|   Verificar base de datos    presione :  1    |";//opcion 1
+    String opcion2="|   Listar clientes            presione :  2    |";//opcion 2
+    String opcion3="|   Insertar clientes          presione :  3    |";//opcion 3
+    String opcion4="|   Modificar cliente          presione :  4    |";//opcion 4
+    String opcion5="|   Eliminar registro cliente  presione :  5    |";//opcion 5
+    String opcion7="|   volver al menu             presione :  0    |";//opcion 7
+    for (int x=0; x<ancho; x++) {//for para imprimir la linea de =
+        if(ancho==0){//if para salir del for
+            break;//      
+        }else{//else para imprimir la linea de =
+            System.out.print("=");//imprime una linea de =
+            ancho--;//resta uno al ancho    
+        }          
+    } 
+    System.out.println("");//salto de linea 
+    System.out.println(titulo);//imprime la opcion 1
+
+    ancho=98;//ancho de la linea    
+    for (int x1=0; x1<ancho; x1++) {//for para imprimir la linea de =
+        if(ancho==0){//if para salir del for
+            break;//      
+        }else{//else para imprimir la linea de =
+            System.out.print("=");//imprime una linea de =
+            ancho--;//resta uno al ancho    
+        }          
+    }
+    System.out.println("");//salto de linea
+    System.out.println(opcion1);//imprime la opcion 1
+    System.out.println(opcion2);//imprime la opcion 2
+    System.out.println(opcion3);//imprime la opcion 3
+    System.out.println(opcion4);//imprime la opcion 4
+    System.out.println(opcion5);//imprime la opcion 5
+    //System.out.println(opcion6);//imprime la opcion 6
+    System.out.println(opcion7);//imprime la opcion 7
+    ancho=98;//vuelve el ancho a 98
+    for (int z=0; z<ancho; z++) {//for para imprimir la linea de =
+        if(ancho==0){//if para salir del for
+            break;  //final del for
+        }else{//else para imprimir la linea de =
+            System.out.print("=");//
+            ancho--;    //resta uno al ancho
+        }          
+    }
+    System.out.println("");//salto de linea
+    System.out.println("");//salto de linea
+    System.out.print("    Ingrese opcion >>>>>>>>  : ");//imprime el mensaje
+}   
 //--------------------------------------------------------------------------------------
 //finde clase
 //--------------------------------------------------------------------------------------
