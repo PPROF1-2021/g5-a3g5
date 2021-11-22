@@ -12,6 +12,7 @@
     <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
     <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
     <script src='main.js'></script>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -48,21 +49,28 @@
 <!---------------------------------------------------------------------------------------------->
 <!---                    Formulario   ---------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------->
-<form name="form1" class="forma" action="index.html" method="get"><!--redirecciona pagina index-->
-    <h1 class="forma__titulo">Contactenos</h1>
+<form name="form1" class="forma" 
+onsubmit="abrir_popup('contacto2.html', '_blank')" action="index.html" method="get" >
+    <!--redirecciona pagina index-->
+ 
+    <h1 class="forma__titulo">Contactenos</h1><!--titulo-->
 
-    <input type="text" id="1" class="forma__input">
-    <label for="" class="forma__label">Nombre</label>
-    <input type="text" id="2" class="forma__input">
-    <label for="" class="forma__label">Correo electronico</label>
-    <input type="text" id="3"   class="forma__input">
-    <label for="" class="forma__label">Telefono</label>
-    <input type="text" id="4"  class="forma__input">
-    <label for="" class="forma__label">Mensaje</label>
+    <input type="text" id="1" class="forma__input" name="nombre" required><!--input nombre-->
+    <label for="" class="forma__label">Nombre</label><!--label nombre-->
+
+    <input type="email"  id="2" class="forma__input" style="text-transform:lowercase" required><!--input email-->
+    <label for="" class="forma__label">Correo electronico</label><!--label email-->
+
+    <input type="text" id="3"   class="forma__input"   placeholder="ingrese solo numeros" required><!--input telefono-->
+    <label for="" class="forma__label">Telefono</label><!--label telefono-->
+
+    <input type="text" id="4"  class="forma__input" required><!--input asunto-->
+    <label for="" class="forma__label">Mensaje</label><!--label asunto-->
    
-    <input type="hidden" id="5" name="Paquete_completo_TX">
+    <input type="hidden" id="5" name="Paquete_completo_TX"><!--input paquete completo-->
 
-    <input type="submit" class="forma__submit" onClick="abrir_popup('contacto2.html', '_blank'); return false;" value="Enviar ">
+    <input type="submit" class="forma__submit"  value="Enviar "><!--boton enviar-->
+    <input type="submit" class="forma__submit"  onclick="contacto.html" value="Limpiar formulario"><!--boton enviar-->
     </form><!-- fin formulario-->
 <!---------------------------------------------------------------------------------------------->
 
@@ -108,10 +116,7 @@
                     <p>info@sistemas.com.ar</p>
                 </div>    
             </div>
-
-
-
-               
+          
             <div class="conteiner-footer2">
                 <div class="copyright">
                     <p>© 2021 Todo los Derechos Reservados</p>
@@ -122,6 +127,16 @@
         </div>
     </div>
 </footer>
+
+<!--<input type="submit" class="forma__submit"  onClick="abrir_popup('contacto2.html', '_blank'); return false;" value="Enviar ">-->
+
+    <script type="text/javascript">//funcion para validad solo numeros
+        jQuery(document).ready(function(){
+            jQuery("#3").on('input', function (evt) {
+            jQuery(this).val(jQuery(this).val().replace(/[^0-9]/g, ''));
+            });
+        });
+    </script>
     <script src="./js/Contacto.js"></script><!-- llama a la pagina js-->
     <script src="js/funcionesGrupo99.js"></script><!-- llama a la pagina js-->
 
