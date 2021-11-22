@@ -49,6 +49,12 @@ En esta Instancia Evaluativa Final, se integrarán todos los contenidos abordado
     </a>
   </p>
 
+  <p align="center">
+   <a>
+  <img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/alert3.png" width="100%" height="350"  title="">
+    </a>
+  </p>
+
 ## Pagina extra a la cual debemos mandarle valores del fomulario actual
 4.Una vez procesado el formulario, mostrar en una pantalla siguiente, los datos procesados, la cual debe mantener la estética del sitio, luego de unos segundos, redireccionar a una página de sitio (por ejemplo al index). 
 
