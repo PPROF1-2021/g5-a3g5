@@ -12,6 +12,7 @@
     <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
     <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
     <script src='main.js'></script>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -57,10 +58,10 @@ onsubmit="abrir_popup('contacto2.html', '_blank')" action="index.html" method="g
     <input type="text" id="1" class="forma__input" name="nombre" required><!--input nombre-->
     <label for="" class="forma__label">Nombre</label><!--label nombre-->
 
-    <input type="email"  id="2" class="forma__input" required><!--input email-->
+    <input type="email"  id="2" class="forma__input" style="text-transform:lowercase" required><!--input email-->
     <label for="" class="forma__label">Correo electronico</label><!--label email-->
 
-    <input type="number" id="3"   class="forma__input" required><!--input telefono-->
+    <input type="text" id="3"   class="forma__input"   placeholder="ingrese solo numeros" required><!--input telefono-->
     <label for="" class="forma__label">Telefono</label><!--label telefono-->
 
     <input type="text" id="4"  class="forma__input" required><!--input asunto-->
@@ -69,6 +70,7 @@ onsubmit="abrir_popup('contacto2.html', '_blank')" action="index.html" method="g
     <input type="hidden" id="5" name="Paquete_completo_TX"><!--input paquete completo-->
 
     <input type="submit" class="forma__submit"  value="Enviar "><!--boton enviar-->
+    <input type="submit" class="forma__submit"  onclick="contacto.html" value="Limpiar formulario"><!--boton enviar-->
     </form><!-- fin formulario-->
 <!---------------------------------------------------------------------------------------------->
 
@@ -128,7 +130,14 @@ onsubmit="abrir_popup('contacto2.html', '_blank')" action="index.html" method="g
 
 <!--<input type="submit" class="forma__submit"  onClick="abrir_popup('contacto2.html', '_blank'); return false;" value="Enviar ">-->
 
-<script src="./js/Contacto.js"></script><!-- llama a la pagina js-->
+    <script type="text/javascript">//funcion para validad solo numeros
+        jQuery(document).ready(function(){
+            jQuery("#3").on('input', function (evt) {
+            jQuery(this).val(jQuery(this).val().replace(/[^0-9]/g, ''));
+            });
+        });
+    </script>
+    <script src="./js/Contacto.js"></script><!-- llama a la pagina js-->
     <script src="js/funcionesGrupo99.js"></script><!-- llama a la pagina js-->
 
 </body>
