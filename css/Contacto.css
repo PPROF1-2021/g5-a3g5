@@ -41,18 +41,15 @@ body{
     direction: rtl;
     unicode-bidi: bidi-override;
     color: white;
-    
-}
+    }
 .forma__input:focus{
     outline: 1px solid rgba(0, 0, 0, 0.7);
-    background: rgba(245, 143,10, 0.6);   
-
-}
+    background: rgba(245, 143,10, 0.6);
+    }
 .forma__input:focus +
 .forma__label{
     margin-top: -140px;
-
-}
+    }
 .forma__label{
     padding-left: 15px;
     position: absolute;
@@ -72,3 +69,8 @@ body{
 .fijar{
     margin-top: -140px;
 }
+.placeholder{
+    color: rgba(255, 255, 255, 0.1);
+}
+:focus::-webkit-input-placeholder { color: rgba(225, 255, 255, 0.7) } 
+::-webkit-input-placeholder{color:transparent;}
