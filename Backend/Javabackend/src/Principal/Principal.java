@@ -1,9 +1,23 @@
-package Principal;//package Principal;
-import java.util.Scanner;//
-import Clases.*;//importa clases
-import java.time.LocalDateTime;//importa clase
-import java.time.format.DateTimeFormatter;//importa clase
+package Principal;
+//import java.sql.*;
+//import Conector.Conectar_bd;
 
+
+import Conector.Conectar_bd;
+
+public class Principal {
+    public static void main(String[] args) throws Exception {
+        Conectar_bd C1=new Conectar_bd();
+        C1.setConecto("15");
+
+
+
+        
+        System.out.println("carga direccion  "+C1.getConecto());
+
+
+        System.out.println("Hello, World!");
+=======
 public class Principal {//clase principal
     public static void main(String[] args) throws Exception {//metodo principal
         int accion=0;//variable para el switch
@@ -124,157 +138,4 @@ public class Principal {//clase principal
             System.out.println(e);//imprime el error
         }
     }
-//--------------------------------------------------------------------------------------
-        public static void CabeceraDoc() {//metodo que imprime la cabecera del programa
-            DateTimeFormatter cfecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");//formato de fecha
-            DateTimeFormatter chora = DateTimeFormatter.ofPattern("HH:mm");//formato de hora
-            String cmotivo="Practica profesionalizante";//motivo de la ejecucion del programa
-            String institucion="| Institucion : ISPC  Materia : Practica profesionalizante 1";//institucion del programa
-            String total="| Aula  3  Grupo 5  :  Ejercicio : "+cmotivo+" |";//total del programa
-            String Abril=("| Integrantes :  Clavaguera, Abril");//integrantes del programa
-            String Laura=("|                Heredia, Laura ");//integrantes del programa
-            String Monica=("|                Zapata, Monica ");//integrantes del programa
-            String Gaston=("|                Ferreyra, Gaston ");//integrantes del programa
-            String Mario=("|                Gonzalez, Mario ");//integrantes del programa
-            String fecha=("| Cordoba Argentina - Fecha : "+cfecha.format(LocalDateTime.now())+"  Hora : "+chora.format(LocalDateTime.now()));//fecha del programa
-                try {//try catch para imprimir la cabecera
-                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();//limpia la pantalla
-                    } catch (Exception e) {
-                }
-                for (int x=0; x<total.length(); x++) {//for para imprimir la cabecera
-                    System.out.print("="); //imprime una linea de =          
-                }          
-        System.out.println();//salto
-        System.out.print(fecha);//imprime la institucion
-        Relleno(total, fecha);//metodo que rellena la linea con espacios
-        System.out.print(institucion);//imprime la institucion   
-        Relleno(total, institucion);//metodo que rellena la linea con espacios
-        System.out.println(total);//imprime la linea total
-        System.out.print(Abril);//imprime el integrante
-        Relleno(total, Abril);//metodo que rellena la linea con espacios
-        System.out.print(Laura);//imprime el integrante
-        Relleno(total, Laura);//metodo que rellena la linea con espacios     
-        System.out.print(Monica);//imprime el integrante
-        Relleno(total, Monica);//metodo que rellena la linea con espacios
-        System.out.print(Gaston);//imprime el integrante
-        Relleno(total, Gaston);//metodo que rellena la linea con espacios       
-        System.out.print(Mario);//imprime el integrante
-        Relleno(total, Mario);//metodo que rellena la linea con espacios
-            for (int k=0; k<3; k++) {
-            if (k==0) {//if para imprimir la linea de =
-                for (int z=0; z<total.length(); z++) {//for para imprimir la linea de =
-                    System.out.print("="); //imprime una linea de =          
-                }
-            }
-            System.out.println();//salto de linea 
-            }
-}
-//--------------------------------------------------------------------------------------
-    public static void Relleno(String t1, String t2){//metodo que rellena la linea con espacios
-        for (int z=0; z<t1.length(); z++) {//for para rellenar la linea con espacios
-            if (z!=t1.length()-t2.length()-1) {//if para rellenar la linea con espacios
-                System.out.print(" ");//imprime un espacio
-                }else{//else para rellenar la linea con espacios
-                System.out.println("|");//imprime una linea de |
-                t1="";//vacio la variable t1
-                t2="";//vacio la variable t2
-                break;                          
-            }      
-        } 
-    }
-//--------------------------------------------------------------------------------------
-    public static void Opciones_menu(){//metodo que muestra las opciones del programa
-        int ancho=98;//ancho de la linea       
-        String opcion1="|   Conectar con base de datos presione :  1    |";//opcion 1
-        String opcion2="|   Listar registro alumnos    presione :  2    |";//opcion 2
-        String opcion3="|   Insertar registro alumnos  presione :  3    |";//opcion 3
-        String opcion4="|   Modificar registro alumnos presione :  4    |";//opcion 4
-        String opcion5="|   Eliminar registro alumno   presione :  5    |";//opcion 5
-        String opcion6="|   Salir del programa         presione :  9    |";//opcion 6
-        String opcion7="|   Menu de ayuda              presione :  0    |";//opcion 7
-        for (int x=0; x<ancho; x++) {//for para imprimir la linea de =
-            if(ancho==0){//if para salir del for
-                break;//      
-            }else{//else para imprimir la linea de =
-                System.out.print("=");//imprime una linea de =
-                ancho--;//resta uno al ancho    
-            }          
-        } 
-        System.out.println("");//salto de linea
-        System.out.println(opcion1);//imprime la opcion 1
-        System.out.println(opcion2);//imprime la opcion 2
-        System.out.println(opcion3);//imprime la opcion 3
-        System.out.println(opcion4);//imprime la opcion 4
-        System.out.println(opcion5);//imprime la opcion 5
-        System.out.println(opcion6);//imprime la opcion 6
-        System.out.println(opcion7);//imprime la opcion 7
-        ancho=98;//vuelve el ancho a 98
-        for (int z=0; z<ancho; z++) {//for para imprimir la linea de =
-            if(ancho==0){//if para salir del for
-                break;  //final del for
-            }else{//else para imprimir la linea de =
-                System.out.print("=");//
-                ancho--;    //resta uno al ancho
-            }          
-        }
-        System.out.println("");//salto de linea
-        System.out.println("");//salto de linea
-        System.out.print("    Ingrese opcion >>>>>>>>  : ");//imprime el mensaje
-    }   
-//--------------------------------------------------------------------------------------
-public static void Menu_clientes(){//metodo que muestra las opciones del programa
-    DateTimeFormatter cfecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");//formato de fecha
-    DateTimeFormatter chora = DateTimeFormatter.ofPattern("HH:mm");//formato de hora   
-    int ancho=98;//ancho de la linea 
-    String titulo=("|   Menu de clientes   "+cfecha.format(LocalDateTime.now())+"  Hora : "+chora.format(LocalDateTime.now())+" |");//fecha del programa                           |";//titulo del menu      
-    String opcion1="|   Verificar base de datos    presione :  1    |";//opcion 1
-    String opcion2="|   Listar clientes            presione :  2    |";//opcion 2
-    String opcion3="|   Insertar clientes          presione :  3    |";//opcion 3
-    String opcion4="|   Modificar cliente          presione :  4    |";//opcion 4
-    String opcion5="|   Eliminar registro cliente  presione :  5    |";//opcion 5
-    String opcion7="|   volver al menu             presione :  0    |";//opcion 7
-    for (int x=0; x<ancho; x++) {//for para imprimir la linea de =
-        if(ancho==0){//if para salir del for
-            break;//      
-        }else{//else para imprimir la linea de =
-            System.out.print("=");//imprime una linea de =
-            ancho--;//resta uno al ancho    
-        }          
-    } 
-    System.out.println("");//salto de linea 
-    System.out.println(titulo);//imprime la opcion 1
-
-    ancho=98;//ancho de la linea    
-    for (int x1=0; x1<ancho; x1++) {//for para imprimir la linea de =
-        if(ancho==0){//if para salir del for
-            break;//      
-        }else{//else para imprimir la linea de =
-            System.out.print("=");//imprime una linea de =
-            ancho--;//resta uno al ancho    
-        }          
-    }
-    System.out.println("");//salto de linea
-    System.out.println(opcion1);//imprime la opcion 1
-    System.out.println(opcion2);//imprime la opcion 2
-    System.out.println(opcion3);//imprime la opcion 3
-    System.out.println(opcion4);//imprime la opcion 4
-    System.out.println(opcion5);//imprime la opcion 5
-    //System.out.println(opcion6);//imprime la opcion 6
-    System.out.println(opcion7);//imprime la opcion 7
-    ancho=98;//vuelve el ancho a 98
-    for (int z=0; z<ancho; z++) {//for para imprimir la linea de =
-        if(ancho==0){//if para salir del for
-            break;  //final del for
-        }else{//else para imprimir la linea de =
-            System.out.print("=");//
-            ancho--;    //resta uno al ancho
-        }          
-    }
-    System.out.println("");//salto de linea
-    System.out.println("");//salto de linea
-    System.out.print("    Ingrese opcion >>>>>>>>  : ");//imprime el mensaje
-}   
-//--------------------------------------------------------------------------------------
-//finde clase
-//--------------------------------------------------------------------------------------
 }

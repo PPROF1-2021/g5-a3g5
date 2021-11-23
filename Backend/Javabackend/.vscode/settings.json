@@ -1,5 +1,4 @@
 {
     "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "git.ignoreLimitWarning": true
+    "java.project.outputPath": "bin"
 }

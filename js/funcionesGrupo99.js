@@ -1,34 +1,21 @@
 //funcion que valida los datos ingresados en el formulario
+
 function validarRegUsuario() {
     var nombre, apellido,email, pass, telef, direcc, fNacim, provincia, tipoUsuario;
   
     //traigo valores del formulario
-    nombre = document.getElementById('inputNombre').value;
-    apellido = document.getElementById('inputApellido').value;
-    email = document.getElementById('inputEmail').value;
-    pass = document.getElementById('inputPassword').value;
-    telef = document.getElementById('inputTelefono').value;
-    direcc = document.getElementById('inputDireccion').value;
-    fNacim = document.getElementById('inputFNacim').value;
-    provincia = document.getElementById('selectProvincia').selectedIndex;
-    tipoUsuario = document.getElementById('selectUsuario').selectedIndex;
+    nombre = document.getElementById('username').value;
+    apellido = document.getElementById('fullname').value;
+    email = document.getElementById('email').value;
+    pass = document.getElementById('passwordid').value;
+    telef = document.getElementById('telefono').value;
+    cuil = document.getElementById('cuil').value;
+    fNacim = document.getElementById('FechaNacim').value;
+  
   
     //verifico que todos los campos contengan datos, si no muestro un alert:
-    if (nombre === '' || apellido === '' || email === '' || pass === '' || telef === '' || direcc === '' || fNacim === '' || provincia === '' ||
-      tipoUsuario === '') {
+    if (nombre === '' || apellido === '' || email === '' || pass === '' || telef === '' || direcc === '' || fNacim === '') {
       alert('Todos los campos deben estar completos');
-      return false;
-    }
-  
-    //verifico que el nombre tenga al menos dos caracteres
-    if (nombre.length < 2) {
-      alert('Ingrese un nombre válido. Debe contener al menos dos caracteres');
-      return false;
-    }
-  
-    //verifico que el apellido tenga al menos dos caracteres
-    if (apellido.length < 2) {
-      alert('Ingrese un apellido válido. Debe contener al menos dos caracteres');
       return false;
     }
   
@@ -58,8 +45,8 @@ function validarRegUsuario() {
       alert(
         'Revise la fecha de nacimiento. El empleado debe ser mayor de 18 a\u00f1os'
       );
-      return false;
-    }
+      return false;     
+    } 
      alert('registro completado exitosamente');
     }
   
@@ -77,65 +64,3 @@ function validarRegUsuario() {
     return edad;
   }
   
-  //funcion que limpia los campos del formulario, 2do evento de interaccion del usuario con el dom
-  function borrarRegistroUsuarios() {
-    document.getElementById('inputNombre').value = '';
-    document.getElementById('inputApellido').value = '';
-    document.getElementById('inputEmail').value = '';
-    document.getElementById('inputPassword').value = '';
-    document.getElementById('inputTelefono').value = '';
-    document.getElementById('inputDireccion').value = '';
-    document.getElementById('inputFNacim').value = 'AAAA-MM-DD';
-    document.getElementById('selectProvincia').selectedIndex = 0;
-    document.getElementById('selectUsuario').selectedIndex = 0;
-  }
-  
-  function redireccion() {
-    var tiempo = 5000;
-  
-    //mensaje
-    document.getElementById('mensaje').innerHTML =
-      'Espere, en breve será redirigido a la pagina de inicio.';
-  
-    setTimeout(function () {
-      window.location = 'index.html';
-    }, tiempo);
-  }
-
-  function abrir_popup2(url,ubicacion){
-    document.getElementById('7').value =
-    "°"+//bandera de inicio
-    document.getElementById('1').value +
-    "°"+//bandera de fin de input
-    document.getElementById('2').value +
-    "°"+//bandera de fin de input
-    document.getElementById('3').value +
-    "°"+//bandera de fin de input
-    document.getElementById('4').value +
-    "°";//bandera de fin de input
-    document.getElementById('5').value +
-    "°";//bandera de fin de input
-    document.getElementById('6').value +
-    "°";//bandera de fin de input
-        window.open(url+'?payload2='+document.getElementById('7').value, ubicacion);
-        cerrar();
-    }
-
-     //     window.location.replace("https://pprof1-2021.github.io/g5-a3g5/index.html");      
-     function abrir_popup(url,ubicacion){
-        document.getElementById('5').value =
-        "°"+//bandera de inicio
-        document.getElementById('1').value +//valor de input 1
-        "°"+//bandera de fin de input
-        document.getElementById('2').value +//valor de input 2
-        "°"+//bandera de fin de input
-        document.getElementById('3').value +//valor de input 3
-        "°"+//bandera de fin de input
-        document.getElementById('4').value +//valor de input 4
-        "°";//bandera de fin de input
-            window.open(url+'?payload='+document.getElementById('5').value, ubicacion, 'width=870,height=700');//return false;
-            cerrar();
-        }
-            function cerrar() {//funcion para cerrar la ventana
-            window.location("https://pprof1-2021.github.io/g5-a3g5/index.html");//redireccionar a la pagina de inicio 
-            }

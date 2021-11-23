@@ -1,6 +1,6 @@
 setTimeout(function(){
 
 
-    location.href="../index.html"
+    "javascript:location.href='../login.html'";
 
-},1000*6)
+},1000*1)
