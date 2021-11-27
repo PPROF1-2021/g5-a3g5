@@ -118,3 +118,4 @@ Semana del 16/11:
 El Entregable de este sprint será el resultado de las iteraciones anteriores, con un producto incremental en lo que respecta a funcionalidades.  
 
 
+[![Alt text](https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/logo.jpg)](https://www.youtube.com/watch?v=oyQQRNPyZ0E)
