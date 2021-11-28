@@ -148,8 +148,9 @@ El Entregable de este sprint será el resultado de las iteraciones anteriores, c
 #### Backend
 - MySQL-(1 de Noviembre 2021)
 - Consultas--(1 de Noviembre 2021)
-
- 
+--- 
+<img alt="Awesome GitHub Profile Readme" src="img/sprint3.gif"> </img> 
+--- 
 
 ### 🎥 Listado de videos
 
