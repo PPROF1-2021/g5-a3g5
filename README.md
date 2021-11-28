@@ -10,9 +10,15 @@
 <a href="https://github.com/PPROF1-2021/g5-a3g5/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PPROF1-2021/g5-a3g5?style=for-the-badge"></a>
 <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/PPROF1-2021/g5-a3g5?style=for-the-badge">
 <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/PPROF1-2021/g5-a3g5?style=for-the-badge">
-</div>
+<img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2021/PPROF1-2021/g5-a3g5?style=for-the-badge">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/PPROF1-2021/g5-a3g5?style=for-the-badge">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/PPROF1-2021/g5-a3g5">
 
+
+
+
+
+</div>
 
 ---
 
