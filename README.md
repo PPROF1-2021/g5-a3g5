@@ -26,11 +26,12 @@
 ### https://pprof1-2021.github.io/g5-a3g5/
 <br>
 <br>
-
-
+<br>
+<br>
 ####
 ---
 **Perspectiva del producto:**
+<br>
 Este sistema fue creado con el objetivo de brindar una solución tecnológica para el área de gestión
 administrativa de tu empresa o emprendimiento de manera virtual utilizando el woocommerce, en donde el
 uso de software o tablas de Excel que no son funcionales a la hora de facturar. Bajo esta problemática se creó
