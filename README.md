@@ -112,10 +112,24 @@ Semana del 01/11:
 ## Sprint 3
 
 Semana del 16/11:
-#### Frontend + Backend
 
 - Producto funcionando con Login 
-El Entregable de este sprint será el resultado de las iteraciones anteriores, con un producto incremental en lo que respecta a funcionalidades.  
+El Entregable de este sprint será el resultado de las iteraciones anteriores, con un producto incremental en lo que respecta a funcionalidades. 
+
+
+#### Frontend
+- HTML -(25 de octubre 2021)
+- BOOSTRAP-(25 de octubre 2021)
+- CSS -(25 de octubre 2021)
+- Responsive-(25 de octubre 2021)
+- JS-(22 de noviembre 2021)
+- PHP-(22 de noviembre 2021)
+
+#### Backend
+- MySQL-(1 de Noviembre 2021)
+- Consultas--(1 de Noviembre 2021)
+
+ 
 
 ### 🎥 Listado de videos
 
