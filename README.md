@@ -117,5 +117,21 @@ Semana del 16/11:
 - Producto funcionando con Login 
 El Entregable de este sprint será el resultado de las iteraciones anteriores, con un producto incremental en lo que respecta a funcionalidades.  
 
+### 🎥 Listado de videos
 
-[![Alt text](https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/logo.jpg)](https://www.youtube.com/watch?v=oyQQRNPyZ0E)
+<!-- YT:START -->
+- [Practica Profesionalizante 1_Parte1][video1]
+- [Practica Profesionalizante 1_Parte2][video2]
+- [IEFI_Programacion_1_Parte1][video3]
+- [IEFI_Programacion_1_Parte2][video4]
+- [IEFI_Base de Datos][video5]
+
+<!-- YT:END -->
+
+
+---
+[video1]: https://www.youtube.com/watch?v=oyQQRNPyZ0E
+[video2]: https://www.youtube.com/watch?v=kpJN7WFziL4
+[video3]: https://www.youtube.com/watch?v=ffQc45vwrT0&t=3s
+[video4]: https://www.youtube.com/watch?v=OdESUNqbz74
+[video5]: https://www.youtube.com/watch?v=YJ_Bg6fGyso&t=169s
