@@ -1,4 +1,4 @@
-## Requerimiento de IEFI Programacion Web 1
+﻿## Requerimiento de IEFI Programacion Web 1
 IEFI Programación Web I 
 En esta Instancia Evaluativa Final, se integrarán todos los contenidos abordados durante la cursada, por lo tanto se continúa con el proyecto del Sitio web grupal. En esta oportunidad se solicitarán los siguientes puntos a considerar en la evaluación:
 
@@ -18,6 +18,8 @@ En esta Instancia Evaluativa Final, se integrarán todos los contenidos abordado
 
 ## Fecha con Javascript
 2.Crear una función en JavaScript para mostrar un cálculo de fechas (edad, día de turno, u otro pertinente al proyecto en desarrollo).
+
+
 
 
 
