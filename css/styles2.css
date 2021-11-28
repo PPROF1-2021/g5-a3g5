@@ -5,8 +5,7 @@ body
         background: url(../img/fondo2.jpg);
 
         background-size: cover;
-        background-attachment: fixed;/*dejo la imagen fija*/ 
-        
+        background-attachment: fixed;/*dejo la imagen fija*/    
     }
 .tabla1{
     padding: 5%;
