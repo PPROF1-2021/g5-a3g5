@@ -12,11 +12,7 @@
 <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/PPROF1-2021/g5-a3g5?style=for-the-badge">
 <img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2021/PPROF1-2021/g5-a3g5?style=for-the-badge">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/PPROF1-2021/g5-a3g5?style=for-the-badge">
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/PPROF1-2021/g5-a3g5">
-
-
-
-
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/PPROF1-2021/g5-a3g5?style=for-the-badge">
 
 </div>
 
