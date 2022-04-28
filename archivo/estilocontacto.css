@@ -1,0 +1,161 @@
+*{
+    margin: 0;/*margen en 0*/
+    padding: 0;/*padding en 0*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    text-decoration: none;/*para que no se vea el texto*/
+    font-family: 'Roboto', sans-serif;/*fuente*/
+}
+
+body{
+    /*background-image: url(../img/Polinesia.jpg);imagen de fondo*/
+    background-image: url(../img/201-varejo.jpg);/*imagen de fondo*/
+    background-size: cover;/*para que se vea la imagen de fondo*/
+    background-repeat: no-repeat;/*para que no se repita la imagen de fondo*/
+    background-attachment: fixed;/*para que se vea la imagen de fondo*/
+    background-position: center;/*para que se vea la imagen de fondo*/
+    margin: 0;
+}
+
+main{
+    width: 100%;/*ancho*/
+    padding: 20px;/*espacio entre el contenido y el borde*/
+    margin: auto;/*para que se vea en el centro*/
+    margin-top: 100px;/*espacio superior*/
+
+}
+
+footer {
+    display: flex;
+    margin-top: 900px;
+    width: 100%;
+    position:absolute;
+    /*left: 400px;*/
+    }
+ 
+/*--------------------------------------------------------------*/
+.encabezado     /*para el encabezado*/
+    {
+        background: rgba(240, 172, 172, 0.6);/*color de fondo*/
+        width: 100%;
+    }
+.encabezado .menu 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+ 
+    }
+.encabezado .menu ul
+    {
+        list-style: none; /*sacar los puntos de las viñetas*/
+        display: flex;/* deja uno al lado del otro en forma horizontal*/
+        justify-content: space-between;
+    }
+.encabezado .menu ul li ul 
+    {
+        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+        flex-direction: column;/* deja en forma vertical los sub item*/
+        position: absolute; /*esto es para sacar los sub menu fuera del header*/
+        background: rgb(203, 205, 36);/*color de fondo*/
+        display: none; /*hago desaparecer el sub item*/
+    }
+.encabezado .menu ul li:hover >ul
+    { 
+        display: flex;/* deja uno al lado del otro en forma horizontal los sub menu*/
+        flex-direction: column;/* deja en forma vertical los sub item*/
+        position: absolute; /*esto es para sacar los sub menu fuera del header*/
+        background: rgba(245, 143, 10, 0.3);   
+    }
+.encabezado .menu ul li ul li
+    {
+        width: 480px; /* hacemos crecer el ancho de los sub item*/
+    }
+    a
+    {
+        text-decoration: none; /*Sacar el subrayado de las etiquetas*/
+        font-size: 20px;
+        color: rgb(203, 205, 36);
+        padding: 12px 20px;
+        display: flex; /*es para que no se superpongan los sub item*/
+        float: left;
+        
+    }
+    a:hover
+    {
+        color: #fff;
+    }
+/*-----------------------------------------------------------------------------*/
+/*formulario de contacto tres input + un text area + 2 botones*/
+/*-----------------------------------------------------------------------------*/
+form{
+    border: 1px solid #E1E1E1;
+    border-radius: 7px;
+    padding: 5px;
+    width: 25%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*-------------------------------------------*/
+    transform: translate(-50%, -50%);
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.30);
+    /*--------------------------------------------*/
+}
+label{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    /*text-shadow: 0.1em 0.1em #333;*//*color para los ingresos*/
+    text-shadow: 0 0 0.2em rgb(253, 255, 119)
+  
+}
+
+
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    outline: none;/*para que no se vea el recuadro en el input texto*/
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+textarea{/*para que se vea el textarea*/
+    resize: vertical;/*para que se vea vertical el textarea*/
+    max-height: 300px;/*Maxima altura del textarea*/
+    min-height: 100px;/*Minima altura del textarea*/
+    
+}
+
+input:focus, textarea:focus{/*para que se vea el recuadro en el input texto*/
+    border: 1px solid red;
+}
+
+input[type="submit"] {/*para que se vea el boton enviar*/
+    margin-bottom: 0;/*Margen inferior del boton enviar*/
+    background: blue;/*color de fondo*/
+    color: white;/*color del texto boton enviar*/
+    width: 47%;/*ancho del boton enviar*/
+    float: left;/*para que se vea el boton en la parte izquierda*/
+    border-radius: 15px;/*para que se vea el borde redondeado*/
+}
+input[type="reset"] {/*para el boton reset del formulario*/
+    margin-bottom: 0;/*Margen inferior del boton reset*/
+    background:grey;/*color de fondo*/
+    color: white;/*color del texto del boton reset*/
+    width: 47%;/*ancho del boton reset*/
+    float:right;/*para que se vea a la derecha*/
+    border-radius: 15px;/*para que se vea redondeado*/
+}
+ form h2{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*---------------------------------------------------------------------------------*/

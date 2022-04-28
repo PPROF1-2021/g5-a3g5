@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Deposito (ISPCA3G5) Productos</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/productos.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body>
+<!--------------------------------------------------------------------------------------->
+<header class="header">
+    <nav class="nav">
+        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
+        <h1 class="web">Gestion Deposito (ISPCA3G5)</h1>
+        <h1 class="mov">Gestion Deposito</h1> 
+        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a  href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a  href="producto.html" class="nav-menu-link nav-link">Productos</a></li> 
+            <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
+            <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
+            <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+<!--------------------------------------------------------------------------------------->
+<div class="contenedor_pantalla">
+    <!--contenedor de toda la pagina-->
+    <!--------------------------------------------------------------------------------------->
+    <div class="wrap">
+        <h1>Nuestros productos</h1> <!--titulo-->
+        <button class="nav-toggle2" id="nav-toggle2" onclick="mi_Menu2()"><!--boton para abrir el menu-->
+            <i class="fas fa-bars" aria-hidden="true"></i><!--boton de menu-->
+        </button>
+        <div class="store-wrapper"><!--contenedor de la tabla-->
+            <div class="category_list"><!--contenedor de la lista-->
+                <a href="#" class="category_item button_vs" onclick="todo()" id="a">Todo</a>
+                <a href="#" class="category_item button_vs" onclick="leds()" id="b">Leds</a>
+                <a href="#" class="category_item button_vs" onclick="disp()" id="c">Display</a>
+                <a href="#" class="category_item button_vs" onclick="tran()" id="d">Transistores</a>
+                <a href="#" class="category_item button_vs" onclick="serv()" id="e">Servidores</a>
+                <a href="#" class="category_item button_vs" onclick="gral()" id="f">Componentes</a>
+            </div>
+            <section class="products-list">
+                <!--------------------------------------------------------------------------------------->
+                <div class="product-item ser">
+                    <img src="./img/rasp_8.jpg" alt="">
+                    <a href="#">CPU Rasp1</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_5mm_ro.jpg" alt="">
+                    <a href="#">Led rojo 5mm</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Acelerometro_brujula.jpg" alt="">
+                    <a href="#">Acelerometro</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_3_4.jpg" alt="">
+                    <a href="#">CPU rasp3 4mgb</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_5mm_az.jpg" alt="">
+                    <a href="#">Led azul 5mm</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_5mm_rgb.jpg" alt="">
+                    <a href="#">Led rgb 5mm</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Perilla_pote_6.jpg" alt="">
+                    <a href="#">Perillas colores</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_10mm_ve.jpg" alt="">
+                    <a href="#">Led verde 10mm</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_10mm_ro.jpg" alt="">
+                    <a href="#">Led rojo 10mm</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_10mm_am.jpg" alt="">
+                    <a href="#">Led amarillo 10mm</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_7seg.jpg" alt="">
+                    <a href="#">Display 7 segmentos</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_7seg_v.jpg" alt="">
+                    <a href="#">Display 7 seg verde</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Pulsa tachswitch_3.jpg" alt="">
+                    <a href="#">Pulsador 6mm</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_lcd1602_backazul.jpg" alt="">
+                    <a href="#">Display lcd1602a</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_lcd1602_backverde.jpg" alt="">
+                    <a href="#">Display lcd1602v</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/ESP-01.jpg" alt="">
+                    <a href="#">ESP 01</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_lcd2004_backazul.jpg" alt="">
+                    <a href="#">Display lcd2004a</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_lcd_ce.jpg" alt="">
+                    <a href="#">Display 128x64 ce</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Pulsa tachswitch_6.jpg" alt="">
+                    <a href="#">Pulsador 10mm</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_oled091.jpg" alt="">
+                    <a href="#">Display oled 0.91</a>
+                </div>
+                <div class="product-item dis">
+                    <img src="./img/Display_tft22.jpg" alt="">
+                    <a href="#">Display TFT22</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_1.jpg" alt="">
+                    <a href="#">Transistores bc337</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_2.jpg" alt="">
+                    <a href="#">Transistores c3198</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Resistencias_1k.jpg" alt="">
+                    <a href="#">Resistencias 1K</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_3.jpg" alt="">
+                    <a href="#">Transistores fototrans</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_4.jpg" alt="">
+                    <a href="#">Transistores IRF3205</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_5.jpg" alt="">
+                    <a href="#">Transistores p3096</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_6.jpg" alt="">
+                    <a href="#">Transistores MJ802</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_7.jpg" alt="">
+                    <a href="#">Transistores a1941</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/esp8266 H12F.jpg" alt="">
+                    <a href="#">ESP8266 H121F</a>
+                </div>
+                <div class="product-item gra">
+                    <img src="./img/Resistencias_1k.jpg" alt="">
+                    <a href="#">Resistencias 4K7</a>
+                </div>
+                <div class="product-item tra">
+                    <img src="./img/Trans_8.jpg" alt="">
+                    <a href="#">Transistores 61f</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_1.jpg" alt="">
+                    <a href="#">CPU rasp1</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_3_2.jpg" alt="">
+                    <a href="#">CPU rasp3 2mgb</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_5mm_Am.jpg" alt="">
+                    <a href="#">Led amarillo 5mm</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_4_8.jpg" alt="">
+                    <a href="#">CPU rasp4 4mgb</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_5.jpg" alt="">
+                    <a href="#">CPU Rasp4 gabinete</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_6.jpg" alt="">
+                    <a href="#">Gabinete Rasp3</a>
+                </div>
+                <div class="product-item ser">
+                    <img src="./img/rasp_7.jpg" alt="">
+                    <a href="#">Pantalla VGA Rasp4</a>
+                </div>
+                <div class="product-item led">
+                    <img src="./img/Diodos_led_5mm_ve.jpg" alt="">
+                    <a href="#">Led verde 5mm</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------->
+
+<!---------------footer ----------->
+    <footer>
+        <div class="tipo__footer">
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="./img/Logo.png" alt="aca va al logo">
+              </div>
+              <div class="terms">
+                <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
+                    Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
+                    Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
+                    como representante de la compañía en ese mercado.
+                  La compañía cuenta también con consultores externos,
+                   personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
+                   educacionales y compañías renombradas.</p>
+              </div>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Soluciones</h2>
+              <a href="">Ventas</a>
+              <a href="">Trabajos</a>
+              <a href="">Procesos</a>
+              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Redes Sociales</h2>
+              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <br>
+          <p>Copyright © 2021 - Todos los derechos reservados</p>
+          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
+      </div>
+  </footer>
+  <!---------------footer ----------->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/funcionesGrupo99.js"></script>
+</body>
+</html>
+<!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->

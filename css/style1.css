@@ -1,0 +1,593 @@
+.header {
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+    height: 60px;
+    position: fixed;/*fija el encabezaso*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+/*-----------------------------------------------*/
+.nav{
+  display: flex; 
+  justify-content: space-between; 
+}
+.nav-link{
+/*color: white;*/
+color: black;
+text-decoration: none;
+font-size: 18px;
+font-weight: 500;
+
+}
+
+.logo__img{
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  line-height: 60px;
+}
+.web{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 0px;
+    line-height: 60px;
+    width: max-content;/*no corta el titulo*/
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+}
+.mov{
+  
+    margin-left: 20px;
+    font-weight: 600;
+    color: black;
+    display: none;
+    line-height: 80px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.nav-menu-link{
+    padding: 8px 10px;
+}
+.nav-menu-link:hover {
+    color: white;
+    background-color: #508fbd;
+    transition: 0.3s;
+}
+.nav-toggle{ 
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ------------------------------------------------------------- */
+.contiene1{
+    background-color: red;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* div azul mas boton de alta + div verde */
+/*-----------------------------------------------------------------------------*/
+.contiene1 .pestaña_alta{
+    background-color: blue;
+    display: inline-flex;
+    width: 100px;
+    height: 25px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.contiene1 .pestaña_alta .boton_alta {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    /* margin-top: 5px; 
+    margin-left: 5px; */
+    justify-content: center;
+}
+.contiene1 .contiene_alta{
+    background-color:green;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 5px;
+}
+.contiene1 .contiene_alta .codigo_input{
+    background-color: grey;
+    display: inline-flex;
+    width: 130px;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.contiene1 .codigo{
+    background-color: white;
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .label_codigo{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .contiene_alta .rubro_input{
+    background-color: blue;
+    display: inline-flex;
+    width: 130px;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.contiene1 .rubro{
+    background-color: white;
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .label_rubro{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .contiene_alta .nombre_input{
+    background-color: pink;
+    display: inline-flex;
+    width: 550px;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .nombre{
+    background-color: white;
+    display: inline-flex;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .label_nombre{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    border: 2px solid black;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .contiene_alta .descripcion_input{
+    background-color: white;
+    display: block;
+    width: 550px;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+
+}
+.contiene1 .descripcion{
+    background-color: white;
+    display: inline-flex;
+    width: 435px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+.contiene1 .label_descripcion{
+    background-color: grey;
+    /* background-color: transparent; */
+    display: inline-flex;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* div rosa  mas boton de modifica + div amarillo */
+/*-----------------------------------------------------------------------------*/
+.contiene1 .pestaña_modi{
+    background-color: pink;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.contiene1 .pestaña_modi .boton_modi {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    justify-content: center;
+    border-radius: 6px;
+}
+.contiene1 .contiene_modi{
+    background-color: yellow;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    position: relative;
+    margin-left: 5px;
+    display: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* div azul mas boton de baja */
+/*-----------------------------------------------------------------------------*/
+.contiene1 .pestaña_baja{
+    background-color: aquamarine;
+    background-color: transparent;
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.contiene1 .pestaña_baja .boton_baja {
+    background-color: white;
+    display: inline-flex;
+/*--------------------*/
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+/*--------------------*/
+    position: absoluta;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    justify-content: center;
+
+}
+
+.contiene1 .contiene_baja{
+    background-color: orange;
+    display: flex;
+    width: 94%;
+    height: 260px;
+    position: relative;
+    margin-left: 5px;
+    display: none;
+}
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 1050px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 1050px) {
+    .web{
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 0px;
+        line-height: 60px;
+        width: max-content;/*no corta el titulo*/
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        
+        }
+        .nav-menu-link{
+            padding: 8px 0px;
+        }
+
+
+
+
+
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -800px;
+        transition: 0.2s;
+    }
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        
+        }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+        line-height: 60px;
+    }
+    .nav-toggle {
+        display: block;
+        color: black;
+    }
+    .nav-menu__visible{
+        right: -10px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px)and (orientation: landscape) {
+    main {
+        margin-top: 150px;
+ 
+    }
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 100%;
+        padding: 10px 0 0 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -810px;
+        transition: 0.2s;
+    }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 120px;
+    }
+    .nav-toggle {
+        display: block;
+        color: black;
+    }
+    .nav-menu__visible{
+        right: -10px;
+
+    }
+}
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    .header{
+        height: 60px;
+    }
+    .logo__img{
+        width: 45px;
+        height: 45px;
+        margin-top: 8px;
+        margin-left: 20px;
+        line-height: 60px;
+      }
+      .mov {
+          font-size: 16px;
+        display: block;
+        line-height: 60px;
+        margin-left: 0px;
+        /*position: relative;*/
+    }
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        right: -600px;
+        transition: 0.8s;
+    }
+    .nav-menu-item{
+        font-size: 14px;
+        line-height: 60px;
+    }
+    .nav-menu-link:hover{
+        background-color: none;
+        transition: 0.5s;
+        color: aqua;
+    }
+    .web{
+        display: none;
+    }
+    .mov {
+        display: block;
+        position: absolute;
+        margin-left: 90px;
+    }
+    .nav-toggle {
+        line-height: 60px;
+        display: block;
+        color: black;
+    }
+    .nav-menu__visible{
+        right: -10px;
+        
+
+    }
+}
+
+
+

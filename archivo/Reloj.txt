@@ -1,0 +1,22 @@
+        <div class="reloj">
+            <ul> 
+                <li><a id="dia"class="now"></a></li>
+                <li><a id="hora"class="now"></a></li>
+                </ul>
+        </div>
+------------------------------------------------------------------
+.now {
+    background: rgba(240, 172, 172, 0.0);
+    color: white;
+    justify-content: space-between;
+
+    border-radius: 3px;
+    padding: 10px;
+}
+
+----------------------------------------------------------------
+libreria a incuir pra el reloj
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->

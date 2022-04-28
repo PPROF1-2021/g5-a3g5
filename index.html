@@ -1,143 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Factura-Online</title>
-    <meta name="author" content="Grupo Aula 3">
-    <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
-    <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="shorcut icon" href="./img/logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Deposito (ISPCA3G5) Productos</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <body>
-    <header class="encabezado">
-        <nav class="menu">
-                <div>
-                    <a href="index.html">
-                        <img class="logo" src="./img/logo.png" width="124" height="105" alt="logo sin imagen">
-                    </a>
-                </div>      
-                <ul>
-                    <li><a  href="index.html">Inicio</a></li>
-                    <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
-                    <li><a  href="contacto.html">Contacto</a></li> 
-                    <li><a  href="login.html">Login</a>
-                        <ul>
-                            <li><a  href="registro.html">Registrar</a>
-                        </ul>
-                    </li>
-                </ul>
-        </nav>
+<!--------------------------------------------------------------------------------------->
+<header class="header">
+    <nav class="nav">
+        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
+        <h1 class="web">Gestion Deposito (ISPCA3G5)</h1>
+        <h1 class="mov">Gestion Deposito</h1> 
+        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a  href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a  href="producto.html" class="nav-menu-link nav-link">Productos</a></li> 
+            <li class="nav-menu-item"><a  href="abm.html" class="nav-menu-link nav-link">ABM</a></li> 
+            <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
+            <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
+            <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+        </ul>
+    </nav>
     </header>
-
-
-    
-    <br><br><br><br>
-<main>
-<div class="indexmain">
-    <h1>El sistema de gestión para tu negocio</h1>
-    <br>
-    <h3>Solicitá hoy tu demo gratuita con un experto.</h3>
-    <br>
-
-
-    <a href="factura.html"><input type="submit" value="Factura-Online" class="botondesc"></a>
-</div>
-    <br><br><br><br>
-    <div class="contenedor-mail-all">
-        <div class="contenedor-mail">
-            <div class="columna1-mail">
-                <div class="img1">
-                    <i id="img1-1" class="fas fa-chart-bar"></i>
-                    <h3>Gestioná tus ventas</h3>
-                    <p>Administrando de forma integrada todo el proceso comercial, desde el presupuesto a la cobranza integrando los canales de comercio electrónico de tu empresa.                    </p>
-                    <input type="submit" value="Más Información" class="botonimg">  
-                </div>
-            </div> 
-
-            <div class="columna2-mail">
-                <div class="img2">
-                    <i id="img1-2" class="far fa-sticky-note"></i>
-                    <h3>Administrá tus compras</h3>
-                    <p>Agregando inteligencia a la gestión de tus proveedores vas a poder controlar pedidos, entregas y pagos haciendo más eficiente tu negocio.</p>
-                    <input type="submit" value="Más Información" class="botonimg">  
-                </div>
-            </div> 
-
-            <div class="columna3-mail">
-                <div class="img3">
-                    <i id="img1-3" class="fas fa-boxes"></i>
-                    <h3>Controlá tu stock</h3>
-                    <p>Monitoreá uno o múltiples depósitos en un misma plataforma, adquiriendo mayor visibilidad y seguimiento en tiempo real a tu inventario.</p>
-                    <input type="submit" value="Más Información" class="botonimg">  
-                </div>    
-            </div>
-        </div>
-    </div>
-</main>
-<br><br><br><br>
-
-<footer>
-    <div class="contenedor-all">
-        <div class="contenedor-footer">
-            <div class="columna1">
-                <h1>Dirección</h1>
-                <p>Buenos Aires 573</p>
-                <br>
-                <p>Cordoba, Villa Allende</p>
-                <br>
-                <p>Argentina, CP 5105</p>
-            </div>
-            <div class="columna2">
-                <div class="logo">
-                <i id="fontawesome1-1" class="fab fa-facebook"></i>
-                <h3>Sigenos en Faceboock</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-2" class="fab fa-whatsapp-square"></i>
-                <h3>Escribenos en whatsapp</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-3" class="fab fa-twitter-square"></i>
-                <h3>Sigenos en twitter</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-4" class="fab fa-instagram-square"></i>
-                <h3>Sigenos en instagram</h3>
-                </div>    
-            </div>
-            <div class="columna3">
-                <h1>Contacto</h1>
-                <p>Soporte: (0351) 4555777</p>
-                <br>
-                <p>info@sistemas.com.ar</p>
-            </div>   
-        </div>
-  
+<!--------------------------------------------------------------------------------------->
+<div class="contenedor_pantalla"><!--contenedor de toda la pagina-->
+    <!--------------------------------------------------------------------------------------->
+    <div class="wrap2">
+        <h1>Novedades</h1> <!--titulo-->
+        <div class="store"><!--contenedor de la tabla-->
+            <section class="listado-franquicias"><!--contenedor de la lista-->
+                    <h2>Franquicias</h2><br>
+                    <hr>
+                    <br>
+                    <a href="https://www.microchip.com/" target="blanck">
+                        <img alt="" src="./img/Franquicia_1.png" width="120" height="75" /></a><br>
         
-
-
-            <div class="conteiner-footer2">
-                <div class="copyright">
-                    <p>© 2021 Todo los Derechos Reservados</p>
-                </div> 
-                <div class="information">
-                    <a href="informacion.html">Informacion Compañia  </a><a href="politica.html">| Politica de Privacidad |</a> <a href="terminos.html">Termino y Condiciones</a>
-                </div>              
-        </div>
+                    <a href="https://www.st.com/content/st_com/en.html" target="blanck">
+                        <img alt="" src="./img/Franquicia_2.png" width="120" height="75" /></a><br>
+        
+                    <a href="https://www.quectel.com/" target="blanck">
+                        <img alt="" src="./img/Franquicia_3.png" width="120" height="75" /></a><br>
+        
+                    <a href="https://www.simcom.com/" target="blanck">
+                        <img alt="" src="./img/Franquicia_4.png" width="120" height="75" /></a><br>
+        
+                    <a href="https://www.honeywell.com/us/en" target="blanck">
+                        <img alt="" src="./img/Franquicia_5.png" width="120" height="75" /></a><br>
+        
+                    <a href="https://www.winstar.com.tw/es/" target="blanck">
+                        <img alt="" src="./img/Franquicia_6.png" width="120" height="75" /></a><br>
+        
+                    <a href="https://www.kerlink.com/" target="blanck">
+                        <img alt="" src="./img/Franquicia_7.png" width="120" height="75" /></a><br>
+        
+                    <a href="https://www.te.com/usa-en/home.html" target="blanck">
+                        <img alt="" src="./img/Franquicia_8.png" width="120" height="75" /></a><br>
+            </section>
+            <div class="listado-novedades">
+                <!--------------------------------------------------------------------------------------->
+                <img src="./img/Banner 0.png" alt=""><br>
+                <img src="./img/Banner 1.png" alt=""><br>
+                <img src="./img/Banner 3.png" alt=""><br>
+                <img src="./img/Banner 2.png" alt=""><br>
+                <img src="./img/Banner 4.png" alt=""><br>
+                <br>
+                <div class="titulo">
+                    <br>
+                    <h2>Noticias Técnicas</h2>
+                    <br>                  
+                </div>
+                <div class="nota_1" style="float: left;">
+                    <h2><a href="./pdf/Memorias Flash MICROCHIP-SST.pdf" target="blanck" style="color:white;">
+                            Memorias Flash. Tecnología SuperFlash®</a></h2>
+                    <p>MICROCHIP incorpora nuevas memorias SST FLASH Serie y Paralelo , de muy bajo consumo y alta
+                        confiabilidad, utilizando su Tecnología SuperFlash®…</p>
+                </div>
+    
+                <div class="nota_2" style="float: left;">
+                    <h2><a href="./pdf/Generando “Ring Tones” con un PIC16F87x....pdf" target="blanck" style="color:white;">
+                            Generando Ring Tones con un PIC 16F87X....</a></h2>
+                    <p>Los teléfonos celulares han “invadido” nuestra vida cotidiana a tal punto que solo en la república
+                        Argentina
+                        hay más de 53 millones de unidades!!!, según las últimas estadísticas, lo que representa algo así como
+                        un 1
+                        y ½ unidad por habitante .... Una verdadera locura!!! ....
+                    </p>
+                </div>
+    
+                <div class="nota_3" style="float: left;">
+                    <h2><a href="./pdf/Microchip integra y simplifica gráficos en los MCUs PIC24F....pdf" target="blanck"
+                            style="color:white;">
+                            Microchip Simplifica Graficos en los MCUs PIC 24F..</a></h2>
+        
+                    <p>Microchip anuncia la familia de microcontroladores PIC24FJ256DA, formada por ocho componentes,
+                        que integra tres unidades de aceleración de gráficos y un
+                        controlador de Display, junto con hasta 96 KB de RAM.
+                    </p>
+                </div>
+            </div>
+         </div>
     </div>
-</footer>
+</div>
+<!--------------------------------------------------------------------------------------->
 
-
+<!---------------footer ----------->
+    <footer>
+        <div class="tipo__footer">
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="./img/Logo.png" alt="aca va al logo">
+              </div>
+              <div class="terms">
+                  <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
+                      Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
+                      Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
+                      como representante de la compañía en ese mercado.
+                    La compañía cuenta también con consultores externos,
+                     personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
+                     educacionales y compañías renombradas.</p>
+              </div>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Soluciones</h2>
+              <a href="">Ventas</a>
+              <a href="">Trabajos</a>
+              <a href="">Procesos</a>
+              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Redes Sociales</h2>
+              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <br>
+          <p>Copyright © 2021 - Todos los derechos reservados</p>
+          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
+      </div>
+  </footer>
+  <!---------------footer ----------->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/funcionesGrupo99.js"></script>
 </body>
 </html>
-
-<!--   https://pprof1-2021.github.io/g5-a3g5/index.html  -->
+<!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->

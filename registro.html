@@ -1,191 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Factura-Online</title>
-        <meta name="author" content="Grupo Aula 3">
-        <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
-        <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-        <link rel="stylesheet" href="./css/styles.css">
-       
-        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-        <link rel="shorcut icon" href="./img/logo.jpg">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Deposito (ISPCA3G5) Registro</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body>
+<!--------------------------------------------------------------------------------------->
+<header class="header">
+    <nav class="nav">
+        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
+        <h1 class="web">Gestion Deposito (ISPCA3G5)</h1>
+        <h1 class="mov">Gestion Deposito</h1> 
+        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a  href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a  href="producto.html" class="nav-menu-link nav-link">Productos</a></li> 
+            <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
+            <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
+            <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+        </ul>
+
+    </nav>
+    </header>
+<!--------------------------------------------------------------------------------------->
 
 
 
+<!--<main>-->
+    <div class="contenedor__registro">
+        <!----------------------------------------------------------------------------------------------------->
+        <!--formulario registro-->
+        <!----------------------------------------------------------------------------------------------------->
+        <form class="formulario__registro" id="form_registro">
+            <input type="hidden" id="1" name="tipo" value="1">
+            <div class="form_contacto__aviso">
+                <h2>Registrarse</h2>
+                <br>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Primer input pide nombres al usuario -------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_nombres">
+                <label for="nombres" class="form__label">Nombres</label><!--etiqueta Nombres-->
+                <div class="form__grupo__input" id="form_nombres"><!--div para mostrar alerta-->
+                    <input autofocus type="text" class="form__input" id="nombres" name="nombres" placeholder="Nombres">
+                </div><!-- fin del div nombres-->
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Segundo input pide apellidos al usuario ----------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_apellidos">
+                <label for="apellidos" class="form__label">Apellidos</label><!--etiqueta Apellidos-->
+                <div class="form__grupo__input" id="form_apellidos"><!--div para mostrar alerta-->
+                    <input type="text" class="form__input" id="apellidos" name="2" placeholder="Apellidos">
+                </div><!-- fin del div apellidos-->
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Tercer input pide dni al usuario ------------------------------------------>
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_dni">
+                <label for="dni" class="form__label">DNI</label><!--etiqueta DNI-->
+                <div class="form__grupo__input" id="form_dni">
+                    <input type="text" class="form__input" id="dni" name="dni" 
+                    placeholder="Documento de identidad sin puntos ni guiones">
+                </div><!-- fin del div dni-->
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Cuarto input pide fecha de nacimiento al usuario -------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_fn">
+                <label for="fecha" class="form__label">Fecha de nacimiento</label><!--etiqueta email-->
+                <div class="form__grupo__input" id="form_fn"><!--div para mostrar alerta-->
+                    <input type="date" class="form__input" id="fecha_n" name="fecha" value="">
+                </div><!-- fin del div fecha nacimiento-->
+             </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Quinto input pide Telefono ------------------------------------------------>
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_telefono">
+                <label for="telefono" class="form__label">Telefono</label><!--etiqueta email-->
+                <div class="form__grupo__input" id="form_telefono"><!--div para mostrar alerta-->
+                    <input type="tel" class="form__input" id="telefono" name="telefono" placeholder="Su telefono (opcional)">
+                </div><!-- fin del div telefono-->
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Sexto input pide E-mail al usuario ---------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_email">
+                <label for="email" class="form__label">Correo Electronico</label><!--etiqueta email-->
+                <div class="form__grupo__input" id="form_email"><!--div para mostrar alerta-->
+                    <input type="email" class="form__input" id="email" name="email" placeholder="lapampa@argentina.com">
+                    <i class="form_validacion_status far fa-times-circle"></i><!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">La direccion de correo esta erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Quinto input pide clave1 al usuario --------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_clave1">
+                <label for="clave1" class="form__label">Contraseña</label><!--etiqueta clave1-->
+                <div class="form__grupo__input" id="form_clave1"><!--div para mostrar alerta-->
+                    <input type="password" class="form__input" id="clave1" name="clave1" placeholder="Contraseña">
+                    <i class="form_validacion_status far fa-times-circle"></i>
+                    <!--icono de alerta-->
+                </div><!-- fin div para mostrar alerta-->
+                <p class="form__input-error">erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Sexto input pide clave2 al usuario ---------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo" id="grupo_clave2">
+                <label for="clave2" class="form__label">Repita Contraseña</label><!--etiqueta clave2-->
+                <div class="form__grupo__input" id="form_clave2"><!--div para mostrar alerta-->
+                    <input type="password" class="form__input" id="clave2" name="clave2" placeholder="Repita contraseña">
+                    <i class="form_validacion_status far fa-times-circle"></i> <!--icono de alerta-->
+                </div><!-- fin div -->
+                <p class="form__input-error">erronea</p>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Septimo boton de enviar del formulario------------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo form__grupo-btn-enviar">
+                <button type="submit" class="button_vs" id="form__mesaje-exito">Crear cuenta</button>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <!------------Octavo input boton de reset del formulario--------------------------------->
+            <!--------------------------------------------------------------------------------------->
+            <div class="form__grupo form__grupo-btn-enviar">
+                <input type="reset" class="button_vs" value="Reiniciar formulario">
+            </div>
+        </form>
+    </div><!-- fin div para mostrar formulario-->
+<!--</main>-->
 
-  <body>
-    <!-- Menú -->
-    <header class="encabezado">
-      <nav class="menu">
-              <div>
-                  <a href="index.html">
-                      <img class="logo" src="img/logo.png" width="124" height="105" alt="logo sin imagen">
-                  </a>
+<!----------------------------------------------------------------------------------------------------->
+
+
+    <!---------------footer ----------->
+    <footer>
+        <div class="footer__div">
+        <div class="tipo__footer">
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="./img/Logo.png" alt="aca va al logo">
               </div>
-              <ul>
-                  <li><a  href="index.html">Inicio</a></li>
-                  <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
-                  <li><a  href="contacto.html">Contacto</a></li> 
-                  <li><a  href="login.html">Login</a>
-                  <ul>
-                      <li><a  href="registro.html">Registrar</a>
-                  </ul>
-                  </li>
-              </ul>
-      </nav>
-  </header>
-           
-     <!-- Formulario  -->
- 
+              <div class="terms">
+                <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
+                    Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
+                    Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
+                    como representante de la compañía en ese mercado.
+                  La compañía cuenta también con consultores externos,
+                   personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
+                   educacionales y compañías renombradas.</p>
+              </div>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Soluciones</h2>
+              <a href="">Ventas</a>
+              <a href="">Trabajos</a>
+              <a href="">Procesos</a>
+              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Redes Sociales</h2>
+              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <br>
+          <p>Copyright © 2021 - Todos los derechos reservados</p>
+          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
 
-      <section class="row mt-4">
-        <div class="col-12">
-        <div class="card">
-        
-            <div class="card-header">
-            <h3 class="card-title"> Registros</h3>
-            </div>
-        <div class="card-body">
-                   
-                <form   onsubmit="return validarRegUsuario()" action="resultado.php" method="Post" class="row g-3 was-validated text-center text-white forma" id="registroDeUsuario" novalidate>
-        
-                  <div class="form-group col-md-3">
-                    <label for="uname" class="text-danger">Nombre</label>
-                    <input name="username" type="text" class="form-control" id="username" placeholder="Nombre" minlength="2"  aria-label="Nombre" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-        
-                  <div class="form-group col-md-3">
-                    <label for="uname" class="text-danger">Apellido</label>
-                    <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Apellido" minlength="2" aria-label="Apellido" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-        
-                  <div class="form-group col-md-5">
-                    <label for="pwd" class="text-danger">email</label>
-                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-
-                          
-                  <div class="form-group col-md-3">
-                    <label for="pwd" class="text-danger">contraseña</label>
-                    <input name="passwordid" type="password" class="form-control" id="passwordid" aria-label="Contrasenia" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-
-                  <div class="form-group col-md-3">
-                    <label for="pwd" class="text-danger">Cuil</label>
-                    <input name="cuil" type="text" class="form-control" id="cuil" placeholder="Ingrese su cuil/cuit" aria-label="Contrasenia" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-
-                  <div class="form-group col-md-3">
-                    <label for="uname" class="text-danger">Telefono</label>
-                    <input name="idtelefono" type="text" class="form-control" id="idtelefono" placeholder="Teléfono (Sin 0 ni 15)" aria-label="Teléfono" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-
-                  <div class="form-group col-md-2">
-                    <label for="uname" class="text-danger">Fecha</label>
-                    <input name="FechaNacim" type="date" class="form-control" id="FechaNacim" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Por favor rellene este campo.</div>
-                  </div>
-        <!--
-                  <div class="form-group col-md-3">
-                    <button class="btn btn-success col-sm-12  botonEnviar" type="submit" id="btnBorrar" onclick="borrarRegistroUsuarios();">Borrar</button>
-                  </div>
-
-                -->
-                  <div class="form-group col-md-3">
-                    <button class="btn btn-success col-sm-12 botonEnviar" type="submit" id="btnResumen">Guardar</button>
-                  </div>
-        
-                </form>
-                </div>
-            </div>
-        </div>
-        </section> 
-  
-     
-  <br>
-  <br>
-  <br>
-  <footer>
-    <div class="contenedor-all">
-        <div class="contenedor-footer">
-            <div class="columna1">
-                <h1>Dirección</h1>
-                <p>Buenos Aires 573</p>
-                <br>
-                <p>Cordoba, Villa Allende</p>
-                <br>
-                <p>Argentina, CP 5105</p>
-            </div>
-            <div class="columna2">
-                <div class="logo">
-                <i id="fontawesome1-1" class="fab fa-facebook"></i>
-                <h3>Sigenos en Faceboock</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-2" class="fab fa-whatsapp-square"></i>
-                <h3>Escribenos en whatsapp</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-3" class="fab fa-twitter-square"></i>
-                <h3>Sigenos en twitter</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-4" class="fab fa-instagram-square"></i>
-                <h3>Sigenos en instagram</h3>
-                </div>    
-            </div>
-            <div class="columna3">
-                <h1>Contacto</h1>
-                <p>Soporte: (0351) 4555777</p>
-                <br>
-                <p>info@sistemas.com.ar</p>
-            </div>   
-        </div>
-        
-        <div class="conteiner-footer2">
-            <div class="copyright">
-                <p>© 2021 Todo los Derechos Reservados</p>
-            </div> 
-            <div class="information">
-                <a href="informacion.html">Informacion Compañia  </a><a href="politica.html">| Politica de Privacidad |</a> <a href="terminos.html">Termino y Condiciones</a>
-            </div>              
+      </div>
     </div>
-</div>
-</footer>
-
-    <script src="js/funcionesGrupo99.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-          
-
-
-<!-- fin del footer-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-  
-  </body>
+  </footer>
+  <!---------------footer ----------->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/funcionesGrupo99.js"></script>
+  <script src="./js/validacion.js"></script>
+</body>
 </html>
+<!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->

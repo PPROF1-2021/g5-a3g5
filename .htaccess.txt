@@ -1,0 +1,5 @@
+﻿short_open_tag = On
+
+DirectoryIndex index.html
+
+Aplicación AddType / x-httpd-php .php .htm .html AddHandler x-httpd-php .php .htm .html

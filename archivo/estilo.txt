@@ -1,0 +1,585 @@
+* {
+    margin: 0;/*margen en 0*/
+    padding: 0;/*padding en 0*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    text-decoration: none;/*para que no se vea el texto*/
+    font-family: 'Roboto', sans-serif;/*fuente*/
+}
+
+body {
+    /*background-image: url(../img/Polinesia.jpg);imagen de fondo*/
+    background-image: url(../img/201-varejo.jpg);/*imagen de fondo*/
+    background-size: cover;/*la imagen de fonndo abarca todo/
+    background-repeat: no-repeat;/*no se repita la imagen de fondo*/
+    background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
+    background-position: center;/*imagen de fondo centrada*/
+    padding: 0px 0px 0px 0px;
+}
+
+main {
+    width: 100%;/*ancho del main*/
+    padding: 100px;/*espacio entre el main y el contenido*/
+    margin: auto;/*para que el main se vea centrado*/
+    margin-top: 100px;/*espacio entre el main y top*/
+
+}
+
+footer {
+    width: 100%;/*ancho del footer*/
+    background: rgba(0, 128, 255, 0.5);
+    color: white;/*color del texto*/
+    margin-left: 0px;/*espacio entre el footer y el contenido*/
+    text-align: left;/*alineacion del texto*/
+    position: relative;/*para que se vea centrado*/
+    cursor: pointer;/*para que se manito en el puntero del mouse*/
+    /*bottom: 0; /*aqui lo enviamos al fondo*/
+    margin-bottom: 0px;/*espacio entre el footer y el contenido*/
+}
+
+.contenedor__todo {
+    width: 100%;/*ancho del main*/
+    max-width: 1000px;/*ancho del main*/
+    margin: auto;/*margen en 0*/
+    position: relative;/*para que se vea el borde*/
+}
+
+.caja__trasera {
+    width: 100%; /*ancho de la caja trasera*/
+    padding: 10px 20px;/*padding de la caja trasera*/
+    display: flex;/*deja uno al lado del otro en forma horizontal*/
+    border-radius: 20px;/*borde redondeado*/
+    justify-content: center;/*centra el contenido*/
+    /*backdrop-filter: blur(10px);/*para darle un efecto de blur*/
+    background-color: rgba(0, 128, 255, 0.5);/*color de fondo caja trasera*/
+}
+
+.caja__trasera div { /*para centrar el contenido*/
+    margin: 100px 140px; /*margen de la caja trasera*/
+    color: white;/*color de texto*/
+    transition: all 0.5s;/*transicion de tamaño*/
+
+}
+
+.caja__trasera div p,
+.caja__trasera div button { 
+    margin-top: 30px; /*margen de la caja trasera*/
+}
+
+.caja__trasera h3 {
+    font-weight: 400;/*para que el texto sea mas fino */
+    font-size: 26px;/*tamaño del texto*/
+}
+
+.caja__trasera button,
+ .button_vs{
+    padding: 10px 40px; /*espacios de arriba y laterales*/
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 14px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea mas liviano*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+}
+
+.caja__trasera button:hover,
+.button_vs:hover {
+
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;/*texto sera azul al pasar el puntero*/
+}
+
+/*--------------------------------------------------------------*/
+/*Formularios Login*/
+/*--------------------------------------------------------------*/
+.contenedor__login {
+    display: flex;/*deja uno al lado del otro en forma horizontal*/
+    align-items: center;/*centra el contenido*/
+    width: 100%;/*ancho del contenedor*/
+    max-width: 380px;/*ancho maximo */
+    position: relative;
+    top: -185px;
+    left: 10px;
+    /*transition: left 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);/*transicion de tamaño*/
+}
+
+.contenedor__login form {
+    width: 100%;/*ancho del formulario*/
+    padding: 80px 20px;/*espacio entre el formulario y el contenido*/
+    background: white;/*cambiar a blanco*/
+    position: absolute;
+    border-radius: 20px;/*borde redondeado*/
+}
+
+.contenedor__login form h2 {
+    font-size: 30px;/*tamaño del texto*/
+    text-align: center;/*alineacion del texto*/
+    margin-bottom: 20px;/*espacio entre el texto y el contenido*/
+    color: #46a2fd;/*color del texto*/
+}
+
+.contenedor__login form input {
+    width: 100%;
+    margin-top: 20px;/*cambiar a 20px*/
+    padding: 10px;/*cambiar a 10px*/
+    border: none;/*para que no se vea el borde*/
+    background: #f2f2f2;/*color de fondo*/
+    font-size: 16px;/*tamaño del texto*/
+    outline: none;/*para que el borde generado por el navegador no se vea*/
+}
+
+.contenedor__login form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46a2fd;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario__login {
+    opacity: 1;/*para que se vea el formulario*/
+    display: block;/*se ve el bloque*/
+}
+
+/*------------------------------------------------------*/
+/*Formularios Registro*/
+/*------------------------------------------------------*/
+.contenedor__registro {
+    display: flex;/*deja uno al lado del otro en forma horizontal*/
+    align-items: center;/*centra el contenido*/
+    width: 100%;/*ancho del contenedor*/
+    max-width: 800px;/*ancho maximo */
+    /*position: relative;*/
+    top: 300px;/*posicion del contenedor con respecto a la parte superior*/
+    left: 200px;/*posicion del contenedor con respecto a la parte izquierda*/
+    background-color: white;/*color de fondo*/
+}
+
+.contenedor__registro form {
+    width: 75%; /*ancho del contenedor*/
+    padding: 20px 20px;/*Margenes de altura y laterales del formulario interiores*/
+    /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
+    background-color: rgba(0, 128, 255, 0.5);
+    top: 60%;/*centra el contenido*/
+    left: 50%;/*centra el contenido*/
+    position: absolute;
+    transform: translate(-50%, -50%);/*centra el contenido*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    border-radius: 20px; /*borde redondeado*/
+}
+
+.formulario__registro {
+    display: grid;/*para que se vea el formulario en grilla*/
+    grid-template-columns: 1fr 1fr;/*dos columnas del formulario*/
+    grid-gap: 20px;/*separacion entre columnas*/
+}
+
+.form__label {
+    display: block;/*para que se vea el label*/
+    font-weight: 600;/*para que el texto sea del tipo bold*/
+    padding: 10px;/*para que el texto tenga margen del borde*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    font-size: 20px;/*para que el texto sea mas liviano*/
+    color: black;/*para que el texto sea mas liviano*/
+}
+
+.form__grupo__input {
+    position: relative;/*posiciona el campo delinput*/
+}
+
+.form__input {
+    width: 100%;
+    /*ancho del input es completo de la columna*/
+    background: gainsboro;
+    border: 3px solid transparent;
+    /*borde del input es de 3px pero ahora solo tranaparente */
+    border-radius: 3px;
+    /*borde redondeado*/
+    height: 45px;
+    /*altura del input*/
+    line-height: 45px;
+    /*Texto de altura de 45px*/
+    padding: 0 40px 0 10px;
+    /*margenes del input*/
+    transition: .3s ease all;
+    /*transicion de tamaño*/
+    font-size: 15px;
+    /*para que el texto sea mas liviano*/
+}
+
+textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    outline: none;/*para que no se vea el recuadro en el input texto*/
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.form__input:focus {
+    border: 3px solid #46a2fd;
+    /*borde del input es de 3px ahora es azul*/
+    outline: none;
+    /*para que el outline del navegador no se vea*/
+    box-shadow: 0 0 5px rgba(163, 163, 163, 0.4);
+    /*sombra del input*/
+}
+
+.form__input-error {
+    font-size: 12px;/*tamaño del texto del mesaje de error */
+    margin-bottom: 0px;/*margen inferior del texto del error*/
+    display: none;
+    color: red;
+}
+
+.form__input-error-activo {
+    display: block;/*para que se vea el mensaje de error*/
+}
+
+.form_validacion_status {
+    /*para que se vea el icono de validacion*/
+    position: absolute;/*posiciona el icono de validacion*/
+    right: 10px;/*margen derecho del icono de validacion*/
+    bottom: 15px;/*margen inferior del icono de validacion*/
+    z-index: 100;/*posicion del icono de validacion*/
+    font-size: 16px;/*tamaño del icono de validacion*/
+    opacity: 0;/*opacidad del icono de validacion*/
+}
+
+textarea{/*para que se vea el textarea*/
+    resize: vertical;/*para que se vea vertical el textarea*/
+    max-height: 200px;/*Maxima altura del textarea*/
+    min-height: 100px;/*Minima altura del textarea*/
+    
+}
+
+.textarea_1{
+    border: 3px solid transparent;
+
+}
+
+.form__input:focus,
+ .textarea_1:focus{
+    border: 3px solid #46a2fd;
+    /*borde del input es de 3px ahora es azul*/
+    outline: none;
+    /*para que el outline del navegador no se vea*/
+    box-shadow: 0 0 5px rgba(163, 163, 163, 0.4);
+    /*sombra del input*/
+}
+
+
+.form__input-error {
+    font-size: 12px;/*tamaño del texto del mesaje de error */
+    margin-bottom: 0px;/*margen inferior del texto del error*/
+    display: none;/*para que no se vea el mensaje de error*/
+    color: red;
+}
+
+.form__input-error-activo {
+    display: block; /*para que se vea el mensaje de error*/
+}
+
+.form_validacion_status {
+    /*para que se vea el icono de validacion*/
+    position: absolute;/*posiciona el icono de validacion*/
+    right: 10px;/*margen derecho del icono de validacion*/
+    bottom: 15px;/*margen inferior del icono de validacion*/
+    z-index: 100;/*orden de capa del icono de validacion*/
+    font-size: 16px;/*tamaño del icono de validacion*/
+    opacity: 0;/*opacidad del icono de validacion*/
+}
+
+.form__grupo-btn-enviar {
+    display: flex;/*para que se vea el boton de enviar*/
+    flex-direction: column;/*para que el boton de centre en la columna*/
+    justify-content: center;/*para que el boton de centre en la columna*/
+    align-items: center;/*para que el boton de centre en la columna*/
+}
+
+.form__btn-enviar {
+    height: 45px;/*altura del boton de enviar*/
+    line-height: 45px;/*altura del texto del boton de enviar*/
+    width: 75%;/*ancho del boton de enviar*/
+    background: #46a2fd;/*color de fondo del boton de enviar*/
+    color: white;/*color del texto del boton de enviar*/
+    font-size: 20px;/*tamaño del texto del boton de enviar*/
+}
+
+.form__btn-reset {
+    height: 45px;
+    /*altura del boton de enviar*/
+    line-height: 45px;
+    /*altura del texto del boton de enviar*/
+    width: 50%;
+    /*ancho del boton de enviar*/
+
+    background: #46a2fd;
+    /*color de fondo del boton de enviar*/
+    /*color: white;/*color del texto del boton de reset*/
+    /*font-weight: bold;/*para que el texto sea del tipo bold*/
+    font-size: 15px;
+    /*tamaño del texto del boton de enviar*/
+    position: relative;
+
+    padding: 10px 40px;
+    /*para que el texto sea mas liviano*/
+    border: 2px solid;
+    /*para darle un borde al boton*/
+    /*background: transparent;/*para que el boton sea transparente*/
+    /*font-size: 14px;/*para que el texto sea mas liviano*/
+    font-weight: 600;
+    /*para que el texto sea mas liviano*/
+    cursor: pointer;
+    /*para que el cursor sea una mano*/
+    color: white;
+    /*para que el texto sea mas liviano*/
+    outline: none;
+    /*para que el outline no se vea*/
+    transition: all 0.4s;
+    /*transicion de tamaño*/
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.form__btn-reset:hover {
+    background: white;
+    /*color de fondo del boton de enviar*/
+    color: #46a2fd;
+    /*color del texto del boton de enviar*/
+    border: 2px solid #46a2fd;
+    /*color del borde del boton de enviar*/
+    transition: all 0.4s;
+    /*transicion de tamaño*/
+}
+
+
+/*------------------------------------------------------*/
+/*Formularios contacto*/
+/*------------------------------------------------------*/
+.contenedor__contacto {
+    display: flex; /*deja uno al lado del otro en forma horizontal*/
+    align-items: center;/*centra el contenido*/
+    width: 100%;/*ancho del contenedor*/
+    max-width: 800px;/*ancho maximo */
+    /*position: relative;*/
+    top: 600px;
+    left: 200px;
+    background-color: white;
+
+}
+
+.contenedor__contacto form {
+    width: 75%;/*ancho del contenedor*/
+    padding: 10px 20px;/*Margenes de altura y laterales del formulario interiores*/
+    /*background: rgba(240, 172, 172, 0.3); /*cambiar a blanco*/
+    background-color: rgba(0, 128, 255, 0.5);
+    top: 60%;/*centra el contenido*/
+    left: 50%;/*centra el contenido*/
+    position: absolute;
+    transform: translate(-50%, -50%);/*centra el contenido*/
+    box-sizing: border-box;/*para que no se vea el borde*/
+    border-radius: 20px;/*borde redondeado*/
+}
+
+.form__contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+/*------------------------------------------------------*/
+/* footer estilos*/
+/*------------------------------------------------------*/
+
+.tipo__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 300px;
+
+
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.box__footer .logo img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: aqua;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: grey;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    color: #46a2fd;
+}
+
+.box__footer a .fab {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para tablet 768px                                  */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 150px;
+    }
+    .contenedor__todo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 900px;
+        background-color: transparent;
+        top: 1px;
+        left: 0px;
+    }
+    .caja__trasera {
+        display: none;
+    }
+    .contenedor__login {
+        width: 400px;
+        height: 400px;
+        left: 1px;
+    }
+      .contenedor__login form {
+        width: 100%;/*ancho del formulario*/
+        top:  50px;
+        padding: 30px 10px;/*espacio entre el formulario y el contenido*/
+        background: white;/*cambiar a blanco*/
+        position: relative;
+        border-radius: 20px;/*borde redondeado*/
+    }
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    main {
+        margin-top: 150px;
+    }
+    /*------------------------------------------------------*/
+    /*Formularios login*/
+    /*------------------------------------------------------*/
+    .contenedor__todo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 900px;
+        background-color: transparent;
+        top: 1px;
+        left: 0px;
+    }
+    .caja__trasera {
+        display: none;
+    }
+    .contenedor__login {
+        width: 300px;
+        height: 300px;
+        left: 1px;
+    }
+    /*------------------------------------------------------*/
+    /*Formularios registro*/
+    /*------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*------------------------------------------------------*/
+    /*Formularios contacto*/
+    /*------------------------------------------------------*/
+
+
+
+
+
+
+
+}
+
+
+
+
+<!--
+    <script>
+        $(".hide").on('click', function() {
+          $("nav ul").toggle('slow');
+        })
+      </script>-->

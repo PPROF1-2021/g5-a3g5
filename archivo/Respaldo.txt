@@ -1,0 +1,22 @@
+        <!--------------------------------------------------------------------------------------->
+        <div class="Novedades">
+            <h1>Novedades</h1><br>
+            <hr>
+            <br>
+            <img src="./img/Banner 1.png" alt=""><br>
+            <img src="./img/Banner 3.png" alt=""><br>
+            <img src="./img/Banner 2.png" alt=""><br>
+            <img src="./img/Banner 4.png" alt=""><br>
+
+        </div>
+        <!--------------------------------------------------------------------------------------->
+        <div class="franquicias">
+            <h2>Franquicias</h2><br>
+
+            <img src="./img/Franquicia_1.png" alt=""><br>
+            <img src="./img/Franquicia_2.png" alt=""><br>
+            <img src="./img/Franquicia_3.png" alt=""><br>
+            <img src="./img/Franquicia_4.png" alt=""><br>
+            <img src="./img/Franquicia_5.png" alt=""><br>
+        </div>
+        <!--------------------------------------------------------------------------------------->

@@ -1,121 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Factura-Online</title>
-        <meta name="author" content="Grupo Aula 3">
-        <meta name="description" content="sistema de facturacion vinculada a tu sitio web">
-        <meta name="keywords" content="facturas,deposito,control,remito,almacen,presupuesto">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <script src="https://kit.fontawesome.com/438f346520.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-        <link rel="shorcut icon" href="./img/logo.jpg">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Deposito (ISPCA3G5) Login</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-    <header class="encabezado">
-        <nav class="menu">
-                <div>
-                    <a href="index.html">
-                        <img class="logo" src="img/logo.png" width="124" height="105" alt="logo sin imagen">
-                    </a>
-                </div>
-            
-                <ul>
-                    <li><a  href="index.html">Inicio</a></li>
-                    <li><a  href="http://hfdistribuidora.com/" target="blank">Tienda</a></li>
-                    <li><a  href="contacto.html">Contacto</a></li> 
-                    <li><a  href="registro.html">Registrar</a>
-                    <ul>
-                        <li><a  href="login.html">Login</a>
-                    </ul>
-                    </li>
-                </ul>
-        </nav>
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body>
+<!--------------------------------------------------------------------------------------->
+<header class="header">
+    <nav class="nav">
+        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
+        <h1 class="web">Gestion Deposito (ISPCA3G5)</h1>
+        <h1 class="mov">Gestion Deposito</h1> 
+        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a  href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a  href="producto.html" class="nav-menu-link nav-link">Productos</a></li> 
+            <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
+            <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
+            <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+        </ul>
+
+    </nav>
     </header>
+<!--------------------------------------------------------------------------------------->
 
-<main>
-    <form class="formulario" action="validar.php" method="Post">
- 
-    <h1>Login</h1>
-    <div class="contendeor">
 
-    <div class="contenedor1">
-    <i class="fas fa-user-alt icono"></i>  
-    <input type="text" placeholder="Ingrese el Usuario" class="cuadrado" size="30" name="usuario2" minlength="2" onfocus="foco(this)" onblur="nofoco(this)" required>   
-    </div>
 
-    <div class="contenedor1">
-    <i class="fas fa-key icono"></i>
-    <input type="password" placeholder="" class="cuadrado" size="30" name="password2" minlength="2" onfocus="foco(this)" onblur="nofoco(this)" required>    
-    </div>
 
-    <input type="submit" value="login" class="button">    
-    <p>si no está registrado haga clic en el botón <a class="link" href="registro.html">
-    <span>Registrarse</span></a></p>
-    </div>
 
-    </form>
-</main>
-<br>
-<br>
-<br>
-<br>
-<footer>
-    <div class="contenedor-all">
-        <div class="contenedor-footer">
-            <div class="columna1">
-                <h1>Dirección</h1>
-                <p>Buenos Aires 573</p>
 
-                <br>
-                <p>Cordoba, Villa Allende</p>
-                <br>
-                <p>Argentina, CP 5105</p>
+
+
+
+
+
+    <!--------------------------------------------------------------------------------------->
+    <main>
+        <!--Contenido principal-->
+        <div class="contenedor__todo">
+            <!--Contenedor de todo el contenido-->
+            <div class="caja__trasera">
+                <!--------------------------------------------------------------------------->
+                <div class="caja__trasera_login">
+                    <!--esta clase esta en estilos.css-->
+                    <button id="btn__iniciar-sesion"></button>
+                </div>
+                <!--------------------------------------------------------------------------->
+                <div class="caja__trasera_registro">
+                    <h3>¿Aun no tiene una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesion</p>
+                    <button class="button_vs" onclick="location.href='registro.html'">Registrarse</button>
+                </div>
+                <!--------------------------------------------------------------------------->
             </div>
-            <div class="columna2">
-                <div class="logo">
-                <i id="fontawesome1-1" class="fab fa-facebook"></i>
-                <h3>Sigenos en Faceboock</h3>
-                </div>
 
-                <div class="logo">
-                <i id="fontawesome1-2" class="fab fa-whatsapp-square"></i>
-                <h3>Escribenos en whatsapp</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-3" class="fab fa-twitter-square"></i>
-                <h3>Sigenos en twitter</h3>
-                </div>
-
-                <div class="logo">
-                <i id="fontawesome1-4" class="fab fa-instagram-square"></i>
-                <h3>Sigenos en instagram</h3>
-                </div>    
+            <!--------------------------------------------------------------------------->
+            <!--formulario iniciar sesion-->
+            <!--------------------------------------------------------------------------->
+            <div class="contenedor__login">
+                <form action="" class="formulario__login"id="form__login">
+                    <!--formulario iniciar sesion-->
+                    <!--<h2>Iniciar sesion</h2>-->
+                    <div class="form_contacto__aviso">
+                        <h2>Iniciar sesion</h2>
+                    </div>
+                    <!--Titulo formulario iniciar sesion-->
+                    <input type="hidden" id="2" name="tipo" value="2">
+                    <input autofocus type="email" class="form__input" placeholder="Correo electronico" id="email">                    
+                    <input type="password" class="form__input " placeholder="Contraseña" id="clave">
+                    <button class="button_vs_r">Iniciar sesion</button>
+                </form>
+                <!--fin formulario iniciar sesion-->
             </div>
-            <div class="columna3">
-                <h1>Contacto</h1>
-                <p>Soporte: (0351) 4555777</p>
-                <br>
-                <p>info@sistemas.com.ar</p>
-            </div>   
+            <!--------------------------------------------------------------------------->
         </div>
-        
-        <div class="conteiner-footer2">
-            <div class="copyright">
-                <p>© 2021 Todo los Derechos Reservados</p>
-            </div> 
-            <div class="information">
-                <a href="informacion.html">Informacion Compañia  </a><a href="politica.html">| Politica de Privacidad |</a> <a href="terminos.html">Termino y Condiciones</a>
-            </div>              
-    </div>
-</div>
-</footer>
-<script src="js/funcionesGrupo99.js"></script>
+    </main>
+    <!--Fin de contenido principal-->
+    <!--------------------------------------------------------------------------->
+
+
+
+
+    <!---------------footer ----------->
+    <footer>
+        <div class="tipo__footer">
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="./img/Logo.png" alt="aca va al logo">
+              </div>
+              <div class="terms">
+                <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
+                    Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
+                    Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
+                    como representante de la compañía en ese mercado.
+                  La compañía cuenta también con consultores externos,
+                   personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
+                   educacionales y compañías renombradas.</p>
+              </div>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Soluciones</h2>
+              <a href="">Ventas</a>
+              <a href="">Trabajos</a>
+              <a href="">Procesos</a>
+              <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+          <div class="box__footer">
+              <h2>Redes Sociales</h2>
+              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+              <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+              <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+          </div>
+          <!--------------------------------------------------------------------------------------->
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <br>
+          <p>Copyright © 2021 - Todos los derechos reservados</p>
+          <b>Gestion deposito Cordoba (ISPCA3G5)</b>
+
+      </div>
+  </footer>
+  <!---------------footer ----------->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/funcionesGrupo99.js"></script>
+  <script src="./js/validacion.js"></script>
 </body>
 </html>
-
-<!--   https://pprof1-2021.github.io/g5-a3g5/index.html  -->
+<!--https://mariogonzalezispc.github.io/g5-a3g5_2/-->
