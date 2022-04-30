@@ -238,100 +238,98 @@ font-weight: 500;
     float: left;
 }
 
-/*.contiene1 .contiene_alta .marca_input{
+.contiene1 .contiene_alta .marca_input{/*div*/
     background-color: cyan;
     display: inline-flex;
-    width: 190px;
-    height: 30px;
-    position: relative;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 580px;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    place-content: center;
+    border: 1px solid black
 }
-.contiene1 .marca{
-    background-color: white;
-    display: inline-flex;
-    width: 98px;
-    height: 20px;
-    position: relative;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: left;
-}
-.contiene1 .label_marca{
+
+.contiene1 .label_marca{/*label*/
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 80px;
+    width: 60px;
     height: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
 }
-.contiene1 .contiene_alta .origen_input{
+
+.contiene1 .marca{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .origen_input{/*div*/
     background-color: yellow;
     display: inline-flex;
-    width: 190px;
-    height: 30px;
-    position: relative;
+    width: 210px;
+    height: 40px;
+    top: 5px;
+    left: 795px;
+    position: absolute;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    place-content: center;
+    border: 1px solid black
 }
-.contiene1 .origen{
-    background-color: white;
-    display: inline-flex;
-    width: 98px;
-    height: 20px;
-    position: relative;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: left;
-}
-.contiene1 .label_origen{
+
+.contiene1 .label_origen{/*label*/
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 80px;
+    width: 60px;
     height: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
 }
-.contiene1 .contiene_alta .descripcion_input{
+
+.contiene1 .origen{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_alta .descripcion_input{/*div*/
     background-color: white;
     display: block;
     width: 855px;
-    height: 30px;
+    height: 40px;
     position: absolute;
+    top: 50px;
     align-items: center;
-    margin-top: 40px;
-    margin-right: 5px;
+    /*margin-top: 40px;
+    margin-right: 5px;*/
     justify-content: right;
+    place-content: center;
+    border: 1px solid black
 
 }
-.contiene1 .descripcion{
-    background-color: white;
-    display: inline-flex;
-    width: 743px;
-    height: 20px;
-    position: absolute;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    justify-content: left;
-}
-.contiene1 .label_descripcion{
+.contiene1 .label_descripcion{/*label*/
     background-color: grey;
     
     display: inline-flex;
@@ -343,7 +341,20 @@ font-weight: 500;
     margin-left: 5px;
     justify-content: left;
 }
-.contiene1 .contiene_alta .prevta_input{
+
+.contiene1 .descripcion{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 743px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: left;
+}
+
+/*.contiene1 .contiene_alta .prevta_input{
     background-color: yellowgreen;
     display: block;
     width: 190px;
