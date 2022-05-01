@@ -104,7 +104,7 @@ Semana del 12/10:
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/mapa.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/Gaston/img/mapa.png">
   </a>
 </p>
 
