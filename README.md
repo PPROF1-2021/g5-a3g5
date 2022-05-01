@@ -1,5 +1,5 @@
-# Gestion Deposito (ISPCA3G5)
-<h1 align="center">Perfil GitHub</h1>
+
+<h1 align="center">Gestion Deposito (ISPCA3G5)</h1>
 <div align="center">
 
 
@@ -19,7 +19,7 @@
 
 ---
 
-<a href="url"><img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/logo.png" align="left" height="300"></a>
+<a href="url"><img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/Logo.png" align="left" height="300"></a>
 
 
 # Factura Online
