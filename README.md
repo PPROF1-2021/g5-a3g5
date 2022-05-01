@@ -74,7 +74,22 @@ El sistema de facturación está apuntado a toda persona que tiene comercio onli
 
 
 --- 
+<br>
 
+#### 2.1         Perspectiva del producto
+--- 
+El sistema será un producto diseñado para trabajar en entornos WEB, lo que facilita la manera de trabajar, manejando la facturación y el inventario del mismo, manejo de proveedores. también como punto importante tendrá un control de stock y estará vinculado con la tienda virtual realizando los cambios correspondientes.
+
+
+
+--- 
+<br>
+
+#### 2.2         Funcionalidad del producto (GESTIÓN DE PROCESOS)
+--- 
+<a href="url"><img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/proceso.png" align="left" height="300"></a>
+
+--- 
 ## Contribuyendo
 
 Damos la bienvenida a todos los colaboradores 💙
@@ -104,7 +119,7 @@ Semana del 12/10:
 
 <p align="center">
   <a>
-    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/Gaston/img/mapa.png">
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/mapa.png">
   </a>
 </p>
 
