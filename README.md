@@ -93,9 +93,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
   </a>
 </p>
 
-<br><br><br><br>
-<br><br><br><br>
-<br><br><br><br>
+<br>
 --- 
 ## Contribuyendo
 
