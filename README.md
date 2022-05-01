@@ -90,6 +90,7 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 <a href="url"><img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/proceso.png" align="left" height="300"></a>
 
 --- 
+<br>
 ## Contribuyendo
 
 Damos la bienvenida a todos los colaboradores 💙
