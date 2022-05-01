@@ -34,11 +34,7 @@
 ---
 **Perspectiva del producto:**
 <br><br>
-Este sistema fue creado con el objetivo de brindar una solución tecnológica para el área de gestión
-administrativa de tu empresa o emprendimiento de manera virtual utilizando el woocommerce, en donde el
-uso de software o tablas de Excel que no son funcionales a la hora de facturar. Bajo esta problemática se creó
-un sistema online, para poder ingresar desde cualquier lugar, adaptable a la tienda virtual, al sistematizar los
-datos se logrará un trabajo más eficiente.
+El sistema será un producto diseñado para trabajar en entornos WEB, lo que facilita la manera de trabajar, manejando la facturación y el inventario del mismo, manejo de proveedores. también como punto importante tendrá un control de stock y estará vinculado con la tienda virtual realizando los cambios correspondientes.
 
 <br>
 <br>
@@ -53,33 +49,30 @@ datos se logrará un trabajo más eficiente.
 
 #### 1     Introducción
 ---
+
 El documento es una Especificación de Requisitos Software (ERS) para el Sistema de información para la gestión de procesos y control de inventarios. Esta especificación se ha estructurado basándose en las directrices dadas por el estándar IEEE Práctica Recomendada para Especificaciones de Requisitos Software ANSI/IEEE 830, 1998.
 <br>
 
 #### 1.1         Propósito
 ---
-Este sistema fue creado con el objetivo de brindar una solución tecnológica para el
-área de gestión administrativa de tu empresa o emprendimiento de manera
-virtual utilizando el woocommerce, en donde el uso de software o tablas de Excel
-que no son funcionales a la hora de facturar.
-Bajo esta problemática se creó un sistema online, para poder ingresar desde
-cualquier lugar, adaptable a la tienda virtual, al sistematizar los datos se logrará
-un trabajo más eficiente.
+
+Este sistema fue creado con el objetivo de brindar una solución tecnológica para el área de gestión administrativa de tu empresa o emprendimiento de manera virtual utilizando tu tienda virtual, en donde el uso de software o tablas de Excel que no son funcionales a la hora de facturar.
+Bajo esta problemática se creó un sistema online, para poder ingresar desde cualquier lugar, adaptable a la tienda virtual, al sistematizar los datos se logrará un trabajo más eficiente.
+
 <br>
 
 #### 1.2         Alcance
 --- 
-El sistema de facturación está apuntado a toda persona que tiene comercio online, como woocommerce, alguna tienda virtual desde la plantillas de wordpress, sincronizando la base de datos existente del mismo woocommerce con el sistema de G.P, manteniendo así todo el historial de ventas, presupuestos, nota de crédito o la cartera de clientes.
 
-
+El sistema de facturación está apuntado a toda persona que tiene comercio online, como woocommerce o tienda online en Facebook e Instagram, sincronizando la base de datos con el sistema de G.D, manteniendo así todo el historial de ventas, presupuestos, nota de crédito o la cartera de clientes.
 
 --- 
 <br>
 
 #### 2.1         Perspectiva del producto
 --- 
-El sistema será un producto diseñado para trabajar en entornos WEB, lo que facilita la manera de trabajar, manejando la facturación y el inventario del mismo, manejo de proveedores. también como punto importante tendrá un control de stock y estará vinculado con la tienda virtual realizando los cambios correspondientes.
 
+El sistema será un producto diseñado para trabajar en entornos WEB, lo que facilita la manera de trabajar, manejando la facturación y el inventario del mismo, manejo de proveedores. también como punto importante tendrá un control de stock y estará vinculado con la tienda virtual realizando los cambios correspondientes.
 
 
 --- 
