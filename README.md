@@ -87,8 +87,11 @@ El sistema será un producto diseñado para trabajar en entornos WEB, lo que fac
 
 #### 2.2         Funcionalidad del producto (GESTIÓN DE PROCESOS)
 --- 
-<a href="url"><img src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/proceso.png" align="left" height="300"></a>
-
+<p align="center">
+  <a>
+    <img alt="Edit on CodeSandbox" src="https://github.com/PPROF1-2021/g5-a3g5/blob/master/img/proceso.png">
+  </a>
+</p>
 
 <br><br><br><br>
 <br><br><br><br>
