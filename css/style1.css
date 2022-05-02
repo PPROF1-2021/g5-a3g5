@@ -22,20 +22,36 @@ font-weight: 500;
 
 }
 .seccion{padding:4rem 0;position:relative;}
-#sostenibilidad{background-color:#237e6f;color:#fff;}
+#sostenibilidad
+{
+    background-color:#237e6f;
+    background: rgba(0, 128, 255, 0.5);
+    color:#fff;
+}
 .container,
 .container-fluid{padding-left:2.5rem;padding-right:2.5rem;}
 .cuerpo-acordion
 {
     padding:2.5rem 2.3rem;
-    background-color:#176657;
+    /*background-color:#176657;*/
+    background: rgba(0, 128, 255);
     display:none;
 }
 .cuerpo-acordion p{font-size:1.28rem;padding-top:1.7rem;padding-bottom:1.7rem;margin:0;border-bottom:.15rem solid #fff;line-height: 1.2;}
 .cuerpo-acordion p big{font-size:2.3rem;font-weight:800;}
 .cuerpo-acordion p:first-child{padding-top:0;}
 .cuerpo-acordion p:last-child{margin-bottom:0;padding-bottom:0;border:none;}
-.acordion .titulo-acordion{font-size:1.5rem;padding-right:3rem;padding:2.3rem 5rem 1.9rem 2rem;line-height:1;font-weight:700;position:relative;width:64%;}
+.acordion .titulo-acordion
+{
+    font-size:1.5rem;
+    padding-right:3rem;
+    padding:2.3rem 5rem 1.9rem 2rem;
+    line-height:1;
+    font-weight:700;
+    position:relative;
+    width:64%;
+    color: rgba(0, 128, 255);
+}
 .acordion .titulo-acordion i{position:absolute;right:2rem;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
 .acordion{color:#197868;background-color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:2rem;cursor:pointer;}
 .acordion:first-child{margin-top:0rem;}
