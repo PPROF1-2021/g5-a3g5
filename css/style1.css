@@ -69,10 +69,22 @@ font-weight: 500;
 .contenedor-imagen .borde-conetendor-imagen{padding-top:0 !important;height:100%;left:0;overflow:hidden;top:0;width:100%;position:absolute;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;}
 .contenedor-imagen .borde-conetendor-imagen img{position:absolute;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease;width:77rem;left:-17rem;height:100%;-o-object-position:center;object-position:center;-o-object-fit:cover;object-fit:cover;}
 .container,
-.container-fluid{padding-left:2.5rem;padding-right:2.5rem;}
-.row{margin-right:-2.5rem;margin-left:-2.5rem;}
+.container-fluid
+{
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+}
+.row
+{
+    margin-right:-2.5rem;
+    margin-left:-2.5rem;
+}
 [class*="col-"],
-.col{padding-left:2.5rem;padding-right:2.5rem;}
+.col
+{
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+}
 
 
 
