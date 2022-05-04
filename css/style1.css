@@ -364,43 +364,41 @@ font-weight: 500;
         position: absolute;
 }        
 .contiene1 .contiene_alta .prevta_input{
-    background-color: yellowgreen;
-    display: block;
+    background-color: cornflowerblue;
+    display: inline-flex;
     width: 210px;
     height: 40px;
     position: absolute;
     align-items: center;
     /* margin-top: 70px;
-    margin-right: 5px; */
+    margin-left: 5px; */
     top: 50px;
     left: 365px;
-    justify-content: center;  
+    justify-content: center;
+}
+.contiene1 .label_prevta{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
 }
 .contiene1 .prevta{
     background-color: white;
     display: inline-flex;
-    width: 98px;
+    width: 140px;
     height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
-}
-.contiene1 .label_prevta{
-    background-color: grey;
-    background-color: transparent; 
-    display: inline-flex;
-    width: 80px;
-    height: 20px;
-    position: relative;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     border: 1px solid black;
-    justify-content: left;
-    font-size: 10px;
+    float: left;
 }
+
 .contiene1 .contiene_alta .precto_input{
     background-color: magenta;
     display: inline-flex;
@@ -418,27 +416,23 @@ font-weight: 500;
     background-color: grey;
     background-color: transparent;
     display: inline-flex;
-    width: 80px;
+    width: 60px;
     height: 20px;
-    /*top: 5px;*/
     border: 1px solid black;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
-    font-size: 10px;
 }
 .contiene1 .precto{
     background-color: white;
     display: inline-flex;
-    width: 98px;
+    width: 140px;
     height: 20px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 5px;
     justify-content: left;
+    border: 1px solid black;
+    float: left;
 }
 .contiene1 .contiene_alta .iva_input{
     background-color: rgb(205, 50, 84);
@@ -500,27 +494,22 @@ font-weight: 500;
     display: inline-flex;
     width: 80px;
     height: 20px;
-    /*top: 5px;*/
-    margin-top: 5px;
-    margin-left: 5px;
     border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
-    font-size: 14px;
 }
 
 .contiene1 .gancia{/*input*/
     background-color: white;
     display: inline-flex;
-    width: 98px;
+    width: 120px;
     height: 20px;
     position: relative;
     align-items: center;
     justify-content: left;
     border: 1px solid black;
-    margin-top: 5px;
-    margin-left: 5px
+    float: left;
 }
 .contiene1 .contiene_alta .proveedor_input{/*este es el div de*/
     background-color: cornflowerblue;
