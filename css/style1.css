@@ -165,7 +165,7 @@ font-weight: 500;
 }
 
 .contiene1 .contiene_alta .rubro_input{/*este es el div de*/
-    background-color: coral;
+    /*background-color: coral;*/
     display: inline-flex;
     width: 210px;
     height: 40px;
@@ -179,19 +179,19 @@ font-weight: 500;
 }
 
 .contiene1 .label_rubro{/*label*/
-    background-color: grey;
+    /*background-color: grey;*/
     background-color: transparent;
     display: inline-flex;
     width: 60px;
     height: 20px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: relative;
     align-items: center;
     justify-content: left;
 }
 
 .contiene1 .rubro{/*este es el input*/
-    background-color: white;
+    /*background-color: white;*/
     display: inline-flex;
     width: 140px;
     height: 20px;
@@ -374,14 +374,14 @@ font-weight: 500;
     margin-right: 5px; */
     top: 50px;
     left: 365px;
-    justify-content: right;  
+    justify-content: center;  
 }
 .contiene1 .prevta{
     background-color: white;
     display: inline-flex;
     width: 98px;
     height: 20px;
-    position: absolute;
+    position: relative;
     align-items: center;
     margin-top: 5px;
     margin-left: 5px;
@@ -389,7 +389,7 @@ font-weight: 500;
 }
 .contiene1 .label_prevta{
     background-color: grey;
-    /* background-color: transparent; */
+    background-color: transparent; 
     display: inline-flex;
     width: 80px;
     height: 20px;
@@ -397,6 +397,7 @@ font-weight: 500;
     align-items: center;
     margin-top: 5px;
     margin-left: 5px;
+    border: 1px solid black;
     justify-content: left;
     font-size: 10px;
 }
@@ -419,6 +420,8 @@ font-weight: 500;
     display: inline-flex;
     width: 80px;
     height: 20px;
+    /*top: 5px;*/
+    border: 1px solid black;
     position: relative;
     align-items: center;
     margin-top: 5px;
@@ -437,8 +440,131 @@ font-weight: 500;
     margin-left: 5px;
     justify-content: left;
 }
+.contiene1 .contiene_alta .iva_input{
+    background-color: rgb(205, 50, 84);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-right: 5px; */
+    top: 95px;
+    left: 580px;
+    justify-content: center;
+    border: 1px solid black;
+}
+.contiene1 .iva{
+    background-color: white;
+    display: inline-flex;
+    width: 115px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    justify-content: center
+    /*border: 1px solid black;*/
+}
+.contiene1 .label_iva{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    position: relative;
+    align-items: right;
+    /*margin-top: 1px;
+    margin-left: 1px;*/
+    /*border: 1px solid black;*/
+    justify-content: left;
+    font-size: 15px;
+}
+.contiene1 .contiene_alta .gancia_input{/*div*/
+    background-color: yellow;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 365px;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black
+}
 
+.contiene1 .label_gancia{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    /*top: 5px;*/
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+}
 
+.contiene1 .gancia{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 98px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: 5px
+}
+.contiene1 .contiene_alta .proveedor_input{/*este es el div de*/
+    background-color: cornflowerblue;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top: 185px;
+    left: 365px;    
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+
+.contiene1 .label_proveedor{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    /*top: 5px;
+    margin-top: 5px;
+    margin-left: 5px;*/
+    /*border: 1px solid black;*/
+    position: relative;
+    align-items: right;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.contiene1 .proveedor{/*este es el input*/
+    background-color: white;
+    display: inline-flex;
+    
+    width: 98px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    /*margin-top: 5px;
+    margin-left: 5px*/
+}
 /*-----------------------------------------------------------------------------*/
 
 
@@ -447,6 +573,7 @@ font-weight: 500;
 /*-----------------------------------------------------------------------------*/
 /* div rosa  mas boton de modifica + div amarillo */
 /*-----------------------------------------------------------------------------*/
+
 .contiene1 .pestaña_modi{
     background-color: pink;
     background-color: transparent;

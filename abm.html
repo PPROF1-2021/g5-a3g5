@@ -86,7 +86,16 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         </div>
         <div class="rubro_input">
             <label for="rubro" class="label_rubro">Rubro</label>
-            <input type="text"  name="Rubro" class="rubro" id="rubro">
+
+            <select name="Rubro">
+                <option value="T">Transistores</option>
+                <option value="C">Centrales</option>
+                <option value="L">Led</option>
+                <option value="I">Interface</option>
+                <option value="P">Pir</option>
+                <option value="E">Teclado</option>
+                <option value="S" selected="selected">Sirena</option>
+             </select>
         </div>
   
         <div class="nombre_input">
@@ -106,7 +115,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         
         <div class="descripcion_input">
             <label for="descripcion" class="label_descripcion">Descripcion</label>
-            <textarea class="textarea" name="mensaje" rows="5" cols="10"  
+            <textarea class="textarea" name="mensaje" rows="6" cols="10"  
                 placeholder="Descripcion del producto"></textarea>
         </div>
         
@@ -119,6 +128,31 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <label for="precto" class="label_precto">Precio de Costo</label>
             <input type="text"  name="Precio de Costo" class="precto" id="precto">
         </div> 
+
+        <div class="iva_input">
+            <label for="iva" class="label_iva">Iva</label>
+
+            <select name="Iva">
+                <option value="D">10,5%</option>
+                <option value="V" selected="selected">21%</option>
+                
+             </select>
+        </div>
+        <div class="gancia_input">
+            <label for="gancia" class="label_gancia">Ganancia</label>
+            <input type="text"  name="Ganancia" class="gancia" id="gancia">
+        </div>
+        <div class="proveedor_input">
+            <label for="proveedor" class="label_proveedor">Proveedor</label>
+
+            <select name="Proveedor">
+                <option value="E">Elemon</option>
+                <option value="G">Getterson</option>
+                <option value="C">Cem</option>
+                <option value="CEL" selected="selected">Celsius</option>
+             </select>
+        </div>
+        
         </form>
 
 
