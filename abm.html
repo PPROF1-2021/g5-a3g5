@@ -34,6 +34,8 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
             <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
             <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+            <li class="nav-menu-item"><a  href="abm.html" class="nav-menu-link nav-link">ABM</a></li>
+            
         </ul>
 
     </nav>
@@ -77,7 +79,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
 
 
 
-    <form>
+    <form style="display: block; background-color: aquamarine;">
     <div class="contiene_alta alta">
         
         <div class="codigo_input">
@@ -86,16 +88,12 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         </div>
         <div class="rubro_input">
             <label for="rubro" class="label_rubro">Rubro</label>
-
-            <select name="Rubro">
-                <option value="T">Transistores</option>
-                <option value="C">Centrales</option>
-                <option value="L">Led</option>
-                <option value="I">Interface</option>
-                <option value="P">Pir</option>
-                <option value="E">Teclado</option>
-                <option value="S" selected="selected">Sirena</option>
-             </select>
+            <input type="text"  name="Rubro" class="rubro" id="rubro">
+            
+            <!--<select name="Rubro">
+                               
+                <option value="Rub" selected="selected">Rubro</option>
+             </select>-->
         </div>
   
         <div class="nombre_input">
@@ -123,6 +121,11 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
             <label for="prevta" class="label_prevta">Venta</label>
             <input type="text"  name="Precio de Venta" class="prevta" id="prevta">
         </div>
+
+        <div class="stock_input">
+            <label for="stock" class="label_stock">Stock</label>
+            <input type="text"  name="Stock" class="stock" id="stock">
+        </div>
         
         <div class="precto_input">
             <label for="precto" class="label_precto">Costo</label>
@@ -144,38 +147,55 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         </div>
         <div class="proveedor_input">
             <label for="proveedor" class="label_proveedor">Proveedor</label>
+            <input type="text"  name="proveedor" class="proveedor" id="proveedor">
 
-            <select name="Proveedor">
-                <option value="E">Elemon</option>
-                <option value="G">Getterson</option>
-                <option value="C">Cem</option>
-                <option value="CEL" selected="selected">Celsius</option>
-             </select>
+           <!-- <select name="Proveedor">
+                
+                <option value="prov" selected="selected">Proveedor</option>
+             </select>-->
         </div>
-        
+        <div>
+        <button type="submit" class="button_grabar" id="form__mesaje-exito">Grabar</button>
+        </div>
+
         </form>
 
-
-
-
-
-
-
-
-
-        <form>
-    <div class="contiene_modi">
     </div>
-        </form>
 
-        <form>
+      
+<!---------------------FIN CLASS CONTIENE ALTA--------------------------------------------------->
+
+<!---------------------COMIENZO CLASS CONTIENE MODIFICAR---------------------------------------->
+
+
+    
+<form>
+    <div class="contiene_modi">
+        
+        <div class="codigo_input">
+            <label for="codigo" class="label_codigo">Codigo</label>
+            <input type="text"  name="Codigo" class="codigo" id="codigo">
+        </div>
+       
+        <div class="nombre_input">
+            <label for="nombre" class="label_nombre">Nombre</label>
+            <input type="text"  name="Nombre" class="nombre" id="nombre">
+        </div>
+    </div>    
+</form>
+
+    
+
+
+
+
+
+<!--------------------FIN CLASS CONTIENE MODIFICAR----------------------------------------------->
+
+
     <div class="contiene_baja">
     </div>
         </form>
-
-
-
-
 
 
 

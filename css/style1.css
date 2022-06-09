@@ -17,7 +17,7 @@
 /*color: white;*/
 color: black;
 text-decoration: none;
-font-size: 18px;
+font-size: 15px;
 font-weight: 500;
 
 }
@@ -28,7 +28,7 @@ font-weight: 500;
   margin-left: 20px;
   line-height: 60px;
 }
-.web98
+.web98{
     font-size: 20px;
     font-weight: 600;
     margin-left: 0px;
@@ -184,7 +184,7 @@ font-weight: 500;
     display: inline-flex;
     width: 60px;
     height: 20px;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     position: relative;
     align-items: center;
     justify-content: left;
@@ -399,6 +399,41 @@ font-weight: 500;
     float: left;
 }
 
+.contiene1 .contiene_alta .stock_input{
+    background-color: rgb(237, 100, 184);
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    /* margin-top: 70px;
+    margin-left: 5px; */
+    top: 50px;
+    left: 580px;
+    justify-content: center;
+}
+.contiene1 .label_stock{
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .stock{
+    background-color: white;
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
 .contiene1 .contiene_alta .precto_input{
     background-color: magenta;
     display: inline-flex;
@@ -511,19 +546,20 @@ font-weight: 500;
     border: 1px solid black;
     float: left;
 }
-.contiene1 .contiene_alta .proveedor_input{/*este es el div de*/
-    background-color: cornflowerblue;
+.contiene1 .contiene_alta .proveedor_input{/*div*/
+    background-color: lightslategrey;
     display: inline-flex;
     width: 210px;
     height: 40px;
-    top: 185px;
-    left: 365px;    
     position: absolute;
+    top: 185px;
+    left: 365px;
     align-items: center;
     justify-content: center;
     place-content: center;
-    border: 1px solid black;
+    border: 1px solid black
 }
+
 
 .contiene1 .label_proveedor{/*label*/
     background-color: grey;
@@ -531,29 +567,51 @@ font-weight: 500;
     display: inline-flex;
     width: 80px;
     height: 20px;
-    /*top: 5px;
-    margin-top: 5px;
-    margin-left: 5px;*/
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     position: relative;
-    align-items: right;
-    justify-content: center;
-    font-size: 14px;
+    align-items: center;
+    justify-content: left;
 }
 
-.contiene1 .proveedor{/*este es el input*/
+.contiene1 .proveedor{/*input*/
     background-color: white;
     display: inline-flex;
-    
-    width: 98px;
+    width: 120px;
     height: 20px;
-    position: absolute;
+    position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     border: 1px solid black;
-    /*margin-top: 5px;
-    margin-left: 5px*/
+    float: left;
 }
+.button_grabar{
+    
+    border: 2px solid;/*para darle un borde al boton*/
+    background: transparent;/*para que el boton sea transparente*/
+    font-size: 15px;/*tamaño del texto */
+    font-weight: 600;/*para que el texto sea caso bold*/
+    cursor: pointer;/*para que el cursor sea una mano*/
+    color: white;/*para que el texto sea mas liviano*/
+    outline: none;/*para que el outline no se vea*/
+    transition: all 0.4s;/*transicion de tamaño*/
+    height: 26px;/*altura del boton de enviar*/
+    width: 15%;/*ancho del boton de enviar*/
+    min-width: 20%;/*ancho minimo del boton de enviar*/
+    
+    margin: 250px;
+    display: inline-flex;
+    line-height: 23px;
+    text-align: center;
+    
+    
+    
+}
+.button_grabar:hover {
+    background: white;/*el fonfo del boton sea blanco al pasar el puntero*/
+    color: #46a2fd;/*texto sera azul al pasar el puntero*/
+}
+
+
 /*-----------------------------------------------------------------------------*/
 
 
@@ -599,6 +657,86 @@ font-weight: 500;
     margin-left: 5px;
     display: none;
 }
+
+
+.contiene1 .contiene_modi .codigo_input{/*este es el div*/
+    background-color: grey;
+    display: inline-flex;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+.contiene1 .label_codigo{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+.contiene1 .codigo{/*input*/
+    background-color: white;
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+.contiene1 .contiene_modi .nom_input{/*este es el div de*/
+    background-color: coral;
+    display: inline-flex;
+    width: 210px;
+    height: 40px;
+    top:5px;
+    left: 150px;    
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    border: 1px solid black;
+}
+
+.contiene1 .label_nom{/*label*/
+    background-color: grey;
+    background-color: transparent;
+    display: inline-flex;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.contiene1 .nom{/*este es el input*/
+    /*background-color: white;*/
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    float: left;
+}
+
+
+
+
+
 
 /*-----------------------------------------------------------------------------*/
 
@@ -877,6 +1015,7 @@ font-weight: 500;
 
     }
 }
+
 
 
 

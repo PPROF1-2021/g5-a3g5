@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Deposito (ISPCA3G5) prueba</title>
+    <link rel="icon" type="image/x-icon" href="./img/camion.png"><!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script><!-- integra libreria para reloj y fecha-->
+<script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body>
+    
+<!--------------------------------------------------------------------------------------->
+<header class="header">
+    <nav class="nav">
+        <img class="logo__img" src="./img/Logo.png" ALT="Logo Gestion deposito">
+        <h1 class="web">Gestion Deposito (ISPCA3G5)</h1>
+        <h1 class="mov">Gestion Deposito</h1> 
+        <button class="nav-toggle" id="nav-toggle" onclick="mi_Menu()">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a  href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a  href="producto.html" class="nav-menu-link nav-link">Productos</a></li> 
+            <li class="nav-menu-item"><a  href="login.html" class="nav-menu-link nav-link">Login</a></li> 
+            <li class="nav-menu-item"><a  href="registro.html" class="nav-menu-link nav-link">Registro</a></li>              
+            <li class="nav-menu-item"><a  href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+            <li class="nav-menu-item"><a  href="quienessomos.html" class="nav-menu-link nav-link">Quienes Somos</a></li>
+        </ul>
+
+    </nav>
+    </header>
+    <main>
+      <!--<section class="box">
+        <h2>¿Quienes somos?</h2>
+          <p></p>Un grupo de Estudiantes, que nos embarcamos juntos a estudiar en el
+          ISPC (Instituto Superior Politecnico Cordoba), la Tecnicatura de
+          Desarrollo Web y Aplicaciones Digitales. Al principio estabamos un
+          poco asustados e intrigados por no saber a que nos enfrentabamos. Pero
+          a medida que fueron pasando los dias, fuimos aprendiendo e
+          incorporando nuevos concocimientos. Por estos dias nos toco armar un
+          proyecto para ir haciendo una practica profesionalizante. Asi es como
+          nace READY! Una Aplicación Digital para administrar objetivos
+          personales, con la cual podras realizar seguimiento de tus objetivos,
+          tareas, rutinas y eventos diarios. Otorgandote la creación de un
+          proyecto personal de corto o largo plazo con el fin de administrar
+          mejor el tiempo, cumplir objetivos y organizar el día a día de manera
+          más eficiente. </p>
+
+          <br /><h3>Nos presentamos: </h3>
+        <br />
+          <br />
+
+        
+
+        <div style="float: left; width: 20%;">
+          <a
+            href="CV/CV-Monica Antich.pdf"
+            target="_blank">
+            <img src="CV/Monica.jpg" title="Monica Antich" />
+          </a> 
+         </div>
+
+      <div style="float: left; width: 20%;">
+          <img src="assets/img/Diego.jpg" title="Diego Marcel Silva" />
+        </div>
+
+        <div style="float: left; width: 20%;">
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vTmXkZ65eI0cG3RNKpw_4iZYHTzjKwWCP38B2pSQpDC-qBVFJ_LJloQrKD4Nrc3TLktnAbQWuopaTxQ/pub"
+            target="_blank"
+          >
+            <img src="assets/img/Monica.jpg" title=" Monica Beatriz Antich"
+          /></a>
+        </div>
+
+        <div style="float: left; width: 20%;">
+          <img src="assets/img/Ivan.jpg" title="Ivan Massimino" />
+        </div>
+      </section>-->
+      
+        <!--------------------------------------------------------------------------->
+        <!--formulario quienes somos -->
+        <!--------------------------------------------------------------------------->
+        <div class="contenedor__contacto">
+          
+          <form class="form__quienessomos"id="form__quienessomos" action="https://mariogonzalezispc.github.io/g5-a3g5_2/index.html">
+              <input type="hidden" id="5" name="tipo" value="">
+              <div class="form_contacto__aviso">
+                  <h2>Nosotros Somos</h2>
+              </div>
+              <div style="float: left; width: 20%;">
+                <a
+                  href="CV/CV-Monica Antich.pdf"
+                  target="_blank">
+                  <img src="CV/Monica.jpg" title="Monica Antich" />
+                </a> 
+               </div>
+        </form>      
+    </main>
+    <br />
+    <br />
+    <footer>
+      <div class="footer__div">
+      <div class="tipo__footer">
+        <!--------------------------------------------------------------------------------------->
+        <div class="box__footer">
+            <div class="logo">
+                <img src="./img/Logo.png" alt="aca va al logo">
+            </div>
+            <div class="terms">
+              <p>Todo nuestro personal está altamente calificado y trabaja en un excelente entorno. 
+                  Nosotros pensamos que éste es uno de los más importantes factores para ofrecer un buen servicio a nuestros clientes.
+                  Algunos de nuestros vendedores están localizados en otras ciudades de nuestro país y uno de ellos se encuentra en Brasil 
+                  como representante de la compañía en ese mercado.
+                La compañía cuenta también con consultores externos,
+                 personas idóneas especializadas en el planeamiento de nuestros cursos y seminarios que son dictados en instituciones 
+                 educacionales y compañías renombradas.</p>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------->
+        <div class="box__footer">
+            <h2>Soluciones</h2>
+            <a href="">Ventas</a>
+            <a href="">Trabajos</a>
+            <a href="">Procesos</a>
+            <a href="terminosycondiciones.html" target="_parent">Informacion Importante</a>
+        </div>
+        <!--------------------------------------------------------------------------------------->
+        <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i></i>Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i></i>Linkedin</a>
+            <a href="#"><i class="fab fa-instagram"></i></i>Instagram</a>
+        </div>
+        <!--------------------------------------------------------------------------------------->
+    </div>
+    <div class="box__copyright">
+        <hr>
+        <br>
+        <p>Copyright © 2021 - Todos los derechos reservados</p>
+        <b>Gestion deposito Cordoba (ISPCA3G5)</b>
+
+    </div>
+  </div>
+</footer>
+<!---------------footer ----------->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/funcionesGrupo99.js"></script>
+<script src="./js/validacion.js"></script>
+</body>
+</html>

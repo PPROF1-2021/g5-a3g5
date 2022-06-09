@@ -191,7 +191,7 @@ footer {
     min-width: 40%;/*ancho minimo del boton de enviar*/
     margin-left: 80px;
     margin: 0 auto;
-    display: fixed;
+    display: relative;
     line-height: 23px;
     text-align: center;
 }
@@ -482,29 +482,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------------*/
 /*Formularios contacto*/
 /*------------------------------------------------------*/
@@ -779,6 +756,6 @@ textarea{/*para que se vea el textarea*/
     }
 
 
-}
 
+}
 
